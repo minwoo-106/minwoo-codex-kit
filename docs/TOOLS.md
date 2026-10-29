@@ -22,6 +22,9 @@ Node 패키지는 package-lock.json의 무결성 정보로 npm ci --ignore-scrip
 | PGlite 0.5.13 | 격리된 PostgreSQL SQL·RLS 예제 검증 |
 | Remotion 패키지 4.0.539 | SRT 파싱·프레임·MP4 렌더 |
 | pytest 9.2.0 | 재배포한 감사 도구의 원본 테스트 실행 |
+| Playwright 1.62.1 | 새 브라우저 컨텍스트의 실제 DOM 동작·회귀 증거 |
+
+0.5.0 브라우저 검사는 설치된 Edge/Chrome 실행 파일을 지정할 수 있다. 선택 런타임 설치만으로 브라우저 바이너리를 자동 설치하지 않는다. CI는 격리 runner에서 Chromium을 별도로 설치한다. 영상 납품 점검은 Remotion compositor에 포함된 ffprobe를 재사용하며 메타데이터 확인을 청취·화질 검수로 대신하지 않는다. 실전 시험은 [평가 안내](../evals/PRACTICAL.md)를 따른다.
 
 2026-10-29 검토에서 Remotion studio의 Zod 4.5.4에 [GHSA-mrhx-c7xc-m3w5](https://github.com/advisories/GHSA-mrhx-c7xc-m3w5)가 조회되어 같은 메이저의 수정 버전 **4.6.7**을 overrides에 고정했다. 실제 bundling·자막·렌더를 검증했다. 전체 Node 잠금 파일의 npm audit 조회 결과는 0건이었다. 이는 해당 시점의 알려진 취약점 조회 결과이며 이후의 안전을 보장하지 않는다.
 

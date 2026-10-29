@@ -3,7 +3,7 @@
 내 Codex 공통 규칙과 자주 쓰는 작업 절차를 관리하는 개인용 저장소.
 새 PC에는 공통 규칙과 필요한 스킬만 설치하고, 프로젝트에는 그 프로젝트의 사실만 추가한다.
 
-현재 버전 **0.4.0**. [설치 묶음·상태 점검·자동 검증·갱신·복구](docs/OPERATIONS.md),
+현재 버전 **0.5.0**. [설치 묶음·상태 점검·자동 검증·갱신·복구](docs/OPERATIONS.md),
 [실제 스킬 선택 평가](evals/README.md), [릴리스 노트](docs/RELEASE-NOTES.md).
 배포 ZIP은 [GitHub Releases](https://github.com/minwoo-106/minwoo-codex-kit/releases)에서 확인한다.
 
@@ -118,7 +118,7 @@ python .\scripts\install.py --skill minwoo-project-context --skill minwoo-public
 ## 새 프로젝트에 적용
 
 0.3.0에서 검수한 추가 스킬 8개와 선택 도구는 [추가 후보 검수 결과](docs/ADOPTED-SKILLS.md), [도구 설치·검증](docs/TOOLS.md)을 참고한다.
-kit이 배포하는 스킬은 총 14개다. 설치가 모든 본문을 매번 읽거나 실행한다는 뜻은 아니다.
+kit이 배포하는 스킬은 총 17개다. 0.5.0의 새 스킬과 기존 확장은 [검수 결과](docs/WORKFLOW-REVIEW.md), [실제 결과물 평가](evals/PRACTICAL.md)를 참고한다. 설치가 모든 본문을 매번 읽거나 실행한다는 뜻은 아니다.
 이름·설명에서 작업에 맞는 스킬을 선택하고, 해당 본문과 필요한 참고 파일만 읽는다.
 발동 설명이 겹치면 여러 절차가 섞일 수 있어 이번 추가분은 역할·제외 범위를 구체화했다.
 완벽한 자동 선택을 보장하지는 않으므로 특정 절차가 필요하면 스킬 이름을 직접 지정할 수 있다.
