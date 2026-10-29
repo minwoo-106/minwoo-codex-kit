@@ -1,0 +1,169 @@
+{
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "model": "current user default; no override",
+  "scope": "native read-only routing and full-document read evidence; no service execution",
+  "case_count": 9,
+  "passed": 9,
+  "results": [
+    {
+      "passed": true,
+      "observed": [
+        "design-taste-frontend",
+        "routing.md",
+        "routing/web-ui.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "brand",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "5d2890f208a5762f3fd82b15d21a5117013edd9f558df662384ada227c410aae",
+      "elapsed_seconds": 43.59
+    },
+    {
+      "passed": true,
+      "observed": [
+        "impeccable",
+        "routing.md",
+        "routing/web-ui.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "polish",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "5a70a0e1ef0a901462c7a2e48a13c648d13c5fcde757baf54eec8ed01bc0a301",
+      "elapsed_seconds": 44.88
+    },
+    {
+      "passed": true,
+      "observed": [
+        "minwoo-api-compat",
+        "routing.md",
+        "routing/engineering.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "api",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "97f426a4dff489d219f2f8c5e548a7f575dbdd135bb265dccb58956dd31806ab",
+      "elapsed_seconds": 43.31
+    },
+    {
+      "passed": true,
+      "observed": [
+        "documents",
+        "routing.md",
+        "routing/documents.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "document",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "e4a1bba934a696aac19559994e9f75e862bd6aba6115b49cb3c10bfec5d790a8",
+      "elapsed_seconds": 38.62
+    },
+    {
+      "passed": true,
+      "observed": [
+        "minwoo-video-review",
+        "routing.md",
+        "routing/media.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "video",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "536fc886eaadae149e73541106cfc25083a6abebfeff276e9db2cbf45dc06949",
+      "elapsed_seconds": 46.2
+    },
+    {
+      "passed": true,
+      "observed": [
+        "figma-design-to-code",
+        "figma-use",
+        "routing.md",
+        "routing/figma.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "figma",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "1ca13042199c2506496c73a5c59a0805144bf7a3ea09e6b9027df99b034d9f9c",
+      "elapsed_seconds": 61.78
+    },
+    {
+      "passed": true,
+      "observed": [
+        "notion-meeting-intelligence",
+        "routing.md",
+        "routing/services.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "meeting",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "eea22c96b916e2cfdfc80199670fda7b26505c2ccdeaf8319c891e32f38f6bf2",
+      "elapsed_seconds": 33.31
+    },
+    {
+      "passed": true,
+      "observed": [
+        "minwoo-work-handoff",
+        "routing.md",
+        "routing/kit.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "handoff",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "aff5cef3d389bcd7a027418f24c215fa91fdc39f185d8fb78969b9f51fa1ea65",
+      "elapsed_seconds": 37.22
+    },
+    {
+      "passed": true,
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "simple",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "aeff1f560177fefca53fc7e046015fef029c499965083a916355db304099b1a7",
+      "elapsed_seconds": 4.53
+    }
+  ],
+  "guide_sha256": {
+    "routing.md": "5ef65a198657e5d4f1339cec6abc395bfe7e65b4cbece8624a25d1ee07b89625",
+    "routing/documents.md": "0c3760102a5fb426923fced7ea2fb778a759c832639a9f2ed9ea7b392eaa4723",
+    "routing/engineering.md": "f85b9a23b9eddfc51422b964fc9790f996bc318633a0ffe3c792c56cb3bb3e8e",
+    "routing/figma.md": "3a774ad1982bbaab4e4b48014bf99ae05aee85ab962277e580d0d13ab8a88bfa",
+    "routing/kit.md": "6e03c59cc66f4c78bd4b195464134f204fa3dcb6c614fc73c4e9b803a9439c61",
+    "routing/media.md": "35aba74b90cd456545fe6ac14895f437a4beedf4160947e22d03425c2e85b305",
+    "routing/services.md": "f5c7668df0ccc7c94e385f9f710333c4e2f07d84561b7ef958cfca57493d57c6",
+    "routing/web-ui.md": "d795056fb321cfb97c15cc8afb0aee4bf9d2c1d3d5cccc076f74e02545f89319"
+  }
+}

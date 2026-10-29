@@ -1,0 +1,36 @@
+{
+  "scope": "Current session-provided catalog names and selected on-disk roots; not account connection or execution certification",
+  "catalog_skills_categorized": 86,
+  "routing_domains": 7,
+  "new_skill_folders": 0,
+  "kit_skills": 17,
+  "uncovered_catalog_names": [],
+  "guide_chars": {
+    "routing.md": 1428,
+    "routing/documents.md": 1225,
+    "routing/engineering.md": 1448,
+    "routing/figma.md": 1193,
+    "routing/kit.md": 1200,
+    "routing/media.md": 838,
+    "routing/services.md": 1685,
+    "routing/web-ui.md": 1650
+  },
+  "selected_root_inventory": {
+    "scanned": 93,
+    "implicit_candidates": 87,
+    "explicit_only": 6,
+    "list_chars": 36419,
+    "list_utf8_bytes": 38830,
+    "comparison_budget_chars": 8000,
+    "duplicates": [],
+    "errors": []
+  },
+  "inventory_scope_note": "93 disk entries include six explicit-only helpers and one legacy skill not exposed in the current session; those invocation policies were preserved. A comparison budget is not proof of host truncation.",
+  "installation": {
+    "protected_existing_files": 484,
+    "expected_changed_existing_files": 2,
+    "config_hash_unchanged_at_install": true,
+    "local_global_rule_customizations_preserved": true,
+    "isolated_repeat_content_and_mtime_unchanged": true
+  }
+}

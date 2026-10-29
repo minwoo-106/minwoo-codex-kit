@@ -56,7 +56,7 @@ python -B scripts/doctor.py --profile all --json
 로컬에서 커밋 기반 묶음을 만들려면 저장소 밖의 새 출력 폴더를 지정한다.
 
 ```sh
-python -B scripts/build_release.py --output ../kit-release --tag v0.5.0
+python -B scripts/build_release.py --output ../kit-release --tag v0.6.0
 ```
 
 다운로드 후 `SHA256SUMS`의 ZIP 해시와 `Get-FileHash -Algorithm SHA256 파일.zip` 또는 `sha256sum 파일.zip` 결과를 대조한다. 해시는 파일 손상 검사용이며 별도 서명이나 신원 증명은 아니다. 압축을 새 폴더에 풀고 미리보기부터 실행한다.

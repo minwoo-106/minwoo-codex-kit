@@ -3,7 +3,7 @@
 내 Codex 공통 규칙과 자주 쓰는 작업 절차를 관리하는 개인용 저장소.
 새 PC에는 공통 규칙과 필요한 스킬만 설치하고, 프로젝트에는 그 프로젝트의 사실만 추가한다.
 
-현재 버전 **0.5.0**. [설치 묶음·상태 점검·자동 검증·갱신·복구](docs/OPERATIONS.md),
+현재 버전 **0.6.0**. [설치 묶음·상태 점검·자동 검증·갱신·복구](docs/OPERATIONS.md),
 [실제 스킬 선택 평가](evals/README.md), [릴리스 노트](docs/RELEASE-NOTES.md).
 배포 ZIP은 [GitHub Releases](https://github.com/minwoo-106/minwoo-codex-kit/releases)에서 확인한다.
 
@@ -30,6 +30,7 @@ docs/candidates/                의존성 정리가 필요한 재사용 후보
 ```
 
 전역 규칙은 항상 적용할 작업 원칙이다. 스킬은 작업이 맞을 때만 본문을 읽는다.
+Codex용 [작업별 선택 안내](skills/minwoo-skill-curation/references/routing.md)는 역할이 겹치거나 여러 분야를 조합할 때만 읽는다. 상세 안내는 7개 분야로 나뉘며 해당 부분만 선택한다. 설치 묶음은 실행 목록이 아니며 플러그인 설치·접근 권한을 보장하지 않는다.
 프로젝트 문서에 공통 규칙이나 스킬 전체를 다시 붙이지 않는다.
 저장소 주소를 대화에 보여주는 것만으로 모든 프로젝트에 영구 설치되지는 않는다.
 

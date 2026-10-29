@@ -6,11 +6,8 @@
 
 ## 먼저 고르기
 
-- 일반 작업은 전역 규칙을 기본으로 하고 [자체 스킬](NEW-SKILLS.md)은 해당 작업에 맞을 때 선택한다.
-- 어려운 오류는 `diagnosing-bugs`, 테스트부터 만들기로 한 작업은 `tdd`를 선택한다.
-- 구조를 결정할 때 `codebase-design`, 불확실한 설계 질문을 시험할 때 `prototype`을 선택한다.
-- UI의 주도 절차는 작업에 맞게 `frontend-design`, `impeccable`, `design-taste-frontend` 중 하나부터 선택한다. `ui-ux-pro-max`는 필요한 근거 검색에 보조로 쓴다.
-- 21st를 사용하기로 한 작업에서만 검색·구현·검토에 해당하는 스킬을 추가한다.
+- 작업 시 선택 기준은 [Codex용 분야별 안내](../skills/minwoo-skill-curation/references/routing.md)를 사용한다. 이 문서의 아래 목록은 출처·배포·설치 검토 기록이며 최신 선택 기준을 중복 유지하지 않는다.
+- 일반 작업은 전역 규칙을 기본으로 하고 [자체 스킬](NEW-SKILLS.md)은 해당 작업에 맞을 때 선택한다. 분야별 주도·보조 역할은 위 선택 안내에서 관리한다.
 
 0.3.0에서 추가한 8개는 [검수·역할 분리 표](ADOPTED-SKILLS.md)에 정리했다. React 성능/구조는 기존 UI 스킬을 대체하지 않고 해당 문제에서만 선택한다.
 

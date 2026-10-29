@@ -1,0 +1,128 @@
+[
+  {
+    "id": "brand",
+    "prompt": "기존 저장소의 브랜드 소개 홈페이지를 시각적으로 개편할 거야. 로컬 코드 작업이고 배포나 호스팅 이전은 원하지 않아. 디자인 관련 스킬들이 겹치니 주도할 것을 골라 첫 단계만 준비해줘.",
+    "routes": [
+      "routing.md",
+      "routing/web-ui.md"
+    ],
+    "expected": [
+      "design-taste-frontend"
+    ],
+    "allowed": [
+      "design-taste-frontend",
+      "sites"
+    ]
+  },
+  {
+    "id": "polish",
+    "prompt": "기존 대시보드의 디자인 방향은 유지하면서 글자 계층, 여백, 모바일 화면을 다듬으려 해. 여러 UI 스킬이 겹치는데 지금 단계에 맞는 것만 골라줘.",
+    "routes": [
+      "routing.md",
+      "routing/web-ui.md"
+    ],
+    "expected": [
+      "impeccable"
+    ],
+    "allowed": [
+      "impeccable",
+      "sites"
+    ]
+  },
+  {
+    "id": "api",
+    "prompt": "API 응답에서 필수 필드를 없애려는데 기존 소비자에게 어떤 영향이 있을지 검토하려고 해. 코드 리뷰·버그 진단·계약 검사 중 역할이 겹치니 필요한 것만 골라 첫 단계를 준비해줘.",
+    "routes": [
+      "routing.md",
+      "routing/engineering.md"
+    ],
+    "expected": [
+      "minwoo-api-compat"
+    ],
+    "allowed": [
+      "minwoo-api-compat"
+    ]
+  },
+  {
+    "id": "document",
+    "prompt": "보고서를 편집 가능한 로컬 Word .docx 파일로 만들 거야. Google Docs나 Pages에 저장하지 마. 여러 문서 기능의 역할이 겹치니 출력 형식에 맞는 것만 골라 준비해줘.",
+    "routes": [
+      "routing.md",
+      "routing/documents.md"
+    ],
+    "expected": [
+      "documents"
+    ],
+    "allowed": [
+      "documents"
+    ]
+  },
+  {
+    "id": "video",
+    "prompt": "일반 프로젝트에서 로컬 영상 수정 전후의 같은 컷을 비교하고 검토 메모를 남기려 해. 새 영상을 만들거나 렌더하지 않아. 영상 도구들이 겹치니 지금 필요한 것만 골라줘.",
+    "routes": [
+      "routing.md",
+      "routing/media.md"
+    ],
+    "expected": [
+      "minwoo-video-review"
+    ],
+    "allowed": [
+      "minwoo-video-review"
+    ]
+  },
+  {
+    "id": "figma",
+    "prompt": "Figma에서 받은 화면을 기존 React 프로젝트에 구현할 준비를 해줘. 디자인은 그대로 따라야 하고 새 Figma 파일은 만들지 않아. Figma 관련 기능들이 겹치니 해당 작업에 필요한 것만 골라줘.",
+    "routes": [
+      "routing.md",
+      "routing/figma.md"
+    ],
+    "expected": [
+      "figma-design-to-code"
+    ],
+    "allowed": [
+      "figma-design-to-code",
+      "figma-use"
+    ],
+    "allowed_routes": [
+      "routing/web-ui.md"
+    ]
+  },
+  {
+    "id": "meeting",
+    "prompt": "Notion에 있는 자료로 다음 회의의 안건과 사전 읽을 내용을 준비하려고 해. 주간 보고나 추적표는 만들지 않아. Notion 기능들이 겹치니 필요한 것만 골라줘.",
+    "routes": [
+      "routing.md",
+      "routing/services.md"
+    ],
+    "expected": [
+      "notion-meeting-intelligence"
+    ],
+    "allowed": [
+      "notion-meeting-intelligence",
+      "notion-research-documentation"
+    ]
+  },
+  {
+    "id": "handoff",
+    "prompt": "진행 중인 코드 작업을 다음 채팅에서 이어가도록 인수인계를 정리할 거야. 프로젝트 공통 규칙이나 릴리스 노트와 역할이 헷갈리니 적합한 것만 골라줘.",
+    "routes": [
+      "routing.md",
+      "routing/kit.md"
+    ],
+    "expected": [
+      "minwoo-work-handoff"
+    ],
+    "allowed": [
+      "minwoo-work-handoff"
+    ]
+  },
+  {
+    "id": "simple",
+    "prompt": "17 더하기 25는? 숫자만 답해줘.",
+    "routes": [],
+    "expected": [],
+    "allowed": []
+  }
+]
