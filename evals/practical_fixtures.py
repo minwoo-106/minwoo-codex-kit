@@ -52,10 +52,19 @@ def create(root,runtime):
     png=b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('!2I5B',64,36,8,2,0,0,0))
     png+=chunk(b'IDAT',zlib.compress((b'\0'+b'\x20\xa0\x60'*64)*36))+chunk(b'IEND',b'')
     (root/'video/frame.png').write_bytes(png)
-    suffix='.exe' if __import__('os').name=='nt' else ''
-    candidates=list((runtime/'node_modules/@remotion').glob('compositor-*/ffmpeg'+suffix))
-    if len(candidates)!=1: raise ValueError('Expected one installed Remotion ffmpeg')
-    ffmpeg=candidates[0];ffprobe=ffmpeg.with_name('ffprobe'+suffix)
+    # Several optional compositor packages can coexist (Linux GNU and musl).
+    # Use the pinned renderer's platform/libc resolver, never package-list order.
+    resolver="""const {createRequire}=require('node:module');
+const req=createRequire(require('node:path').join(process.argv[1],'package.json'));
+const {getExecutablePath}=req('@remotion/renderer').RenderInternals;
+console.log(JSON.stringify(Object.fromEntries(['ffmpeg','ffprobe'].map(type=>
+  [type,getExecutablePath({type,indent:false,logLevel:'error',binariesDirectory:null})]))));"""
+    resolved=subprocess.run(['node','-e',resolver,str(runtime.resolve())],
+        capture_output=True,text=True,encoding='utf-8',timeout=30,check=True)
+    binaries=json.loads(resolved.stdout)
+    ffmpeg=Path(binaries['ffmpeg']);ffprobe=Path(binaries['ffprobe'])
+    if not ffmpeg.is_file() or not ffprobe.is_file():
+        raise ValueError('Resolved Remotion media tools are missing')
     proc=subprocess.run([str(ffmpeg),'-v','error','-loop','1','-i',str(root/'video/frame.png'),
         '-t','1','-r','30','-c:v','libx264','-pix_fmt','yuv420p',str(root/'video/sample.mp4')],
         capture_output=True,timeout=60)
