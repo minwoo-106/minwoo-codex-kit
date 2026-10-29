@@ -118,6 +118,20 @@ class EntrypointTests(unittest.TestCase):
     def test_windows_powershell_51_wrapper(self):
         self.check_powershell('powershell')
 
+    def test_powershell_profile_preserves_rules(self):
+        shell = shutil.which('pwsh')
+        if not shell:
+            self.skipTest('pwsh not available')
+        self.env.update(KIT_SCRIPT_PATH=str(REPO / 'scripts/install.ps1'),
+                        KIT_RULES_PATH=str(self.codex), KIT_SKILLS_PATH=str(self.skills))
+        code = ('& $env:KIT_SCRIPT_PATH -CodexHome $env:KIT_RULES_PATH -SkillsRoot $env:KIT_SKILLS_PATH '
+                '-Profiles core,video -SkipRules')
+        self.invoke([shell, '-NoProfile', '-Command', code + ' -DryRun'])
+        self.assertFalse(self.codex.exists())
+        for _ in range(2): self.invoke([shell, '-NoProfile', '-Command', code])
+        self.assertFalse((self.codex / 'AGENTS.md').exists())
+        self.assertEqual(len(list(self.skills.glob('*/SKILL.md'))), 8)
+
     def test_windows_powershell_51_syntax(self):
         shell = shutil.which('powershell')
         if not shell:

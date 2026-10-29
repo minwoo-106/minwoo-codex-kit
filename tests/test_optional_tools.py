@@ -30,7 +30,12 @@ class ToolSetupTests(unittest.TestCase):
                 patch.object(setup.shutil, "which", return_value="node"),
                 patch.object(setup.subprocess, "check_output", return_value="v24.22.1"),
             ):
-                setup.main()
+                if sys.version_info < (3, 11):
+                    with self.assertRaises(SystemExit) as exc:
+                        setup.main()
+                    self.assertEqual(exc.exception.code, 2)
+                else:
+                    setup.main()
             self.assertFalse(target.exists())
 
     def test_repeat_keeps_files_and_modification_is_rejected(self):

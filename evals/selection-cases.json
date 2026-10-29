@@ -1,0 +1,159 @@
+[
+  {
+    "id": "project",
+    "kind": "positive",
+    "prompt": "새 프로젝트의 실제 구조와 실행 명령을 확인해서 프로젝트용 AGENTS.md를 작성할 준비를 해 줘.",
+    "expected": [
+      "minwoo-project-context"
+    ]
+  },
+  {
+    "id": "publication",
+    "kind": "positive",
+    "prompt": "이 저장소를 처음 공개하기 전에 민감정보, 배포 대상 파일, 외부 코드 출처를 점검할 준비를 해 줘.",
+    "expected": [
+      "minwoo-publication-review"
+    ]
+  },
+  {
+    "id": "curation",
+    "kind": "positive",
+    "prompt": "candidates.md의 두 외부 스킬 후보를 중복·라이선스·필요 도구 기준으로 검수해서 개인 kit 편입 여부를 정리할 준비를 해 줘.",
+    "expected": [
+      "minwoo-skill-curation"
+    ]
+  },
+  {
+    "id": "maintenance",
+    "kind": "positive",
+    "prompt": "개인 Codex kit 원본과 이 PC 설치본의 차이·누락·중복을 점검할 준비를 해 줘. 지금은 갱신하지 않아.",
+    "expected": [
+      "minwoo-kit-maintenance"
+    ]
+  },
+  {
+    "id": "handoff",
+    "kind": "positive",
+    "prompt": "progress.md의 미완료 작업을 새 채팅에서 이어갈 수 있도록 인수인계를 작성할 준비를 해 줘.",
+    "expected": [
+      "minwoo-work-handoff"
+    ]
+  },
+  {
+    "id": "video-review",
+    "kind": "positive",
+    "prompt": "before.mp4와 after.mp4의 같은 컷을 반복 재생해서 수정 전후를 비교하고 검토 메모를 남길 준비를 해 줘. 새 렌더링은 필요 없어.",
+    "expected": [
+      "minwoo-video-review"
+    ]
+  },
+  {
+    "id": "walkthrough",
+    "kind": "positive",
+    "prompt": "changes.patch의 변경을 단계별로 넘기면서 이해할 수 있는 HTML 설명 화면으로 만들 준비를 해 줘.",
+    "expected": [
+      "minwoo-diff-walkthrough"
+    ]
+  },
+  {
+    "id": "dependencies",
+    "kind": "positive",
+    "prompt": "package.json의 의존 패키지에 알려진 취약점이나 유지보수·공급망 위험이 있는지 근거를 모아 조사할 준비를 해 줘.",
+    "expected": [
+      "minwoo-dependency-audit"
+    ]
+  },
+  {
+    "id": "properties",
+    "kind": "positive",
+    "prompt": "codec.py의 인코딩·디코딩이 임의의 입력에서도 원래 값으로 돌아오는지 속성 기반 테스트로 검증할 준비를 해 줘.",
+    "expected": [
+      "minwoo-property-testing"
+    ]
+  },
+  {
+    "id": "performance",
+    "kind": "positive",
+    "prompt": "React 검색 화면에서 타이핑할 때 큰 목록이 매번 다시 계산돼 느려. src/Search.jsx를 보고 재렌더 성능을 측정하고 개선할 준비를 해 줘.",
+    "expected": [
+      "minwoo-react-performance"
+    ]
+  },
+  {
+    "id": "composition",
+    "kind": "positive",
+    "prompt": "React Editor 컴포넌트에 불리언 옵션이 너무 많아서 조합하기 어려워. 재사용 컴포넌트 API와 상태 공유 구조를 개선할 준비를 해 줘.",
+    "expected": [
+      "minwoo-react-composition"
+    ]
+  },
+  {
+    "id": "postgres",
+    "kind": "positive",
+    "prompt": "schema.sql의 PostgreSQL 테넌트별 RLS와 인덱스 설계를 검토할 준비를 해 줘. 다른 테넌트 행 접근을 막는지 확인하고 싶어.",
+    "expected": [
+      "minwoo-postgres-review"
+    ]
+  },
+  {
+    "id": "release",
+    "kind": "positive",
+    "prompt": "changes.md의 확정된 변경을 근거로 사용자용 릴리스 노트를 작성할 준비를 해 줘. 배포나 태그 생성은 하지 않아.",
+    "expected": [
+      "minwoo-release-notes"
+    ]
+  },
+  {
+    "id": "remotion",
+    "kind": "positive",
+    "prompt": "기존 Remotion 프로젝트에 captions.srt의 한글 자막을 넣고 MP4로 로컬 렌더링할 준비를 해 줘.",
+    "expected": [
+      "minwoo-remotion-render"
+    ]
+  },
+  {
+    "id": "arithmetic",
+    "kind": "negative",
+    "prompt": "17 곱하기 23은 얼마야? 결과만 짧게 알려줘.",
+    "expected": []
+  },
+  {
+    "id": "plain-edit",
+    "kind": "negative",
+    "prompt": "'회의는 내일 두 시입니다'를 조금 더 친근한 문장으로 바꿔줘.",
+    "expected": []
+  },
+  {
+    "id": "css-only",
+    "kind": "negative",
+    "prompt": "스타일시트에서 버튼 배경색만 파랑에서 초록으로 바꿀 준비를 해 줘. 구조·성능·다른 요소는 바꾸지 않아.",
+    "expected": []
+  },
+  {
+    "id": "simple-bug",
+    "kind": "negative",
+    "prompt": "calc.py의 divide(8, 0)에서 ZeroDivisionError가 나. 기존 동작을 확인해서 오류 원인을 진단할 준비를 해 줘.",
+    "expected": []
+  },
+  {
+    "id": "ordinary-review",
+    "kind": "negative",
+    "prompt": "changes.patch를 일반적인 코드 리뷰로 읽고 요구사항과 버그 가능성을 검토할 준비를 해 줘. 별도 HTML 설명 화면이나 변경 기록은 필요 없어.",
+    "expected": []
+  },
+  {
+    "id": "simple-react",
+    "kind": "negative",
+    "prompt": "React 화면에 정적인 안내 문구 한 줄을 추가할 준비를 해 줘. 성능 최적화나 컴포넌트 API 재설계는 하지 않아.",
+    "expected": []
+  },
+  {
+    "id": "combined-react",
+    "kind": "combined",
+    "prompt": "React 검색 컴포넌트의 불리언 옵션이 많아 공개 API가 복잡하고, 타이핑마다 큰 목록 계산이 반복돼 느려. 구조 설계와 성능 개선 두 부분을 함께 검토할 준비를 해 줘.",
+    "expected": [
+      "minwoo-react-composition",
+      "minwoo-react-performance"
+    ]
+  }
+]

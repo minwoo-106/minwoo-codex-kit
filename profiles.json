@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "profiles": {
+    "core": {
+      "description": "공통 프로젝트 관리·공개 점검·인수인계",
+      "skills": [
+        "minwoo-project-context",
+        "minwoo-publication-review",
+        "minwoo-skill-curation",
+        "minwoo-kit-maintenance",
+        "minwoo-work-handoff",
+        "minwoo-release-notes"
+      ]
+    },
+    "web": {
+      "description": "공통 관리 + React·DB·의존성·테스트·변경 설명",
+      "skills": [
+        "minwoo-project-context",
+        "minwoo-publication-review",
+        "minwoo-skill-curation",
+        "minwoo-kit-maintenance",
+        "minwoo-work-handoff",
+        "minwoo-release-notes",
+        "minwoo-react-performance",
+        "minwoo-react-composition",
+        "minwoo-postgres-review",
+        "minwoo-dependency-audit",
+        "minwoo-property-testing",
+        "minwoo-diff-walkthrough"
+      ]
+    },
+    "video": {
+      "description": "공통 관리 + 영상 비교·자막 렌더",
+      "skills": [
+        "minwoo-project-context",
+        "minwoo-publication-review",
+        "minwoo-skill-curation",
+        "minwoo-kit-maintenance",
+        "minwoo-work-handoff",
+        "minwoo-release-notes",
+        "minwoo-video-review",
+        "minwoo-remotion-render"
+      ]
+    },
+    "documents": {
+      "description": "문서 작업의 프로젝트 정리·공개 점검·인수인계",
+      "skills": [
+        "minwoo-project-context",
+        "minwoo-publication-review",
+        "minwoo-skill-curation",
+        "minwoo-kit-maintenance",
+        "minwoo-work-handoff",
+        "minwoo-release-notes"
+      ]
+    },
+    "all": {
+      "description": "이 저장소에서 배포하는 스킬 전체",
+      "skills": [
+        "minwoo-project-context",
+        "minwoo-publication-review",
+        "minwoo-skill-curation",
+        "minwoo-kit-maintenance",
+        "minwoo-work-handoff",
+        "minwoo-release-notes",
+        "minwoo-react-performance",
+        "minwoo-react-composition",
+        "minwoo-postgres-review",
+        "minwoo-dependency-audit",
+        "minwoo-property-testing",
+        "minwoo-diff-walkthrough",
+        "minwoo-video-review",
+        "minwoo-remotion-render"
+      ]
+    }
+  }
+}

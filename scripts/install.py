@@ -263,13 +263,25 @@ def main() -> int:
     parser.add_argument('--codex-home')
     parser.add_argument('--skills-root')
     parser.add_argument('--skill', action='append', dest='skills', default=[])
+    parser.add_argument('--profile', action='append', dest='profiles', default=[])
+    parser.add_argument('--list-profiles', action='store_true')
     parser.add_argument('--skip-rules', action='store_true')
     parser.add_argument('--dry-run', action='store_true')
     parser.add_argument('--replace-existing', action='store_true')
     args = parser.parse_args()
     try:
+        from profiles import load_profiles, expand
+        if args.list_profiles:
+            for name, entry in load_profiles(REPO).items():
+                print(f"{name}: {entry['description']} ({len(entry['skills'])} skills)")
+            return 0
+        del args.list_profiles
+        selected_profiles = args.profiles
+        del args.profiles
+        if selected_profiles:
+            args.skills = expand(REPO, selected_profiles, args.skills)
         return install(REPO, **vars(args))
-    except (OSError, InstallError) as exc:
+    except (OSError, ValueError, InstallError) as exc:
         print(f'오류: {exc}', file=sys.stderr)
         return 1
 

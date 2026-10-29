@@ -9,6 +9,8 @@ from pathlib import Path
 import stat
 import sys
 
+GENERATED_DIRS = {"__pycache__", ".pytest_cache", ".hypothesis", "node_modules", ".venv"}
+
 
 def checked(path: Path) -> Path:
     path = Path(os.path.abspath(path.expanduser()))
@@ -32,9 +34,13 @@ def files(root: Path) -> dict[str, str]:
     for item in sorted(root.iterdir()):
         checked(item)
         if item.is_dir():
+            if item.name in GENERATED_DIRS:
+                continue
             for name, value in files(item).items():
                 result[f"{item.name}/{name}"] = value
         elif item.is_file():
+            if item.suffix in {".pyc", ".pyo"}:
+                continue
             result[item.name] = hashlib.sha256(item.read_bytes()).hexdigest()
         else:
             raise ValueError(f"일반 파일이 아닌 항목: {item}")

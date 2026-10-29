@@ -6,6 +6,8 @@ param(
     [string]$CodexHome,
     [string]$SkillsRoot,
     [string[]]$Skills = @(),
+    [string[]]$Profiles = @(),
+    [switch]$ListProfiles,
     [switch]$SkipRules,
     [switch]$DryRun,
     [switch]$ReplaceExisting
@@ -17,6 +19,8 @@ if ($ProjectPath) { $installArgs += @('--project', $ProjectPath) }
 if ($CodexHome) { $installArgs += @('--codex-home', $CodexHome) }
 if ($SkillsRoot) { $installArgs += @('--skills-root', $SkillsRoot) }
 foreach ($skill in $Skills) { $installArgs += @('--skill', $skill) }
+foreach ($profile in $Profiles) { $installArgs += @('--profile', $profile) }
+if ($ListProfiles) { $installArgs += '--list-profiles' }
 if ($SkipRules) { $installArgs += '--skip-rules' }
 if ($DryRun) { $installArgs += '--dry-run' }
 if ($ReplaceExisting) { $installArgs += '--replace-existing' }

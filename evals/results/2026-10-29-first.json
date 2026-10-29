@@ -1,0 +1,549 @@
+{
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "model": "current user default; no model override",
+  "scope": "native skill selection under a read-only preparation request; kit skills only",
+  "case_count": 21,
+  "passed": 20,
+  "results": [
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-project-context"
+      ],
+      "observed": [
+        "minwoo-project-context"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 53758,
+        "cached_input_tokens": 39936,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 538,
+        "reasoning_output_tokens": 292
+      },
+      "id": "project",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "c987a65a38913432b8ea775e814ce635c8c831044b54d55a584d354d10fbfead",
+      "elapsed_seconds": 25.83
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-publication-review"
+      ],
+      "observed": [
+        "minwoo-publication-review"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 45522,
+        "cached_input_tokens": 35840,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 245,
+        "reasoning_output_tokens": 28
+      },
+      "id": "publication",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "175d136973b6556e06aa0a26edb37e793ed3200518363cf82401534a814b7d8b",
+      "elapsed_seconds": 11.81
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-skill-curation"
+      ],
+      "observed": [
+        "minwoo-skill-curation"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 70041,
+        "cached_input_tokens": 59008,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 578,
+        "reasoning_output_tokens": 99
+      },
+      "id": "curation",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "c31c335db4029f826716b18d3cf84bdecaf376415d01c6045dae89f040f06a69",
+      "elapsed_seconds": 30.06
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-kit-maintenance"
+      ],
+      "observed": [
+        "minwoo-kit-maintenance"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 121627,
+        "cached_input_tokens": 102784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 478,
+        "reasoning_output_tokens": 52
+      },
+      "id": "maintenance",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "5f93309ccd11dfef8c4a1a06a6c453585d3898a2e0e5b375d166b3669b977e9e",
+      "elapsed_seconds": 22.86
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-work-handoff"
+      ],
+      "observed": [
+        "minwoo-work-handoff"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 69668,
+        "cached_input_tokens": 49280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 405,
+        "reasoning_output_tokens": 40
+      },
+      "id": "handoff",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "20f23a9e65b1fa5dbf9a9d8ff391ab0c5f413ce9052098a6711688fdfb42683f",
+      "elapsed_seconds": 20.69
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-video-review"
+      ],
+      "observed": [
+        "minwoo-video-review"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 92938,
+        "cached_input_tokens": 82432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 539,
+        "reasoning_output_tokens": 80
+      },
+      "id": "video-review",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "e1e91f73fc0f6c9753866d11494b7611f8eabbbe0e12c49744186a4651dd0b9b",
+      "elapsed_seconds": 28.34
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-diff-walkthrough"
+      ],
+      "observed": [
+        "minwoo-diff-walkthrough"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 68811,
+        "cached_input_tokens": 49280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 365,
+        "reasoning_output_tokens": 65
+      },
+      "id": "walkthrough",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "613be19053d3ab14b9ee499a24bfbac92ff779219a0d27f3096b371a25d82091",
+      "elapsed_seconds": 20.58
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-dependency-audit"
+      ],
+      "observed": [
+        "minwoo-dependency-audit"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 46004,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 395,
+        "reasoning_output_tokens": 74
+      },
+      "id": "dependencies",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "f3d7afddd484463d6dbd85fbd5cf8766599e662b8dd4f65df02d684f740b5922",
+      "elapsed_seconds": 16.77
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-property-testing"
+      ],
+      "observed": [
+        "minwoo-property-testing"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 69207,
+        "cached_input_tokens": 49408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 432,
+        "reasoning_output_tokens": 66
+      },
+      "id": "properties",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "f92b53fbcdb814ccfe3eede2dd0b063ae02808027a0b821708fdc86d46f23e18",
+      "elapsed_seconds": 29.03
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-react-performance"
+      ],
+      "observed": [
+        "minwoo-react-performance"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 97074,
+        "cached_input_tokens": 83712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 554,
+        "reasoning_output_tokens": 136
+      },
+      "id": "performance",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "a9ef707c72ed4aab2374b567db3e603be55c2f598c32031ea4d8e1daeff01996",
+      "elapsed_seconds": 32.97
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-react-composition"
+      ],
+      "observed": [
+        "minwoo-react-composition"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 98442,
+        "cached_input_tokens": 75520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 340,
+        "reasoning_output_tokens": 73
+      },
+      "id": "composition",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "a56ae8a93211d4c9fa54d32843040ab4d7b2b2e283dc3c937055d0c41ff83c51",
+      "elapsed_seconds": 17.11
+    },
+    {
+      "passed": false,
+      "expected": [
+        "minwoo-postgres-review"
+      ],
+      "observed": [],
+      "missing": [
+        "minwoo-postgres-review"
+      ],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 45719,
+        "cached_input_tokens": 35840,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 574,
+        "reasoning_output_tokens": 326
+      },
+      "id": "postgres",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "4aca725ee098e94620d3b5f40f7972dce96dee5619289c926c097998cf4f839d",
+      "elapsed_seconds": 25.81
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-release-notes"
+      ],
+      "observed": [
+        "minwoo-release-notes"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 86762,
+        "cached_input_tokens": 67584,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 394,
+        "reasoning_output_tokens": 52
+      },
+      "id": "release",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "4bc1f5403b62bc20b2ccff5bcb5769871f93f2348ffa72eaf5e7e29a00a272d4",
+      "elapsed_seconds": 16.84
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-remotion-render"
+      ],
+      "observed": [
+        "minwoo-remotion-render"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 70022,
+        "cached_input_tokens": 59264,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 535,
+        "reasoning_output_tokens": 59
+      },
+      "id": "remotion",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "4359c6baa41691600962d265df0769a1b09d683ceddc2b734d12bb40c6f8e5e9",
+      "elapsed_seconds": 25.69
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 22477,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31,
+        "reasoning_output_tokens": 24
+      },
+      "id": "arithmetic",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "2123285a8c7dc49109aeb11e3728bd6867a3e9e6cf64ab357c1d1baae675f3f3",
+      "elapsed_seconds": 6.02
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 22483,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 126,
+        "reasoning_output_tokens": 109
+      },
+      "id": "plain-edit",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "2aaec875223fa988d7b62ea3315718eff8e10eb4aa154be889dfb33ba6ad6374",
+      "elapsed_seconds": 7.84
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 100167,
+        "cached_input_tokens": 87296,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 680,
+        "reasoning_output_tokens": 208
+      },
+      "id": "css-only",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "179f7f8ad0cd7cc8864607ec30240cb914ef601964c41b89ffe3c7a85bd88a69",
+      "elapsed_seconds": 36.38
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 72862,
+        "cached_input_tokens": 60800,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 421,
+        "reasoning_output_tokens": 63
+      },
+      "id": "simple-bug",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "3855259773d8e9ca9a15184fd51c6537aea49c8a66714f7f14fc9e241b5929f1",
+      "elapsed_seconds": 22.47
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 55020,
+        "cached_input_tokens": 39936,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 471,
+        "reasoning_output_tokens": 221
+      },
+      "id": "ordinary-review",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "3173b447a8fa5980f29202fb54d9a6cb16de3737884bff90959ad78b8c94b912",
+      "elapsed_seconds": 20.36
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 100498,
+        "cached_input_tokens": 87680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 720,
+        "reasoning_output_tokens": 235
+      },
+      "id": "simple-react",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "fa9067f08da429e20cafd7aede66a19e1c14711dc4488002ead2ea091672a307",
+      "elapsed_seconds": 36.27
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-react-composition",
+        "minwoo-react-performance"
+      ],
+      "observed": [
+        "minwoo-react-composition",
+        "minwoo-react-performance"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 46243,
+        "cached_input_tokens": 35968,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 437,
+        "reasoning_output_tokens": 122
+      },
+      "id": "combined-react",
+      "kind": "combined",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "3777bd0125a5e442e2f199d0838d247fdc309bb681356625814a2e75d7077456",
+      "elapsed_seconds": 18.97
+    }
+  ],
+  "skill_sha256": {
+    "minwoo-dependency-audit": "30e314dd4c846c984e8dc2ffd877b381957f2ea714e284c9732887fa808ab9ae",
+    "minwoo-diff-walkthrough": "5d47bfe6e269c0bd6989b0280999bf6b03d28ebf9c9b52a0615ddf3120b2b410",
+    "minwoo-kit-maintenance": "c5476485887c223cc1f794f659bd0881ef547a75849d2ab690294e2ae4ed0fde",
+    "minwoo-postgres-review": "cfd6b42997b3243df36a89fb2374c35b00492853210fbdbd34078ab337e9dfac",
+    "minwoo-project-context": "d0695f7f4cfd3ea98f6405b2c8a611b7ebd6b75deb5153500fdc18fbda6b9d9b",
+    "minwoo-property-testing": "52ded4417ff3bd7159bf67ed52d24bff7324ea6d39a998f0ca3cc2a56f032b63",
+    "minwoo-publication-review": "a21dbda6b4d3c43b0e5ccd22f343d38f56fc8fa36c6f2732f9d4638b49a4df96",
+    "minwoo-react-composition": "514ac9fa8d791a8576589eb5142eef876e9d816770ab599ac64e028dd4ab635a",
+    "minwoo-react-performance": "7e843435fce144d19646958508d52d24e93ae732dbaade8712cb7f1d086ecf69",
+    "minwoo-release-notes": "d692cb2a4558a16021dcba6b417adb7572b5229d436404cf3c2589cebaf094f8",
+    "minwoo-remotion-render": "9e1865840f9933f49ecccdf28edc06cde314005d27cfc6cdc2112ae91fb1afc7",
+    "minwoo-skill-curation": "9993f729bb7b042289ebe9d325088c0d0a99528313473b43b5ecdd5a99ad6738",
+    "minwoo-video-review": "cd81b70475dae35438c5a260b25ea75b1ad6e973188b3ce559cd957c51038af0",
+    "minwoo-work-handoff": "b7c6fc54ccf284c3681dee0cd41b26e49dd49b85f1bb75443e14a6e2bd66f791"
+  }
+}
