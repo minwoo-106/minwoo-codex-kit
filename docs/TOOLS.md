@@ -23,12 +23,16 @@ Node 패키지는 package-lock.json의 무결성 정보로 npm ci --ignore-scrip
 | Remotion 패키지 4.0.539 | SRT 파싱·프레임·MP4 렌더 |
 | pytest 9.2.0 | 재배포한 감사 도구의 원본 테스트 실행 |
 | Playwright 1.62.1 | 새 브라우저 컨텍스트의 실제 DOM 동작·회귀 증거 |
+| @playwright/test 1.62.1 (Apache-2.0) | 기준 이미지와 실제 화면 비교·차이 증거 |
+| @axe-core/playwright 4.14.0 (MPL-2.0) | 접근성 자동 규칙 검사 |
 
 0.5.0 브라우저 검사는 설치된 Edge/Chrome 실행 파일을 지정할 수 있다. 선택 런타임 설치만으로 브라우저 바이너리를 자동 설치하지 않는다. CI는 격리 runner에서 Chromium을 별도로 설치한다. 영상 납품 점검은 Remotion compositor에 포함된 ffprobe를 재사용하며 메타데이터 확인을 청취·화질 검수로 대신하지 않는다. 실전 시험은 [평가 안내](../evals/PRACTICAL.md)를 따른다.
 
 2026-10-29 검토에서 Remotion studio의 Zod 4.5.4에 [GHSA-mrhx-c7xc-m3w5](https://github.com/advisories/GHSA-mrhx-c7xc-m3w5)가 조회되어 같은 메이저의 수정 버전 **4.6.7**을 overrides에 고정했다. 실제 bundling·자막·렌더를 검증했다. 전체 Node 잠금 파일의 npm audit 조회 결과는 0건이었다. 이는 해당 시점의 알려진 취약점 조회 결과이며 이후의 안전을 보장하지 않는다.
 
 Python 후보의 pytest 8.4.2와 Pygments 2.19.2도 공개 권고에 해당해 각각 **9.2.0**, **2.21.0**으로 교체했다. 근거: [pytest 임시 디렉터리](https://github.com/advisories/GHSA-6w46-j5rx-g56g), [Pygments 정규식](https://github.com/advisories/GHSA-5239-wwwm-4pmq). 최종 9개 Python 패키지의 OSV 조회는 0건이었고 수정 버전에서 원본 테스트 105개가 통과했다.
+
+0.7.0은 위 두 검사 패키지를 잠금 파일과 무결성 해시로 추가했다. 패키지 원문을 스킬에 복사하지 않고 별도 런타임에 설치하며 해당 패키지의 라이선스 고지를 유지한다. 보안 스킬은 별도 스캐너를 요구하지 않고 SEO 검사는 Python 표준 라이브러리만 사용한다. [실전 평가](../evals/WEB-REVIEWS.md)의 범위와 한계를 함께 확인한다.
 
 ## 설치 후 실제 실행
 

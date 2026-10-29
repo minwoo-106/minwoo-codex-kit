@@ -1,0 +1,178 @@
+{
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "model": "current user default; no model override",
+  "scope": "native skill selection under a read-only preparation request; kit skills only",
+  "case_count": 6,
+  "passed": 6,
+  "results": [
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 98927,
+        "cached_input_tokens": 84736,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 480,
+        "reasoning_output_tokens": 96
+      },
+      "id": "css-only",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "d9013edd492aa0b041363d2fbcad3bddb844955ca945714ce2f95e09a090e7fb",
+      "elapsed_seconds": 29.53
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 87820,
+        "cached_input_tokens": 56832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 552,
+        "reasoning_output_tokens": 139
+      },
+      "id": "ordinary-review",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "0ab827630e75d2ac55002c3e8e88885b3c1585082ca314f743efc7d4eca2adb5",
+      "elapsed_seconds": 26.59
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-security-review"
+      ],
+      "observed": [
+        "minwoo-security-review"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 46622,
+        "cached_input_tokens": 36352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 445,
+        "reasoning_output_tokens": 188
+      },
+      "id": "security-review",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "971d1715ea3b032c1a8dd5f9aa9bcf08bc67dd130cdb1bfa3b6b6c55697f792f",
+      "elapsed_seconds": 21.08
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-seo-review"
+      ],
+      "observed": [
+        "minwoo-seo-review"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 46521,
+        "cached_input_tokens": 36352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 345,
+        "reasoning_output_tokens": 64
+      },
+      "id": "seo-review",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "002372db9f76e5cb70bf65cdb946bbe160d787120d9c938d062129eb2a3c04af",
+      "elapsed_seconds": 23.0
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-browser-check"
+      ],
+      "observed": [
+        "minwoo-browser-check"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 82720,
+        "cached_input_tokens": 67712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 277,
+        "reasoning_output_tokens": 14
+      },
+      "id": "accessibility-check",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "620d599108d79a62ff723031b1abd86f2e715b34e37023977163cdb6873f33f7",
+      "elapsed_seconds": 18.69
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-browser-check"
+      ],
+      "observed": [
+        "minwoo-browser-check"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 71585,
+        "cached_input_tokens": 49792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 633,
+        "reasoning_output_tokens": 120
+      },
+      "id": "visual-regression",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "c0d170305909a25f971c7d749d03d6a245bace7d66ff8d61583b63e10b9a1150",
+      "elapsed_seconds": 30.84
+    }
+  ],
+  "skill_sha256": {
+    "diagnosing-bugs": "651c1c4cd8cf8a35a9173fb50545c9966e4052eabd46096f2ba4e86aa329a20e",
+    "minwoo-api-compat": "5da96a8d1acc2313185278b200d61dc4fd284598745048a37998489d7146c307",
+    "minwoo-browser-check": "bd52a06b436f9360a3238f39d430ac1e18a7e507d4fafeb54a9fde2c44f744c6",
+    "minwoo-dependency-audit": "30e314dd4c846c984e8dc2ffd877b381957f2ea714e284c9732887fa808ab9ae",
+    "minwoo-diff-walkthrough": "5d47bfe6e269c0bd6989b0280999bf6b03d28ebf9c9b52a0615ddf3120b2b410",
+    "minwoo-kit-maintenance": "1f420ec3beccc706731c0adb7d56576c3959698aa0c09d36d5841594a2f1a7a9",
+    "minwoo-postgres-review": "aa89101f97463e7c9df64acce1abb085533bd65b6c20005e9fc64b86bf6c7662",
+    "minwoo-project-context": "d0695f7f4cfd3ea98f6405b2c8a611b7ebd6b75deb5153500fdc18fbda6b9d9b",
+    "minwoo-property-testing": "52ded4417ff3bd7159bf67ed52d24bff7324ea6d39a998f0ca3cc2a56f032b63",
+    "minwoo-publication-review": "a21dbda6b4d3c43b0e5ccd22f343d38f56fc8fa36c6f2732f9d4638b49a4df96",
+    "minwoo-react-composition": "514ac9fa8d791a8576589eb5142eef876e9d816770ab599ac64e028dd4ab635a",
+    "minwoo-react-performance": "7e843435fce144d19646958508d52d24e93ae732dbaade8712cb7f1d086ecf69",
+    "minwoo-release-notes": "d692cb2a4558a16021dcba6b417adb7572b5229d436404cf3c2589cebaf094f8",
+    "minwoo-remotion-render": "9e1865840f9933f49ecccdf28edc06cde314005d27cfc6cdc2112ae91fb1afc7",
+    "minwoo-security-review": "4a3eac5e42d30c3d6db84ae603732028a0dc11eaadce46331161e437843e5a9c",
+    "minwoo-seo-review": "c841e96e090a6d485f922f31a69d42b5e523f87ca395264d611e822a856982fa",
+    "minwoo-skill-curation": "74edca1b4224e54069d0ff8e049c534a637b7ca3821742470c881c8207151369",
+    "minwoo-video-review": "e94d729e5ac657ac63c89f30318d06ff5adbb3dea7194a20598c4bf42dfb945b",
+    "minwoo-work-handoff": "b7c6fc54ccf284c3681dee0cd41b26e49dd49b85f1bb75443e14a6e2bd66f791"
+  }
+}

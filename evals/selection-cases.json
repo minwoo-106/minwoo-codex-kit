@@ -205,5 +205,37 @@
     "expected": [
       "minwoo-kit-maintenance"
     ]
+  },
+  {
+    "id": "security-review",
+    "kind": "positive",
+    "prompt": "이 앱의 Python 코드에서 인증·권한·SQL 입력 처리의 보안 문제를 검토해줘. 패키지 버전 감사는 아니야.",
+    "expected": [
+      "minwoo-security-review"
+    ]
+  },
+  {
+    "id": "seo-review",
+    "kind": "positive",
+    "prompt": "웹페이지의 검색 색인 설정과 canonical, 제목, 사이트맵을 기술적으로 점검해줘.",
+    "expected": [
+      "minwoo-seo-review"
+    ]
+  },
+  {
+    "id": "accessibility-check",
+    "kind": "positive",
+    "prompt": "이 웹페이지를 axe로 실제 접근성 자동 검사해서 라벨과 버튼 이름 문제를 찾아줘. 미적 디자인 변경은 하지 마.",
+    "expected": [
+      "minwoo-browser-check"
+    ]
+  },
+  {
+    "id": "visual-regression",
+    "kind": "positive",
+    "prompt": "기존 기준 스크린샷과 현재 웹페이지를 같은 브라우저로 비교해서 시각적 회귀를 검증해줘. 기준 이미지는 덮어쓰지 마.",
+    "expected": [
+      "minwoo-browser-check"
+    ]
   }
 ]

@@ -17,6 +17,7 @@
 | API 요청·응답 변경의 소비자 호환성 | minwoo-api-compat | 일반 API 구현·호출에는 자동 적용하지 않음 |
 | PostgreSQL·Supabase 쿼리·RLS·스키마·변경 연습 | minwoo-postgres-review | 격리 연습을 운영 DB 변경 권한으로 해석하지 않음 |
 | 패키지 취약점·유지보수·공급망 조사 | minwoo-dependency-audit | 앱 전체 보안 감사나 모든 설치의 필수 절차가 아님 |
+| 앱 코드의 인증·권한·입력 처리 보안 검토 | minwoo-security-review | 명시적 보안 요청에 적용; 패키지 감사와 구분 |
 | 버튼·검색·폼의 브라우저 회귀 | minwoo-browser-check | UI 미적 평가와 구분 |
 | 변경을 따라 읽는 HTML 설명 화면 | minwoo-diff-walkthrough | 코드 리뷰를 대체하지 않음 |
 

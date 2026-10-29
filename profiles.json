@@ -30,7 +30,9 @@
         "minwoo-diff-walkthrough",
         "diagnosing-bugs",
         "minwoo-browser-check",
-        "minwoo-api-compat"
+        "minwoo-api-compat",
+        "minwoo-security-review",
+        "minwoo-seo-review"
       ]
     },
     "video": {
@@ -78,7 +80,9 @@
         "minwoo-remotion-render",
         "diagnosing-bugs",
         "minwoo-browser-check",
-        "minwoo-api-compat"
+        "minwoo-api-compat",
+        "minwoo-security-review",
+        "minwoo-seo-review"
       ]
     }
   }

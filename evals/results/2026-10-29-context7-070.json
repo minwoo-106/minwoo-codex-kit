@@ -1,0 +1,21 @@
+{
+  "scope": "connected Context7 plugin in a fresh native Codex session; public documentation only",
+  "installed": true,
+  "passed": true,
+  "successful_calls": [
+    "context7.resolve-library-id",
+    "context7.query-docs",
+    "context7.query-docs"
+  ],
+  "library_id": "/microsoft/playwright",
+  "topics": [
+    "screenshot comparison",
+    "updateSnapshots"
+  ],
+  "sources": [
+    "https://github.com/microsoft/playwright/blob/main/docs/src/test-snapshots-js.md",
+    "https://github.com/microsoft/playwright/blob/main/docs/src/test-api/class-testconfig.md"
+  ],
+  "version_scope": "Returned main-branch documentation, not certified as installed Playwright 1.62.1 documentation. Local runtime acceptance tests recorded separately.",
+  "trace_sha256": "7db24cccdfb36e87f7b52ca8b325caac84de592bcf2d6f411eed0e714dce6341"
+}
