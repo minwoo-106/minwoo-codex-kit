@@ -20,7 +20,8 @@ export function validate(config, remote=false) {
     for (const s of c.steps) {
       if (!actions.has(s.action)) throw Error('Unknown action');
       if (s.action==='goto') {
-        if (!origins.includes(new URL(s.path,base).origin)) throw Error('Navigation outside allowed origins');
+        const target=new URL(s.path,base);
+        if (target.username || target.password || !origins.includes(target.origin)) throw Error('Navigation outside allowed origins or credentials in URL');
       } else if (!(typeof s.testId==='string' || (typeof s.role==='string' && typeof s.name==='string'))) throw Error('Locator required');
       if (['fill','text','value'].includes(s.action) && typeof s.value!=='string') throw Error('String value required');
       if (s.action==='count' && (!Number.isInteger(s.value) || s.value<0)) throw Error('Count must be nonnegative integer');

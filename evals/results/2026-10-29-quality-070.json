@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "cases": 8,
+  "results": [
+    {
+      "case": "accessibility-good",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "case": "accessibility-bad",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true
+    },
+    {
+      "case": "baseline-created",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "case": "visual-same",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "case": "visual-changed",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true
+    },
+    {
+      "case": "baseline-overwrite-rejected",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true
+    },
+    {
+      "case": "baseline-tamper-rejected",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true
+    },
+    {
+      "case": "remote-without-opt-in",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true
+    }
+  ],
+  "scope": "real local browser and axe/Playwright screenshot checks on synthetic pages; baseline never silently updated"
+}

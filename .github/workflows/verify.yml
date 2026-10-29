@@ -76,6 +76,8 @@ jobs:
         run: node "$KIT_RUNTIME/node_modules/playwright/cli.js" install --with-deps chromium
       - name: Real browser, API, video and migration acceptance cases
         run: python -B evals/verify_practical.py --runtime "$KIT_RUNTIME" --out "$RUNNER_TEMP/practical"
+      - name: Accessibility and visual regression acceptance cases
+        run: node evals/verify_quality.mjs --runtime "$KIT_RUNTIME" --out "$RUNNER_TEMP/quality"
   release:
     name: Versioned release
     if: startsWith(github.ref, 'refs/tags/v') && github.event_name == 'push'

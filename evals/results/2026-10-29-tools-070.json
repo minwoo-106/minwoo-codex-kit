@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "cases": 8,
+  "api_breaking_detected": 3,
+  "video_failures_detected": [
+    "audio",
+    "fps",
+    "SRT outside media duration or empty interval"
+  ],
+  "browser_and_migration": [
+    {
+      "case": "browser-good",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "browser-bad",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "migration-good.sql",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "migration-up.sql",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    }
+  ],
+  "scope": "real helper execution on synthetic artifacts; not model selection"
+}
