@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.minwoo-codex-kit/
+work/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+auth.json
+config.toml
+.DS_Store
+Thumbs.db
