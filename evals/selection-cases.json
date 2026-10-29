@@ -337,5 +337,95 @@
     "expected": [
       "minwoo-natural-writing"
     ]
+  },
+  {
+    "id": "test-quality",
+    "kind": "positive",
+    "prompt": "기존 테스트가 결함을 실제로 잡는지 검증력을 점검하고 작은 변이로 빠진 assertion을 찾아줘. 새 기능이나 속성 기반 입력 생성은 아니야.",
+    "expected": [
+      "minwoo-test-quality"
+    ]
+  },
+  {
+    "id": "dependency-upgrade",
+    "kind": "positive",
+    "prompt": "프로젝트의 라이브러리를 지정한 새 버전으로 올리면서 실제 호출 코드와 잠금 파일을 이전하고 검증할 준비를 해줘. 취약점 조사만 하는 요청은 아니야.",
+    "expected": [
+      "minwoo-dependency-upgrade"
+    ]
+  },
+  {
+    "id": "observability",
+    "kind": "positive",
+    "prompt": "앱 요청의 소요 시간과 성공·실패를 알아볼 구조화 로그와 계측을 구현하려고 해. 수집 필드와 실패 처리부터 확인해줘.",
+    "expected": [
+      "minwoo-observability"
+    ]
+  },
+  {
+    "id": "async-jobs",
+    "kind": "positive",
+    "prompt": "백그라운드 작업의 중복 실행 방지, 제한된 재시도와 취소를 구현하려고 해. 큐 worker 쪽 설계를 확인해줘.",
+    "expected": [
+      "minwoo-async-jobs"
+    ]
+  },
+  {
+    "id": "state-flow",
+    "kind": "positive",
+    "prompt": "예약 화면의 여러 단계를 명시적인 상태 전이로 구현하고 취소 뒤 늦게 도착한 응답을 무시하게 만들 준비를 해줘. 컴포넌트 구조 변경은 아니야.",
+    "expected": [
+      "minwoo-state-flow"
+    ]
+  },
+  {
+    "id": "data-ingestion",
+    "kind": "positive",
+    "prompt": "대형 CSV를 청크로 가져오고 잘못된 행을 구분하며 중간 실패 후 재개하는 적재 기능을 구현하려고 해.",
+    "expected": [
+      "minwoo-data-ingestion"
+    ]
+  },
+  {
+    "id": "i18n",
+    "kind": "positive",
+    "prompt": "앱의 다국어 리소스와 언어 전환, 복수형, 날짜·숫자·시간대 포맷을 구현할 준비를 해줘.",
+    "expected": [
+      "minwoo-i18n"
+    ]
+  },
+  {
+    "id": "consumer-contract",
+    "kind": "positive",
+    "prompt": "서버 응답 변경이 실제 소비자 코드와 맞는지 로컬 제공자와 소비자 계약 시험으로 검증할 준비를 해줘.",
+    "expected": [
+      "minwoo-api-compat"
+    ]
+  },
+  {
+    "id": "flaky-tests",
+    "kind": "positive",
+    "prompt": "같은 테스트가 실행 순서에 따라 가끔 실패해. 공유 상태와 비동기 완료 조건을 진단해줘.",
+    "expected": [
+      "diagnosing-bugs"
+    ]
+  },
+  {
+    "id": "plain-translation",
+    "kind": "negative",
+    "prompt": "다음 문장을 영어로 번역만 해줘: 오늘 회의는 오후 세 시입니다. 앱이나 코드 변경은 아니야.",
+    "expected": []
+  },
+  {
+    "id": "plain-async",
+    "kind": "negative",
+    "prompt": "JavaScript에서 async 함수가 반환하는 값의 종류를 한 문장으로 설명해줘. 코드 수정은 아니야.",
+    "expected": []
+  },
+  {
+    "id": "plain-log",
+    "kind": "negative",
+    "prompt": "로그가 무슨 뜻인지 초보자에게 두 문장으로 설명해줘. 설정이나 구현은 필요 없어.",
+    "expected": []
   }
 ]

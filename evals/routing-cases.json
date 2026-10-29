@@ -172,5 +172,34 @@
     "allowed": [
       "minwoo-natural-writing"
     ]
+  },
+  {
+    "id": "upgrade-routing",
+    "prompt": "의존성 취약점 감사와 버전 이전 도구가 겹치는데, 이번에는 지정된 패키지 새 버전으로 실제 코드와 잠금 파일을 이전할 거야. 분야별 안내에서 필요한 것만 골라줘.",
+    "expected": [
+      "minwoo-dependency-upgrade"
+    ],
+    "allowed": [
+      "minwoo-dependency-upgrade"
+    ],
+    "routes": [
+      "routing.md",
+      "routing/engineering.md"
+    ]
+  },
+  {
+    "id": "refactor-routing",
+    "prompt": "기존 모듈의 복잡한 공개 인터페이스를 정리하되 동작을 보존하려고 해. 테스트 우선 개발을 새로 시작하거나 리뷰 보고서를 만드는 요청은 아니야. 분야별 안내와 안전한 리팩터링 안내에서 필요한 설계 도구만 골라줘.",
+    "expected": [
+      "codebase-design"
+    ],
+    "allowed": [
+      "codebase-design"
+    ],
+    "routes": [
+      "routing.md",
+      "routing/engineering.md",
+      "routing/refactoring.md"
+    ]
   }
 ]

@@ -36,7 +36,14 @@
         "minwoo-brand-voice",
         "minwoo-web-copy",
         "minwoo-web-assets",
-        "minwoo-web-launch"
+        "minwoo-web-launch",
+        "minwoo-test-quality",
+        "minwoo-dependency-upgrade",
+        "minwoo-observability",
+        "minwoo-async-jobs",
+        "minwoo-state-flow",
+        "minwoo-data-ingestion",
+        "minwoo-i18n"
       ]
     },
     "video": {
@@ -92,7 +99,14 @@
         "minwoo-web-copy",
         "minwoo-web-assets",
         "minwoo-web-launch",
-        "minwoo-natural-writing"
+        "minwoo-natural-writing",
+        "minwoo-test-quality",
+        "minwoo-dependency-upgrade",
+        "minwoo-observability",
+        "minwoo-async-jobs",
+        "minwoo-state-flow",
+        "minwoo-data-ingestion",
+        "minwoo-i18n"
       ]
     }
   }

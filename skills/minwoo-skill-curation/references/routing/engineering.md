@@ -23,3 +23,19 @@
 
 GitHub 연결 도구는 저장소·PR·CI의 실제 증거와 승인된 반영을 맡는다. 진단 스킬은 조사 절차를 맡는다. 일반 Git 작업은 현재 제공된 도구 또는 저장소 CLI를 사용하며 새 Git 전용 스킬을 만들 필요는 없다.
 관리형 클라우드 실행 환경에서만 cloud-environment:cloud-environment-runtime을 적용한다. 로컬 Windows 작업에 클라우드 전용 초기화를 강제하지 않는다.
+
+## 구현과 검증의 추가 선택
+
+| 요청 | 주도 | 경계 |
+| --- | --- | --- |
+| 기존 테스트의 결함 탐지 능력·변이 검증 | minwoo-test-quality | 일반 테스트 작성·불규칙 실패 진단과 구분 |
+| 패키지 버전과 호출 코드·lock 실제 이전 | minwoo-dependency-upgrade | 취약점 조사만이면 minwoo-dependency-audit |
+| 로그·측정·요청 추적 기능 추가 | minwoo-observability | 기존 오류 원인 조사면 diagnosing-bugs |
+| 큐 worker·재시도·취소·중복 부작용 방지 | minwoo-async-jobs | 단순 async 문법·UI 상태와 구분 |
+| 여러 단계·늦은 응답·취소 등 상태 전이 구현 | minwoo-state-flow | React 컴포넌트 구조·업무 용어 모델과 구분 |
+| 업로드·CSV·대량 적재·부분 실패·재개 구현 | minwoo-data-ingestion | 표 분석·DB 쿼리만이면 기존 전용 스킬 |
+| 앱 다국어·복수형·날짜/숫자/시간대 구현 | minwoo-i18n | 일반 번역·말투·한글 타이포그래피와 구분 |
+
+API 제공자/소비자 계약은 minwoo-api-compat의 consumer-contracts, 가끔 실패하는 테스트는 diagnosing-bugs의 flaky-tests 참조로 이어간다. 같은 작업을 별도 스킬로 중복 등록하지 않는다.
+
+동작을 보존하는 코드 정리는 [안전한 리팩터링](refactoring.md)을 필요한 경우만 읽는다. 이 안내는 새 자동 발동 스킬이 아니며 기존 설계·테스트·리뷰를 요청 범위에 맞게 연결한다.
