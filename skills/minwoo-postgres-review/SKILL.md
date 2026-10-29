@@ -1,6 +1,6 @@
 ---
 name: minwoo-postgres-review
-description: PostgreSQL·Supabase의 느린 쿼리, 인덱스·스키마·RLS·잠금·연결 관리 문제를 조사하거나 DB 설계를 검토할 때 사용한다. DB와 무관한 개발이나 단순 데이터 조회에는 적용하지 않는다.
+description: PostgreSQL·Supabase의 쿼리·스키마·RLS·잠금 문제 검토와 마이그레이션의 격리 환경 연습에 사용한다. 단순 데이터 조회에는 적용하지 않는다.
 ---
 
 # PostgreSQL 검토
@@ -12,6 +12,7 @@ DB 종류·버전, 데이터 규모, 실제 실행 계획, 읽기/쓰기 빈도�
 - RLS·권한: `security-*.md`
 - 연결·잠금: `conn-*.md`, `lock-*.md`
 - 데이터 처리·관측: `data-*.md`, `monitor-*.md`
+- 변경·복구 연습: [마이그레이션 연습](references/migration.md). 관련 파일만 읽고 합성 데이터로 실행한다.
 
 예시 SQL을 운영 환경에 그대로 실행하지 않는다. EXPLAIN ANALYZE는 실제 쿼리를 실행한다. 특히 쓰기 쿼리·트리거·외부 효과는 단순 읽기 검사가 아니다. 현 작업에서 허용한 격리 환경이나 읽기 전용 계획부터 확인한다.
 

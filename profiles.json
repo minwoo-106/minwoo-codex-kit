@@ -9,7 +9,8 @@
         "minwoo-skill-curation",
         "minwoo-kit-maintenance",
         "minwoo-work-handoff",
-        "minwoo-release-notes"
+        "minwoo-release-notes",
+        "diagnosing-bugs"
       ]
     },
     "web": {
@@ -26,7 +27,10 @@
         "minwoo-postgres-review",
         "minwoo-dependency-audit",
         "minwoo-property-testing",
-        "minwoo-diff-walkthrough"
+        "minwoo-diff-walkthrough",
+        "diagnosing-bugs",
+        "minwoo-browser-check",
+        "minwoo-api-compat"
       ]
     },
     "video": {
@@ -39,7 +43,8 @@
         "minwoo-work-handoff",
         "minwoo-release-notes",
         "minwoo-video-review",
-        "minwoo-remotion-render"
+        "minwoo-remotion-render",
+        "diagnosing-bugs"
       ]
     },
     "documents": {
@@ -50,7 +55,8 @@
         "minwoo-skill-curation",
         "minwoo-kit-maintenance",
         "minwoo-work-handoff",
-        "minwoo-release-notes"
+        "minwoo-release-notes",
+        "diagnosing-bugs"
       ]
     },
     "all": {
@@ -69,7 +75,10 @@
         "minwoo-property-testing",
         "minwoo-diff-walkthrough",
         "minwoo-video-review",
-        "minwoo-remotion-render"
+        "minwoo-remotion-render",
+        "diagnosing-bugs",
+        "minwoo-browser-check",
+        "minwoo-api-compat"
       ]
     }
   }

@@ -130,7 +130,7 @@ class EntrypointTests(unittest.TestCase):
         self.assertFalse(self.codex.exists())
         for _ in range(2): self.invoke([shell, '-NoProfile', '-Command', code])
         self.assertFalse((self.codex / 'AGENTS.md').exists())
-        self.assertEqual(len(list(self.skills.glob('*/SKILL.md'))), 8)
+        self.assertEqual(len(list(self.skills.glob('*/SKILL.md'))), 9)
 
     def test_windows_powershell_51_syntax(self):
         shell = shutil.which('powershell')

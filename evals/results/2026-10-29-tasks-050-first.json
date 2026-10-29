@@ -1,0 +1,67 @@
+{
+  "scope": "explicit skill execution and independently checked synthetic artifacts; raw traces remain private",
+  "cases": 5,
+  "passed": 4,
+  "results": [
+    {
+      "case": "browser",
+      "passed": true,
+      "skill_read": true,
+      "tool_command_seen": true,
+      "inputs_preserved": true,
+      "artifact_verified": true,
+      "completed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 48.62,
+      "trace_sha256": "02c0470ef3dd13584abcf36392c744d58b41b06ae6f47bb815c32792ef4a030d"
+    },
+    {
+      "case": "api",
+      "passed": true,
+      "skill_read": true,
+      "tool_command_seen": true,
+      "inputs_preserved": true,
+      "artifact_verified": true,
+      "completed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 36.47,
+      "trace_sha256": "a7c20e7d633e176c85a0ae6a45b71295fbda6bda457af7cc3171e1ea5118fd87"
+    },
+    {
+      "case": "video",
+      "passed": false,
+      "skill_read": false,
+      "tool_command_seen": true,
+      "inputs_preserved": true,
+      "artifact_verified": true,
+      "completed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 28.03,
+      "trace_sha256": "fdb3a2fc4643ac09eb844257382d80424bb930ac812483c02cd3c84a5c3ec44a"
+    },
+    {
+      "case": "migration",
+      "passed": true,
+      "skill_read": true,
+      "tool_command_seen": true,
+      "inputs_preserved": true,
+      "artifact_verified": true,
+      "completed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 38.11,
+      "trace_sha256": "3352c32868d6184d4c3d81cb20f3b5ce0593396e5d349adda92cb40128a0a190"
+    },
+    {
+      "case": "ci",
+      "passed": true,
+      "skill_read": true,
+      "tool_command_seen": true,
+      "inputs_preserved": true,
+      "artifact_verified": true,
+      "completed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 59.24,
+      "trace_sha256": "ee9b35a4e0f229f05fb190992188081d46a3ca2e9cd0a3196ba9100c44768459"
+    }
+  ]
+}

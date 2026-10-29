@@ -992,6 +992,30 @@
       "local": "skills/minwoo-postgres-review/references/security-rls-performance.md",
       "gitBlob": "c3c7c416d57d9a46a9993f4e0c20f772fb64483d",
       "modified": false
+    },
+    {
+      "repo": "mattpocock/skills",
+      "ref": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+      "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "local": "skills/diagnosing-bugs/SKILL.md",
+      "gitBlob": "d039541ddd1c46e6ddbd662fe99d49b686fc5e12",
+      "modified": true
+    },
+    {
+      "repo": "mattpocock/skills",
+      "ref": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+      "path": "skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "local": "skills/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "gitBlob": "243198464a8401a7ba1d63b3708fa43c3d067665",
+      "modified": false
+    },
+    {
+      "repo": "mattpocock/skills",
+      "ref": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+      "path": "skills/engineering/diagnosing-bugs/agents/openai.yaml",
+      "local": "skills/diagnosing-bugs/agents/openai.yaml",
+      "gitBlob": "a13a755a77634ce61a649a3a0d905a66d3865b35",
+      "modified": false
     }
   ]
 }

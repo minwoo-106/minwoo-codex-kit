@@ -131,9 +131,11 @@
   },
   {
     "id": "simple-bug",
-    "kind": "negative",
+    "kind": "positive",
     "prompt": "calc.py의 divide(8, 0)에서 ZeroDivisionError가 나. 기존 동작을 확인해서 오류 원인을 진단할 준비를 해 줘.",
-    "expected": []
+    "expected": [
+      "diagnosing-bugs"
+    ]
   },
   {
     "id": "ordinary-review",
@@ -154,6 +156,54 @@
     "expected": [
       "minwoo-react-composition",
       "minwoo-react-performance"
+    ]
+  },
+  {
+    "id": "browser",
+    "kind": "positive",
+    "prompt": "웹앱 로그인, 검색, 폼 제출이 실제 브라우저에서 정상 동작하는지 회귀 테스트할 준비를 해 줘. 디자인 평가는 필요 없어.",
+    "expected": [
+      "minwoo-browser-check"
+    ]
+  },
+  {
+    "id": "api",
+    "kind": "positive",
+    "prompt": "기존 API와 변경한 API의 요청·응답 계약을 비교해서 하위 호환성이 깨지는지 확인할 준비를 해 줘.",
+    "expected": [
+      "minwoo-api-compat"
+    ]
+  },
+  {
+    "id": "delivery",
+    "kind": "positive",
+    "prompt": "로컬 영상 납품 파일의 해상도, 프레임률, 음성 스트림 유무와 SRT 시간 범위를 기술 점검할 준비를 해 줘.",
+    "expected": [
+      "minwoo-video-review"
+    ]
+  },
+  {
+    "id": "migration",
+    "kind": "positive",
+    "prompt": "PostgreSQL 마이그레이션을 합성 데이터가 든 임시 DB에서 적용하고 데이터 보존과 복구를 연습할 준비를 해 줘.",
+    "expected": [
+      "minwoo-postgres-review"
+    ]
+  },
+  {
+    "id": "ci",
+    "kind": "positive",
+    "prompt": "GitHub Actions 검사 실패 로그를 읽어 실패한 단계와 커밋을 고정하고 원인을 재현할 준비를 해 줘.",
+    "expected": [
+      "diagnosing-bugs"
+    ]
+  },
+  {
+    "id": "inventory",
+    "kind": "positive",
+    "prompt": "이 PC의 Codex 스킬 이름·설명 목록 크기와 중복을 읽기 전용으로 점검할 준비를 해 줘.",
+    "expected": [
+      "minwoo-kit-maintenance"
     ]
   }
 ]

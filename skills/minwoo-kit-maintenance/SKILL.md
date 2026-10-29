@@ -1,6 +1,6 @@
 ---
 name: minwoo-kit-maintenance
-description: 개인 Codex kit 원본과 이 PC의 설치본 차이를 점검하거나 선택한 규칙·스킬을 안전하게 갱신할 때 사용한다. 일반 개발 작업마다 최신 버전을 확인하는 용도로 쓰지 않는다.
+description: 개인 Codex kit의 설치 차이·스킬 목록 크기·중복을 점검하거나 규칙·스킬을 갱신할 때 사용한다. 일반 개발 작업마다 원격을 조회하지 않는다.
 ---
 
 # kit 점검·갱신
@@ -20,6 +20,8 @@ python <이 스킬 폴더>/scripts/inspect_kit.py --kit <로컬 kit 경로>
 경로를 바꾼 환경은 --codex-home과 반복 가능한 --skills-root를 지정한다.
 기본 스킬 위치는 ~/.agents/skills와 실제 Codex 홈의 skills다.
 출력에는 로컬 경로가 들어가므로 공개 저장소에 그대로 저장하지 않는다.
+
+스킬 목록 크기를 점검할 때는 [목록 크기 안내](references/inventory.md)를 사용한다. 실제 결과물 평가를 추가할 때는 kit의 evals/README.md와 evals/PRACTICAL.md를 읽고 기존 평가기를 확장한다.
 
 - absent는 해당 경로에 설치되지 않았다는 뜻이다. 오류나 설치 필요 판정이 아니다.
 - different는 파일 바이트 차이다. 원본이 더 최신이거나 사용자 수정이 틀렸다는 뜻이 아니다.

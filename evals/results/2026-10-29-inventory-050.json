@@ -1,0 +1,20 @@
+{
+  "scanned": 93,
+  "implicit_candidates": 87,
+  "explicit_only": 6,
+  "list_chars": 36448,
+  "list_utf8_bytes": 38892,
+  "duplicates": [],
+  "errors": [],
+  "comparison_budget_chars": 8000,
+  "over_comparison_budget": true,
+  "scope": "selected roots only; cache may include inactive plugins; exact host catalog, truncation and token count are not inferred",
+  "kit": {
+    "skills": 17,
+    "list_chars": 3293,
+    "list_utf8_bytes": 5354,
+    "max_description_chars": 156
+  },
+  "configured_context_window": null,
+  "configured_skills_budget": null
+}

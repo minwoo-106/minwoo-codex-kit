@@ -1,0 +1,19 @@
+{
+  "scope": "explicit skill execution and independently checked synthetic artifacts; raw traces remain private",
+  "cases": 1,
+  "passed": 1,
+  "results": [
+    {
+      "case": "video",
+      "passed": true,
+      "skill_read": true,
+      "tool_command_seen": true,
+      "inputs_preserved": true,
+      "artifact_verified": true,
+      "completed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 36.45,
+      "trace_sha256": "97729c27b4100d8b76d4832f33681934a335b2f0ef731ec3e772593f3c0dea8c"
+    }
+  ]
+}

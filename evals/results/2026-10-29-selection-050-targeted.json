@@ -1,0 +1,330 @@
+{
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "model": "current user default; no model override",
+  "scope": "native skill selection under a read-only preparation request; kit skills only",
+  "case_count": 12,
+  "passed": 12,
+  "results": [
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-release-notes"
+      ],
+      "observed": [
+        "minwoo-release-notes"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 69274,
+        "cached_input_tokens": 59136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 320,
+        "reasoning_output_tokens": 9
+      },
+      "id": "release",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "259fa4ae85f888a7e5ae1604dc4623528d34bbbe44c0e4ffe7addf9ff19e7116",
+      "elapsed_seconds": 22.14
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 22568,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27,
+        "reasoning_output_tokens": 20
+      },
+      "id": "arithmetic",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "053d1a329c2520f160baeed137719a19f90e3219aa750cb83ab06a3269cb4efb",
+      "elapsed_seconds": 6.44
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 74280,
+        "cached_input_tokens": 52608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 693,
+        "reasoning_output_tokens": 317
+      },
+      "id": "css-only",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "9d5c530341eac8cc76bc6a416916b601c7a6c22fb7135c442e814615a0b85c48",
+      "elapsed_seconds": 33.77
+    },
+    {
+      "passed": true,
+      "expected": [
+        "diagnosing-bugs"
+      ],
+      "observed": [
+        "diagnosing-bugs"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 73387,
+        "cached_input_tokens": 61312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 396,
+        "reasoning_output_tokens": 44
+      },
+      "id": "simple-bug",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "b36f62424dd81170b33dba556ec7325be0011ef5a19658e0e8e83fb4ace62852",
+      "elapsed_seconds": 23.03
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 111032,
+        "cached_input_tokens": 89984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 707,
+        "reasoning_output_tokens": 381
+      },
+      "id": "simple-react",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "456584686bd03d20181ab71fbf9265c7072ad63e22558972c9ac4bf78231d059",
+      "elapsed_seconds": 35.23
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-react-composition",
+        "minwoo-react-performance"
+      ],
+      "observed": [
+        "minwoo-react-composition",
+        "minwoo-react-performance"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 100746,
+        "cached_input_tokens": 90368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 752,
+        "reasoning_output_tokens": 97
+      },
+      "id": "combined-react",
+      "kind": "combined",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "4faa94d8d06a955f95f37c5dc7cb0cec649d64057cfa4112ea4e09dec10d09f4",
+      "elapsed_seconds": 34.61
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-browser-check"
+      ],
+      "observed": [
+        "minwoo-browser-check"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 45694,
+        "cached_input_tokens": 26880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 272,
+        "reasoning_output_tokens": 54
+      },
+      "id": "browser",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "01d6bf03ccaa88ad6b13618f6ae98c8cceb25c512b97b85d140f070bfec7d5b4",
+      "elapsed_seconds": 15.12
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-api-compat"
+      ],
+      "observed": [
+        "minwoo-api-compat"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 45648,
+        "cached_input_tokens": 26880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 269,
+        "reasoning_output_tokens": 39
+      },
+      "id": "api",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "33aa8b877eb1c157554f3230ab13ba6cb1654e60f1f732356df8e91b5e43427e",
+      "elapsed_seconds": 16.8
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-video-review"
+      ],
+      "observed": [
+        "minwoo-video-review"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 69516,
+        "cached_input_tokens": 59136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 345,
+        "reasoning_output_tokens": 59
+      },
+      "id": "delivery",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "eff39a50af4cc7a4934bc747aed01b15a033eb8c800f7b525cb17c3b29f558a9",
+      "elapsed_seconds": 16.91
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-postgres-review"
+      ],
+      "observed": [
+        "minwoo-postgres-review"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 69877,
+        "cached_input_tokens": 49408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 595,
+        "reasoning_output_tokens": 136
+      },
+      "id": "migration",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "378e8ca24645cdb445b643fe1bbbb6610736cc0fc1f8286a2dd1506a408af536",
+      "elapsed_seconds": 26.7
+    },
+    {
+      "passed": true,
+      "expected": [
+        "diagnosing-bugs"
+      ],
+      "observed": [
+        "diagnosing-bugs"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 100350,
+        "cached_input_tokens": 75392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 664,
+        "reasoning_output_tokens": 108
+      },
+      "id": "ci",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "f07d985fe24c4def8d06d068c9ceba83618d32ce958be677a6a6df8722be50ae",
+      "elapsed_seconds": 27.69
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-kit-maintenance"
+      ],
+      "observed": [
+        "minwoo-kit-maintenance"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 46082,
+        "cached_input_tokens": 40832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 466,
+        "reasoning_output_tokens": 245
+      },
+      "id": "inventory",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "7c89d2bc4c2bee31649a06fa4f8604a14876ff0b4a91927691b107d135f051b7",
+      "elapsed_seconds": 20.2
+    }
+  ],
+  "skill_sha256": {
+    "diagnosing-bugs": "651c1c4cd8cf8a35a9173fb50545c9966e4052eabd46096f2ba4e86aa329a20e",
+    "minwoo-api-compat": "5da96a8d1acc2313185278b200d61dc4fd284598745048a37998489d7146c307",
+    "minwoo-browser-check": "b314eb4ca8c73702b11816a5ac882b0a56b5b8ab8886569de34bbce0b9004e28",
+    "minwoo-dependency-audit": "30e314dd4c846c984e8dc2ffd877b381957f2ea714e284c9732887fa808ab9ae",
+    "minwoo-diff-walkthrough": "5d47bfe6e269c0bd6989b0280999bf6b03d28ebf9c9b52a0615ddf3120b2b410",
+    "minwoo-kit-maintenance": "1f420ec3beccc706731c0adb7d56576c3959698aa0c09d36d5841594a2f1a7a9",
+    "minwoo-postgres-review": "aa89101f97463e7c9df64acce1abb085533bd65b6c20005e9fc64b86bf6c7662",
+    "minwoo-project-context": "d0695f7f4cfd3ea98f6405b2c8a611b7ebd6b75deb5153500fdc18fbda6b9d9b",
+    "minwoo-property-testing": "52ded4417ff3bd7159bf67ed52d24bff7324ea6d39a998f0ca3cc2a56f032b63",
+    "minwoo-publication-review": "a21dbda6b4d3c43b0e5ccd22f343d38f56fc8fa36c6f2732f9d4638b49a4df96",
+    "minwoo-react-composition": "514ac9fa8d791a8576589eb5142eef876e9d816770ab599ac64e028dd4ab635a",
+    "minwoo-react-performance": "7e843435fce144d19646958508d52d24e93ae732dbaade8712cb7f1d086ecf69",
+    "minwoo-release-notes": "d692cb2a4558a16021dcba6b417adb7572b5229d436404cf3c2589cebaf094f8",
+    "minwoo-remotion-render": "9e1865840f9933f49ecccdf28edc06cde314005d27cfc6cdc2112ae91fb1afc7",
+    "minwoo-skill-curation": "9993f729bb7b042289ebe9d325088c0d0a99528313473b43b5ecdd5a99ad6738",
+    "minwoo-video-review": "7ac1b06314bb512993b0444759dbfdb7fb6e07d11f1570c09910fc17cd00cd3d",
+    "minwoo-work-handoff": "b7c6fc54ccf284c3681dee0cd41b26e49dd49b85f1bb75443e14a6e2bd66f791"
+  }
+}
