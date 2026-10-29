@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "cases": 13,
+  "results": [
+    {
+      "case": "launch-good",
+      "passed": true
+    },
+    {
+      "case": "broken-link",
+      "passed": true
+    },
+    {
+      "case": "broken-fragment",
+      "passed": true
+    },
+    {
+      "case": "broken-image",
+      "passed": true
+    },
+    {
+      "case": "missing-share-review",
+      "passed": true
+    },
+    {
+      "case": "performance-samples",
+      "passed": true
+    },
+    {
+      "case": "explicit-budget",
+      "passed": true
+    },
+    {
+      "case": "input-boundaries",
+      "passed": true
+    },
+    {
+      "case": "no-overwrite",
+      "passed": true
+    },
+    {
+      "case": "form-empty-rejected",
+      "passed": true
+    },
+    {
+      "case": "form-receipt-and-double-click",
+      "passed": true
+    },
+    {
+      "case": "form-server-failure-not-success",
+      "passed": true
+    },
+    {
+      "case": "form-retry-receipt",
+      "passed": true
+    }
+  ],
+  "scope": "real browser on local synthetic routes and in-memory form receipts; not production delivery, visual taste or field performance"
+}
