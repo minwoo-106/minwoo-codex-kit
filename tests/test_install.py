@@ -91,6 +91,17 @@ class InstallTests(unittest.TestCase):
         self.run_install(skills=['example'])
         self.assertEqual(before, self.snapshot())
 
+    def test_generated_skill_caches_are_not_distributed(self):
+        base = self.repo / 'skills' / 'example'
+        self.write(base / 'scripts' / '__pycache__' / 'helper.pyc', b'cache')
+        self.write(base / 'node_modules' / 'package' / 'index.js', b'installed dependency')
+        self.write(base / 'scripts' / 'helper.py', b'print("real tool")')
+        self.run_install(skills=['example'])
+        installed = self.skills / 'example'
+        self.assertFalse((installed / 'scripts' / '__pycache__').exists())
+        self.assertFalse((installed / 'node_modules').exists())
+        self.assertEqual((installed / 'scripts' / 'helper.py').read_bytes(), b'print("real tool")')
+
     @unittest.skipUnless(os.name == 'nt', 'Windows case-insensitive paths')
     def test_windows_path_case_does_not_lose_managed_ownership(self):
         self.run_install(skills=['example'])

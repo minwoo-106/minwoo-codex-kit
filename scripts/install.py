@@ -16,6 +16,7 @@ from dataclasses import dataclass
 
 REPO = Path(__file__).absolute().parent.parent
 STATE_DIR = '.minwoo-codex-kit'
+GENERATED_DIRS = {'__pycache__', '.pytest_cache', '.hypothesis', 'node_modules', '.venv'}
 
 
 class InstallError(Exception):
@@ -102,8 +103,12 @@ def skill_files(root: Path):
     for item in sorted(root.iterdir()):
         check_path(item)
         if item.is_dir():
+            if item.name in GENERATED_DIRS:
+                continue
             yield from skill_files(item)
         elif item.is_file():
+            if item.suffix in {'.pyc', '.pyo'}:
+                continue
             yield item
         else:
             raise InstallError(f'지원하지 않는 원본 파일: {item}')
