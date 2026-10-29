@@ -25,7 +25,7 @@ Node 패키지는 package-lock.json의 무결성 정보로 npm ci --ignore-scrip
 
 2026-10-29 검토에서 Remotion studio의 Zod 4.5.4에 [GHSA-mrhx-c7xc-m3w5](https://github.com/advisories/GHSA-mrhx-c7xc-m3w5)가 조회되어 같은 메이저의 수정 버전 **4.6.7**을 overrides에 고정했다. 실제 bundling·자막·렌더를 검증했다. 전체 Node 잠금 파일의 npm audit 조회 결과는 0건이었다. 이는 해당 시점의 알려진 취약점 조회 결과이며 이후의 안전을 보장하지 않는다.
 
-Python 후보의 pytest 8.4.2와 Pygments 2.19.2도 공개 권고에 해당해 각각 **9.2.0**, **2.21.0**으로 교체했다. 근거: [pytest 임시 디렉터리](https://github.com/advisories/GHSA-6w46-j5rx-g56g), [Pygments 정규식](https://github.com/advisories/GHSA-5239-wwwm-4pmq). 최종 9개 Python 패키지의 OSV 조회와 원본 테스트를 다시 수행한다.
+Python 후보의 pytest 8.4.2와 Pygments 2.19.2도 공개 권고에 해당해 각각 **9.2.0**, **2.21.0**으로 교체했다. 근거: [pytest 임시 디렉터리](https://github.com/advisories/GHSA-6w46-j5rx-g56g), [Pygments 정규식](https://github.com/advisories/GHSA-5239-wwwm-4pmq). 최종 9개 Python 패키지의 OSV 조회는 0건이었고 수정 버전에서 원본 테스트 105개가 통과했다.
 
 ## 설치 후 실제 실행
 

@@ -36,6 +36,7 @@ docs/candidates/                의존성 정리가 필요한 재사용 후보
 ## 준비
 
 - Python **3.10 이상**. 외부 Python 패키지는 필요 없다.
+- 위 조건은 기본 설치기와 기존 도구 기준이다. 0.3.0의 선택 분석 도구는 Python 3.11 이상, 영상·실행 예제 묶음은 Node.js 22 이상을 사용한다.
 - Windows PowerShell 5.1 이상 또는 PowerShell 7. Unix에서는 POSIX `sh`.
 - GitHub에서 내려받고 갱신할 때는 Git 또는 GitHub의 ZIP 다운로드를 사용한다.
 - 설치 파일은 검토한 로컬 복사본에서 실행한다. 관리자 권한은 필요 없다.
@@ -112,6 +113,12 @@ python .\scripts\install.py --skill minwoo-project-context --skill minwoo-public
 
 ## 새 프로젝트에 적용
 
+0.3.0에서 검수한 추가 스킬 8개와 선택 도구는 [추가 후보 검수 결과](docs/ADOPTED-SKILLS.md), [도구 설치·검증](docs/TOOLS.md)을 참고한다.
+kit이 배포하는 스킬은 총 14개다. 설치가 모든 본문을 매번 읽거나 실행한다는 뜻은 아니다.
+이름·설명에서 작업에 맞는 스킬을 선택하고, 해당 본문과 필요한 참고 파일만 읽는다.
+발동 설명이 겹치면 여러 절차가 섞일 수 있어 이번 추가분은 역할·제외 범위를 구체화했다.
+완벽한 자동 선택을 보장하지는 않으므로 특정 절차가 필요하면 스킬 이름을 직접 지정할 수 있다.
+
 전역 규칙을 설치한 PC에서는 새 프로젝트에도 공통 규칙이 적용된다.
 프로젝트 전용 스킬이 필요한 경우에만 로컬 스킬을 추가한다. 전역과 로컬에 같은 이름을 설치하면 중복 표시될 수 있다.
 
@@ -144,6 +151,7 @@ python .\scripts\install.py --skill minwoo-project-context --skill minwoo-public
 - 이전 설치본 그대로인 파일은 새 원본으로 갱신할 수 있다. 교체 전 내용은 항상 백업한다.
 - 로컬 수정 내용을 원본에 반영하거나 수동으로 합치는 것을 우선한다. **차이를 확인한 뒤 전체 교체를 원하는 경우에만** `-ReplaceExisting` / `--replace-existing`를 붙인다.
 - 선택하지 않은 스킬, 다른 파일, 원본에서 사라진 파일은 자동 삭제하지 않는다. 스킬에서 폐기한 파일이 있으면 설치된 복사본도 별도로 검토한다.
+- 로컬 테스트가 만든 __pycache__, .pytest_cache, .hypothesis, node_modules, .venv와 pyc/pyo 파일은 새 설치 대상에서 제외한다. 이미 설치된 파일을 자동 삭제하지는 않는다.
 - `AGENTS.override.md`가 있으면 우선 적용될 수 있다는 경고를 낸다. 기존 override를 삭제하거나 고치지 않는다.
 - 링크·Windows 정션·reparse point가 포함된 경로와 원본/설치 경로 중첩은 거절한다. 실제 폴더 경로를 사용한다.
 
