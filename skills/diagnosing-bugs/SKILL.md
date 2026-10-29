@@ -9,6 +9,8 @@ A discipline for hard bugs. Skip phases only when explicitly justified.
 
 For a failing GitHub Actions check, use [the CI evidence workflow](references/github-actions.md) before the diagnosis loop below. It fixes the run/commit being investigated and separates code defects from runner, permission and service failures. Preserve the user's existing authorization; do not add per-step approvals.
 
+For intermittent test failures, read [the flaky-test workflow](references/flaky-tests.md) to separate first-attempt failures from retries and control order, clock, and shared state.
+
 When exploring the codebase, read `CONTEXT.md` (if it exists) to get a clear mental model of the relevant modules, and check ADRs in the area you're touching.
 
 ## Redact

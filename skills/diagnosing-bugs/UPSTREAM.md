@@ -7,3 +7,5 @@
 - 기존 설치의 Phase 5 두 번째 항목은 "Watch it fail."로 끝난다. 공개 커밋의 추가 diff 확인 문장이 없던 차이도 유지했으며 이번 작업에서 삭제한 것이 아니다.
 - GitHub Actions 실패에만 읽는 references/github-actions.md와 진입 링크를 추가했다. 기존 진단 루프·실행 템플릿·UI 설정은 유지했다.
 - 재배포 범위는 SKILL.md와 scripts/hitl-loop.template.sh, 기존 UI 메타데이터다. 개인 대화·프로젝트·설정은 포함하지 않는다.
+
+0.10.0: 직접 작성한 references/flaky-tests.md와 진입 링크를 추가했다. 기존 원문 진단 단계·실행 템플릿은 유지했다.
