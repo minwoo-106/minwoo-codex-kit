@@ -1,0 +1,57 @@
+{
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "model": "current user default; no override",
+  "scope": "native read-only routing and full-document read evidence; no service execution",
+  "case_count": 2,
+  "passed": 2,
+  "results": [
+    {
+      "passed": true,
+      "observed": [
+        "impeccable",
+        "routing.md",
+        "routing/web-craft.md",
+        "routing/web-ui.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "korean-craft",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "0624ea674b42b4efedef29bad2409b77ac1faf87626f06547e4652c8b224573c",
+      "elapsed_seconds": 40.19
+    },
+    {
+      "passed": true,
+      "observed": [
+        "21st-ui-explore",
+        "design-taste-frontend",
+        "routing.md",
+        "routing/web-craft.md",
+        "routing/web-ui.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "direction-craft",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "059842f6e47e558b3a37d15998802fe3943ee678ae3b7dfbd61346429851a482",
+      "elapsed_seconds": 35.86
+    }
+  ],
+  "guide_sha256": {
+    "routing.md": "5ef65a198657e5d4f1339cec6abc395bfe7e65b4cbece8624a25d1ee07b89625",
+    "routing/documents.md": "0c3760102a5fb426923fced7ea2fb778a759c832639a9f2ed9ea7b392eaa4723",
+    "routing/engineering.md": "3fcf189cebc70599c398f7cbe7f8db55c85e9fa5079d5e5ac14233dddbb36d2c",
+    "routing/figma.md": "3a774ad1982bbaab4e4b48014bf99ae05aee85ab962277e580d0d13ab8a88bfa",
+    "routing/kit.md": "60f6aa706faade120a10f0846b0d28d3dd71e1ad3a7faf8282b37371cc4f2517",
+    "routing/media.md": "35aba74b90cd456545fe6ac14895f437a4beedf4160947e22d03425c2e85b305",
+    "routing/services.md": "2143913512c85f8687f0a16289df7215811d393d1ab0142cea2f6d6c98a6f4e4",
+    "routing/web-craft.md": "378b9c3c96d7ca4b4017e13caa2de8ddd9dc8e029b03017a0288ac14b6767730",
+    "routing/web-ui.md": "c343e8e2e6cad378dd673a124ed61cacef752c16d4c065e3bb1fe3f45ec5b41a"
+  }
+}

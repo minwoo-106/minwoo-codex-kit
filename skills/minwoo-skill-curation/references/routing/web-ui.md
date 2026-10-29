@@ -34,3 +34,17 @@
 접근성 자동 규칙이나 기존 화면과의 차이는 같은 minwoo-browser-check의 품질 검사로 맡긴다. 시각적 회귀는 미적 평가와 다르며 기준 화면을 자동 갱신하지 않는다. 검색 색인·canonical·사이트맵은 minwoo-seo-review로 구분한다.
 React 성능 문제는 minwoo-react-performance, 재사용 컴포넌트 API 문제는 minwoo-react-composition을 해당 단계에만 추가한다.
 예: 기존 브랜드 사이트 개편은 방향 결정 → 기존 코드 구현 → 필요한 화면 검토 → 주요 동작 검사다. 이 순서를 이유로 모든 디자인 스킬을 로드하지 않는다.
+
+
+## 콘텐츠·자산·출시
+
+| 요청 | 주도 | 연결할 때 |
+| --- | --- | --- |
+| 홈페이지 페이지 구성·콘텐츠 기획 문서 | minwoo-project-context의 site-brief | 실제 문구 작성·UI 구현으로 임의 확장하지 않음 |
+| 브랜드 전체의 말투·용어 체계 | minwoo-brand-voice | 단일 문장 교정에는 새 가이드를 만들지 않음 |
+| 홈페이지 제목·서비스 설명·FAQ·행동 유도 문구 | minwoo-web-copy | 기존 말투를 적용; 기술 SEO와 구분 |
+| 웹 이미지·폰트·아이콘 준비와 출처·스타일 | minwoo-web-assets | 실제 생성·편집은 현재 이미지 도구 사용 |
+| 브라우저 로딩 시간 반복 측정·폼 접수 검증 | minwoo-browser-check | React 병목 자체의 개선은 minwoo-react-performance 주도 |
+| 공개 전 준비·배포 후 경로·링크·공유 점검 | minwoo-web-launch | 배포 실행은 선택한 호스팅 도구; 검사만으로 배포 권한을 만들지 않음 |
+
+디자인 방향 비교·한글 화면·UI 문구·자산 스타일을 강화할 때만 [화면과 문구 연결](web-craft.md)의 해당 절을 읽는다. 기존 외부 디자인 스킬을 복제하거나 플러그인 캐시를 고치지 않는다.

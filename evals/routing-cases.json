@@ -124,5 +124,39 @@
     "routes": [],
     "expected": [],
     "allowed": []
+  },
+  {
+    "id": "korean-craft",
+    "prompt": "기존 홈페이지의 디자인 방향과 서비스 설명은 유지하면서 한글 제목의 모바일 줄바꿈과 버튼·오류 문구만 다듬으려고 해. 디자인·문구 도구가 겹치니 분야별 안내에서 필요한 것만 골라줘. 브랜드 가이드와 광고 본문을 새로 만들지는 마.",
+    "routes": [
+      "routing.md",
+      "routing/web-ui.md",
+      "routing/web-craft.md"
+    ],
+    "expected": [
+      "impeccable"
+    ],
+    "allowed": [
+      "impeccable",
+      "sites"
+    ]
+  },
+  {
+    "id": "direction-craft",
+    "prompt": "기존 로컬 홈페이지의 콘텐츠는 확정됐고 배포는 원하지 않아. 21st를 활용해서 서로 다른 시각 방향을 비교하고 싶어. 디자인 스킬들이 겹치니 분야별 안내에서 지금 단계에 맞는 것만 골라줘.",
+    "routes": [
+      "routing.md",
+      "routing/web-ui.md",
+      "routing/web-craft.md"
+    ],
+    "expected": [
+      "21st-ui-explore"
+    ],
+    "allowed": [
+      "21st-ui-explore",
+      "21st-cli-use",
+      "sites",
+      "design-taste-frontend"
+    ]
   }
 ]

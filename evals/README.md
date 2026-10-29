@@ -4,7 +4,7 @@
 
 [분야별 선택 안내 평가](ROUTING.md)는 설치된 전역 진입점에서 관련 분야만 읽는지, 외부 스킬과의 역할 구분이 적용되는지 별도로 검사한다.
 
-19개 kit 스킬을 대상으로 31개 자연어 사례를 유지한다. diagnosing-bugs 편입으로 simple-bug 사례도 이 스킬을 기대하는 양성 사례가 됐다. [실제 결과물 평가](PRACTICAL.md)는 별도로 실행한다. 예상 스킬 이름은 평가기에만 있고 모델에게 전달하는 요청에는 넣지 않는다.
+23개 kit 스킬을 대상으로 40개 자연어 사례를 유지한다. diagnosing-bugs 편입으로 simple-bug 사례도 이 스킬을 기대하는 양성 사례가 됐다. [실제 결과물 평가](PRACTICAL.md)는 별도로 실행한다. 예상 스킬 이름은 평가기에만 있고 모델에게 전달하는 요청에는 넣지 않는다.
 
 ```sh
 python -B evals/run_selection.py
@@ -14,7 +14,7 @@ python -B evals/run_selection.py --run --out ../private-selection-results
 python -B evals/run_selection.py --run --case postgres --out ../private-postgres-retry
 ```
 
-실행 전 현재 PC에 대상 19개 스킬을 설치하고 원본과 같은지 확인한다. 각 사례는 새 합성 프로젝트와 `codex exec --ephemeral --json --sandbox read-only` 세션을 사용한다. 실행 옵션은 시험 세션에만 적용하며 사용자의 저장된 승인 방식·모델·설정은 수정하지 않는다. 로그인 자료를 복사하거나 평가 폴더에 넣지 않는다.
+실행 전 현재 PC에 대상 23개 스킬을 설치하고 원본과 같은지 확인한다. 각 사례는 새 합성 프로젝트와 `codex exec --ephemeral --json --sandbox read-only` 세션을 사용한다. 실행 옵션은 시험 세션에만 적용하며 사용자의 저장된 승인 방식·모델·설정은 수정하지 않는다. 로그인 자료를 복사하거나 평가 폴더에 넣지 않는다.
 
 모델에는 실제 작업 전 준비 단계로서 적용되는 스킬 문서를 읽고 첫 단계만 설명하도록 요청한다. **성공한 명령 출력에 전체 SKILL.md 본문이 있는 경우만 사용 증거로 인정한다.** 이름 언급·최종 답변의 자기 주장·일부 읽기·실패한 명령은 인정하지 않는다. kit의 예상 집합과 실제 집합이 일치하고, 세션이 정상 완료되고, 합성 프로젝트 파일이 그대로이며, 파일 변경·웹 검색·MCP 실행 이벤트가 없어야 통과한다. 성공 판정 자체에도 회귀 테스트가 있다.
 
@@ -23,3 +23,5 @@ python -B evals/run_selection.py --run --case postgres --out ../private-postgres
 `trace.jsonl`, `stderr.txt`는 로컬 경로·문서 내용·실행 식별자가 포함될 수 있으므로 공개하지 않는다. `summary.json`만 검토 후 공개하며 실패와 재시험을 구분해서 기록한다. 원시 로그 해시는 로컬 증거 대조용이다. 평가기는 매번 새 폴더를 요구하므로 이전 실패 로그를 덮어쓰지 않는다.
 
 방식 참고: [OpenAI의 스킬 평가 안내](https://developers.openai.com/blog/eval-skills), [비대화형 Codex 실행](https://learn.chatgpt.com/docs/non-interactive-mode). 현재 설치 CLI의 실제 옵션을 우선한다.
+
+[홈페이지 실제 작업 평가](SITE-TASKS.md)는 브랜드·문구·기획·자산 결과물과 경로·속도·폼 접수의 실제 검증을 다룬다.

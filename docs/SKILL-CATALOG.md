@@ -57,7 +57,7 @@
 
 ## 설치 경로 선택
 
-kit의 `scripts/install.ps1`은 **이 저장소의 skills/에 포함된 19개 중 선택한 것만** 설치한다. 카탈로그에만 있는 외부 이름을 `-Skills`에 넣지 않는다.
+kit의 `scripts/install.ps1`은 **이 저장소의 skills/에 포함된 23개 중 선택한 것만** 설치한다. 카탈로그에만 있는 외부 이름을 `-Skills`에 넣지 않는다.
 먼저 기존 `~/.agents/skills`, 기존 환경의 `~/.codex/skills`, 프로젝트 `.agents/skills`, 설치된 플러그인에 같은 스킬이 있는지 확인한다.
 
 새 PC에서 외부 스킬이 필요할 때는 이 문서의 스킬 이름·원본 링크를 지정해 `$skill-installer`에 요청할 수 있다.

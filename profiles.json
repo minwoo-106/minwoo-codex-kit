@@ -32,7 +32,11 @@
         "minwoo-browser-check",
         "minwoo-api-compat",
         "minwoo-security-review",
-        "minwoo-seo-review"
+        "minwoo-seo-review",
+        "minwoo-brand-voice",
+        "minwoo-web-copy",
+        "minwoo-web-assets",
+        "minwoo-web-launch"
       ]
     },
     "video": {
@@ -82,7 +86,11 @@
         "minwoo-browser-check",
         "minwoo-api-compat",
         "minwoo-security-review",
-        "minwoo-seo-review"
+        "minwoo-seo-review",
+        "minwoo-brand-voice",
+        "minwoo-web-copy",
+        "minwoo-web-assets",
+        "minwoo-web-launch"
       ]
     }
   }
