@@ -1,0 +1,22 @@
+{
+  "name": "minwoo-codex-kit-tools",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Optional isolated tools and representative checks; never project dependencies",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.13",
+    "@remotion/bundler": "4.0.539",
+    "@remotion/captions": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "fast-check": "4.10.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.539"
+  },
+  "overrides": {
+    "zod": "4.6.7"
+  }
+}
