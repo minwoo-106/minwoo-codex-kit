@@ -1,0 +1,18 @@
+{
+  "scope": "explicit skill execution on local synthetic artifacts; no production security or live SEO certification",
+  "cases": 1,
+  "passed": 1,
+  "results": [
+    {
+      "case": "security",
+      "passed": true,
+      "skill_read": true,
+      "inputs_unchanged": true,
+      "artifact_verified": true,
+      "external_tool_calls": false,
+      "exit_code": 0,
+      "elapsed_seconds": 75.17,
+      "trace_sha256": "079acc56319ba39842e99398a69dde5c5f8e7f546e0850266c63f29dc32fb0f8"
+    }
+  ]
+}
