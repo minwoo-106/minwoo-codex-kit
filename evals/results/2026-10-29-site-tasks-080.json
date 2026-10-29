@@ -1,0 +1,55 @@
+{
+  "scope": "explicit skills on synthetic artifacts; creative quality and factual claims need manual review; not conversion or audience testing",
+  "cases": 4,
+  "passed": 4,
+  "results": [
+    {
+      "case": "brand-copy",
+      "passed": true,
+      "skill_read": true,
+      "artifact_verified": true,
+      "helper_executed": null,
+      "inputs_unchanged": true,
+      "external_tools": false,
+      "exit_code": 0,
+      "elapsed_seconds": 138.38,
+      "trace_sha256": "b114308f92c2e7880123f9c1853e9c7ac5452131f73142b5353c6f29b9f343d0"
+    },
+    {
+      "case": "brief",
+      "passed": true,
+      "skill_read": true,
+      "artifact_verified": true,
+      "helper_executed": null,
+      "inputs_unchanged": true,
+      "external_tools": false,
+      "exit_code": 0,
+      "elapsed_seconds": 89.42,
+      "trace_sha256": "c7f2d3d8e94cc871427de4e654610a63b96bd5303ae1a2638848ae07474b52bf"
+    },
+    {
+      "case": "assets",
+      "passed": true,
+      "skill_read": true,
+      "artifact_verified": true,
+      "helper_executed": null,
+      "inputs_unchanged": true,
+      "external_tools": false,
+      "exit_code": 0,
+      "elapsed_seconds": 51.69,
+      "trace_sha256": "2f00a5b47f3d592fae75c360402b83c18539b5b44f9a6733e7a02800655d6beb"
+    },
+    {
+      "case": "launch",
+      "passed": true,
+      "skill_read": true,
+      "artifact_verified": true,
+      "helper_executed": true,
+      "inputs_unchanged": true,
+      "external_tools": false,
+      "exit_code": 0,
+      "elapsed_seconds": 45.38,
+      "trace_sha256": "2630bab3bc4a07abfb9054114774312ae4d5976fce622f115a9686cdc5179c69"
+    }
+  ]
+}
