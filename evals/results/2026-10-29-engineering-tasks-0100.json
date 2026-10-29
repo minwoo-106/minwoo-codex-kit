@@ -1,0 +1,833 @@
+{
+  "scope": "synthetic explicit skill implementations and independent acceptance; framework/service limits documented in ENGINEERING.md",
+  "cases": 10,
+  "passed": 10,
+  "acceptance_checks": 50,
+  "attempts": [
+    {
+      "case": "quality",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "implementation unchanged",
+            "passed": true
+          },
+          {
+            "name": "normal tests pass",
+            "passed": true
+          },
+          {
+            "name": "detect age boundary",
+            "passed": true
+          },
+          {
+            "name": "detect wrong connective",
+            "passed": true
+          },
+          {
+            "name": "detect always true",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 78.97,
+      "trace_sha256": "a5f08c986c2c24d6159393932e9474e8b9377b7953ae91c4be0f72396e5b0347"
+    },
+    {
+      "case": "upgrade",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "offline clean install",
+            "passed": true
+          },
+          {
+            "name": "v2 real API preserves behavior",
+            "passed": true
+          },
+          {
+            "name": "manifest lock consistent",
+            "passed": true
+          },
+          {
+            "name": "only intended dependency",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 171.69,
+      "trace_sha256": "598636c6cc4be15c9a435db0d717b15ac9bc90cf5dff01fa7adf6edbcc4b343f"
+    },
+    {
+      "case": "observability",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "result and single call",
+            "passed": true
+          },
+          {
+            "name": "bounded fields and timing",
+            "passed": true
+          },
+          {
+            "name": "original error and redacted event",
+            "passed": true
+          },
+          {
+            "name": "sink failure preserves success",
+            "passed": true
+          },
+          {
+            "name": "sink failure preserves original error",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 74.19,
+      "trace_sha256": "274ad79bac22a9ff9c76f2981450b6f18507f5b6e9a8666bded2cfea89b99ade"
+    },
+    {
+      "case": "async",
+      "passed": false,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "verifier exception",
+            "passed": false,
+            "error_type": "AttributeError"
+          }
+        ]
+      },
+      "elapsed_seconds": 182.11,
+      "trace_sha256": "5cf98952c87f7e22ba04eb05735b76cc1062469a33a8b7dfe18a97f825fc88f5"
+    },
+    {
+      "case": "state",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "pure start",
+            "passed": true
+          },
+          {
+            "name": "duplicate start ignored",
+            "passed": true
+          },
+          {
+            "name": "cancel active",
+            "passed": true
+          },
+          {
+            "name": "late success ignored",
+            "passed": true
+          },
+          {
+            "name": "stale generation ignored",
+            "passed": true
+          },
+          {
+            "name": "matching result",
+            "passed": true
+          },
+          {
+            "name": "error transition",
+            "passed": true
+          },
+          {
+            "name": "unknown ignored",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 64.75,
+      "trace_sha256": "47a1247f8c8ac235de763e071f3f755c898ff7a2551bd23e7ad86ffec28dc925"
+    },
+    {
+      "case": "data",
+      "passed": false,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "verifier exception",
+            "passed": false,
+            "error_type": "AttributeError"
+          }
+        ]
+      },
+      "elapsed_seconds": 229.83,
+      "trace_sha256": "593404da8f193caed7da4c4f8a704e01acf35e3cea79eb54e92ef4ca2a8e1787"
+    },
+    {
+      "case": "i18n",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "plural fallback date boundary and currency",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 90.14,
+      "trace_sha256": "8e76f0a98555d7bc3025b385642f56fa4b8905c5609411274d29f0e484466c7e"
+    },
+    {
+      "case": "contract",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "real consumer HTTP normal",
+            "passed": true
+          },
+          {
+            "name": "new field retained",
+            "passed": true
+          },
+          {
+            "name": "empty semantics",
+            "passed": true
+          },
+          {
+            "name": "additional fields compatible",
+            "passed": true
+          },
+          {
+            "name": "missing field is incompatible",
+            "passed": true
+          },
+          {
+            "name": "consumer preserved",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 89.36,
+      "trace_sha256": "9ff0a2270876062ba65d087d077a570d14d95d6f4da1e920bf7e7db401c7e17e"
+    },
+    {
+      "case": "flaky",
+      "passed": false,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": false,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": false,
+        "checks": [
+          {
+            "name": "independent defaults",
+            "passed": true
+          },
+          {
+            "name": "explicit list identity",
+            "passed": true
+          },
+          {
+            "name": "assertions unchanged",
+            "passed": false
+          },
+          {
+            "name": "order test_a,test_b",
+            "passed": true
+          },
+          {
+            "name": "order test_b,test_a",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 131.67,
+      "trace_sha256": "a60287dd17dffa2e10ba0072d76968025aa0b31675e34e3c970d884c39350d93"
+    },
+    {
+      "case": "refactor",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "36 behavior comparisons",
+            "passed": true
+          },
+          {
+            "name": "implementation actually changed",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 98.7,
+      "trace_sha256": "2eddb1af7285f4ee6473ee59a40b36c4984a1a692c76cfb854dd08557c84681f"
+    },
+    {
+      "case": "data",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "first batch partial counts",
+            "passed": true
+          },
+          {
+            "name": "resume counts",
+            "passed": true
+          },
+          {
+            "name": "completed repeat no work",
+            "passed": true
+          },
+          {
+            "name": "input change refused",
+            "passed": true
+          },
+          {
+            "name": "multiline and checkpoint persist",
+            "passed": true
+          },
+          {
+            "name": "bounded reading 10000 records",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 173.36,
+      "trace_sha256": "ce513023b097b8b42223832f8833cf57f9627882bdd0395d86bd65a1d81c6229"
+    },
+    {
+      "case": "async",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "bounded retry then success",
+            "passed": true
+          },
+          {
+            "name": "duplicate has no attempts",
+            "passed": true
+          },
+          {
+            "name": "same key different content rejected",
+            "passed": true
+          },
+          {
+            "name": "permanent invalid input",
+            "passed": true
+          },
+          {
+            "name": "retry exhaustion",
+            "passed": true
+          },
+          {
+            "name": "cancelled",
+            "passed": true
+          },
+          {
+            "name": "atomic duplicate application",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 174.23,
+      "trace_sha256": "27a9d092fcee1f34da5a54ef789747ff3660f868b88fa05bb1fc0fcc0d142906"
+    },
+    {
+      "case": "flaky",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "independent defaults",
+            "passed": true
+          },
+          {
+            "name": "explicit list identity",
+            "passed": true
+          },
+          {
+            "name": "original tests preserved",
+            "passed": true
+          },
+          {
+            "name": "full regression suite",
+            "passed": true
+          },
+          {
+            "name": "order test_a,test_b",
+            "passed": true
+          },
+          {
+            "name": "order test_b,test_a",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 131.67,
+      "trace_sha256": "a60287dd17dffa2e10ba0072d76968025aa0b31675e34e3c970d884c39350d93",
+      "regrade_reason": "Original request preserved existing assertion bodies and names, but permitted additional regression tests. Replaced incorrect whole-file equality with AST preservation plus full-suite execution; 8 grader regression tests passed. Same model output, no rerun or changed implementation."
+    }
+  ],
+  "final_results": [
+    {
+      "case": "quality",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "implementation unchanged",
+            "passed": true
+          },
+          {
+            "name": "normal tests pass",
+            "passed": true
+          },
+          {
+            "name": "detect age boundary",
+            "passed": true
+          },
+          {
+            "name": "detect wrong connective",
+            "passed": true
+          },
+          {
+            "name": "detect always true",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 78.97,
+      "trace_sha256": "a5f08c986c2c24d6159393932e9474e8b9377b7953ae91c4be0f72396e5b0347"
+    },
+    {
+      "case": "upgrade",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "offline clean install",
+            "passed": true
+          },
+          {
+            "name": "v2 real API preserves behavior",
+            "passed": true
+          },
+          {
+            "name": "manifest lock consistent",
+            "passed": true
+          },
+          {
+            "name": "only intended dependency",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 171.69,
+      "trace_sha256": "598636c6cc4be15c9a435db0d717b15ac9bc90cf5dff01fa7adf6edbcc4b343f"
+    },
+    {
+      "case": "observability",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "result and single call",
+            "passed": true
+          },
+          {
+            "name": "bounded fields and timing",
+            "passed": true
+          },
+          {
+            "name": "original error and redacted event",
+            "passed": true
+          },
+          {
+            "name": "sink failure preserves success",
+            "passed": true
+          },
+          {
+            "name": "sink failure preserves original error",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 74.19,
+      "trace_sha256": "274ad79bac22a9ff9c76f2981450b6f18507f5b6e9a8666bded2cfea89b99ade"
+    },
+    {
+      "case": "async",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "bounded retry then success",
+            "passed": true
+          },
+          {
+            "name": "duplicate has no attempts",
+            "passed": true
+          },
+          {
+            "name": "same key different content rejected",
+            "passed": true
+          },
+          {
+            "name": "permanent invalid input",
+            "passed": true
+          },
+          {
+            "name": "retry exhaustion",
+            "passed": true
+          },
+          {
+            "name": "cancelled",
+            "passed": true
+          },
+          {
+            "name": "atomic duplicate application",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 174.23,
+      "trace_sha256": "27a9d092fcee1f34da5a54ef789747ff3660f868b88fa05bb1fc0fcc0d142906"
+    },
+    {
+      "case": "state",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "pure start",
+            "passed": true
+          },
+          {
+            "name": "duplicate start ignored",
+            "passed": true
+          },
+          {
+            "name": "cancel active",
+            "passed": true
+          },
+          {
+            "name": "late success ignored",
+            "passed": true
+          },
+          {
+            "name": "stale generation ignored",
+            "passed": true
+          },
+          {
+            "name": "matching result",
+            "passed": true
+          },
+          {
+            "name": "error transition",
+            "passed": true
+          },
+          {
+            "name": "unknown ignored",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 64.75,
+      "trace_sha256": "47a1247f8c8ac235de763e071f3f755c898ff7a2551bd23e7ad86ffec28dc925"
+    },
+    {
+      "case": "data",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "first batch partial counts",
+            "passed": true
+          },
+          {
+            "name": "resume counts",
+            "passed": true
+          },
+          {
+            "name": "completed repeat no work",
+            "passed": true
+          },
+          {
+            "name": "input change refused",
+            "passed": true
+          },
+          {
+            "name": "multiline and checkpoint persist",
+            "passed": true
+          },
+          {
+            "name": "bounded reading 10000 records",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 173.36,
+      "trace_sha256": "ce513023b097b8b42223832f8833cf57f9627882bdd0395d86bd65a1d81c6229"
+    },
+    {
+      "case": "i18n",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "plural fallback date boundary and currency",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 90.14,
+      "trace_sha256": "8e76f0a98555d7bc3025b385642f56fa4b8905c5609411274d29f0e484466c7e"
+    },
+    {
+      "case": "contract",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "real consumer HTTP normal",
+            "passed": true
+          },
+          {
+            "name": "new field retained",
+            "passed": true
+          },
+          {
+            "name": "empty semantics",
+            "passed": true
+          },
+          {
+            "name": "additional fields compatible",
+            "passed": true
+          },
+          {
+            "name": "missing field is incompatible",
+            "passed": true
+          },
+          {
+            "name": "consumer preserved",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 89.36,
+      "trace_sha256": "9ff0a2270876062ba65d087d077a570d14d95d6f4da1e920bf7e7db401c7e17e"
+    },
+    {
+      "case": "flaky",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "independent defaults",
+            "passed": true
+          },
+          {
+            "name": "explicit list identity",
+            "passed": true
+          },
+          {
+            "name": "original tests preserved",
+            "passed": true
+          },
+          {
+            "name": "full regression suite",
+            "passed": true
+          },
+          {
+            "name": "order test_a,test_b",
+            "passed": true
+          },
+          {
+            "name": "order test_b,test_a",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 131.67,
+      "trace_sha256": "a60287dd17dffa2e10ba0072d76968025aa0b31675e34e3c970d884c39350d93",
+      "regrade_reason": "Original request preserved existing assertion bodies and names, but permitted additional regression tests. Replaced incorrect whole-file equality with AST preservation plus full-suite execution; 8 grader regression tests passed. Same model output, no rerun or changed implementation."
+    },
+    {
+      "case": "refactor",
+      "passed": true,
+      "skill_and_refs_read": true,
+      "protected_inputs_unchanged": true,
+      "external_tools": false,
+      "completed": true,
+      "exit_code": 0,
+      "acceptance": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "36 behavior comparisons",
+            "passed": true
+          },
+          {
+            "name": "implementation actually changed",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 98.7,
+      "trace_sha256": "2eddb1af7285f4ee6473ee59a40b36c4984a1a692c76cfb854dd08557c84681f"
+    }
+  ],
+  "evaluation_corrections": [
+    {
+      "case": "upgrade",
+      "phase": "initial fixture setup",
+      "observed": "offline lock creation failed using the portable npm wrapper; no model attempt at that stage",
+      "fix": "invoke bundled npm-cli.js with Node; separate fresh run passed"
+    },
+    {
+      "case": "data and async",
+      "observed": "request omitted whether db was a path or connection; implementation used connection, verifier used path and raised AttributeError",
+      "fix": "explicitly specify SQLite file path; keep acceptance requirements and rerun each in a new folder"
+    },
+    {
+      "case": "flaky",
+      "observed": "whole-file equality incorrectly rejected valid added regression tests; original names/assertions were preserved",
+      "fix": "AST preservation and full-suite check; 8 grading regression tests; same artifact regraded without rerunning model"
+    }
+  ],
+  "manual_review": {
+    "artifact_reviewed": true,
+    "notes": "Inspected generated implementations and final reports, protected data, actual commands and separate verifier results. No evaluator read or config-write command observed. Native tests may retain local temporary artifacts; these are excluded from distribution. Assertions about native extra cases are not counted as independent acceptance.",
+    "limits": "No live queues, production databases, external telemetry exporters, Pact/Broker, Stryker full mutation run, UI/RTL rendering, upload-server security or large-scale performance certification."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "model": "current user default; no override",
+  "scope": "native read-only routing and full-document read evidence; no service execution",
+  "case_count": 2,
+  "passed": 2,
+  "results": [
+    {
+      "passed": true,
+      "observed": [
+        "minwoo-dependency-upgrade",
+        "routing.md",
+        "routing/engineering.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "upgrade-routing",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "80a770beeeeee44f0cb33c2988a11d22fa5411c19846799fa1336af915d14c00",
+      "elapsed_seconds": 32.03
+    },
+    {
+      "passed": true,
+      "observed": [
+        "codebase-design",
+        "routing.md",
+        "routing/engineering.md",
+        "routing/refactoring.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "refactor-routing",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "3200b5b2c306cf411efab4d8550beaa23448d5889d0ee36f90038bc68ea5ba92",
+      "elapsed_seconds": 65.58
+    }
+  ],
+  "guide_sha256": {
+    "routing.md": "745e5d983a6ce8e0bcb8da3693a03043274c35d5f4add88c5d9b5c961d681717",
+    "routing/documents.md": "8184cbe594fc8ca5744f0c8bd89c269dbc1eb4ac9709b7682435a0a99334f881",
+    "routing/engineering.md": "e70e8255828a650719817c433fa0c695e7a9bd2ba2fd33dee43e5620388924d2",
+    "routing/figma.md": "3a774ad1982bbaab4e4b48014bf99ae05aee85ab962277e580d0d13ab8a88bfa",
+    "routing/kit.md": "60f6aa706faade120a10f0846b0d28d3dd71e1ad3a7faf8282b37371cc4f2517",
+    "routing/media.md": "35aba74b90cd456545fe6ac14895f437a4beedf4160947e22d03425c2e85b305",
+    "routing/refactoring.md": "061fe70bcb3a761466e29721d875a8ff94aadab63bca8b1ae8211134e7e2f614",
+    "routing/services.md": "2143913512c85f8687f0a16289df7215811d393d1ab0142cea2f6d6c98a6f4e4",
+    "routing/web-craft.md": "a1bcfe884f93bac69bca5b8ff39c152cde7b1486460cdab63d42373d40fbb1c9",
+    "routing/web-ui.md": "c343e8e2e6cad378dd673a124ed61cacef752c16d4c065e3bb1fe3f45ec5b41a"
+  }
+}

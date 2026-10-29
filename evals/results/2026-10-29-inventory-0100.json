@@ -1,0 +1,27 @@
+{
+  "scope": "same selected roots as 0.9.0; not exact host tokens or truncation",
+  "kit_skills": 31,
+  "inventory": {
+    "scanned": 107,
+    "implicit_candidates": 101,
+    "explicit_only": 6,
+    "list_chars": 39007,
+    "list_utf8_bytes": 43260,
+    "comparison_budget_chars": 8000,
+    "over_comparison_budget": true,
+    "duplicates": [],
+    "errors": [],
+    "scope": "selected roots only; cache may include inactive plugins; exact host catalog, truncation and token count are not inferred"
+  },
+  "delta_chars": 1269,
+  "delta_utf8_bytes": 2150,
+  "installation": {
+    "protected_existing_files": 516,
+    "changed_existing_files": 5,
+    "global_rules_unchanged": true,
+    "config_unchanged": false,
+    "all_kit_files_match": true,
+    "repeat_install_changes": 0,
+    "isolated_web_skills": 28
+  }
+}

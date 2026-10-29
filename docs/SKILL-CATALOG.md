@@ -59,7 +59,7 @@
 
 ## 설치 경로 선택
 
-kit의 `scripts/install.ps1`은 **이 저장소의 skills/에 포함된 24개 중 선택한 것만** 설치한다. 카탈로그에만 있는 외부 이름을 `-Skills`에 넣지 않는다.
+kit의 `scripts/install.ps1`은 **이 저장소의 skills/에 포함된 31개 중 선택한 것만** 설치한다. 카탈로그에만 있는 외부 이름을 `-Skills`에 넣지 않는다.
 먼저 기존 `~/.agents/skills`, 기존 환경의 `~/.codex/skills`, 프로젝트 `.agents/skills`, 설치된 플러그인에 같은 스킬이 있는지 확인한다.
 
 새 PC에서 외부 스킬이 필요할 때는 이 문서의 스킬 이름·원본 링크를 지정해 `$skill-installer`에 요청할 수 있다.
@@ -118,3 +118,5 @@ SKILL.md를 복사하는 것만으로 이미지 생성, 사이트 게시, 플러
 다른 기본 제공·플러그인도 설치 캐시를 통째로 공개하지 않는다.
 
 직접 작성 후보의 검토는 [studio-review 후보](candidates/studio-review.md), 전체 판단 기록은 [스킬 검토 기록](SKILL-REVIEW.md)을 참고한다.
+
+0.10.0 코딩 후보 10개의 편입·겹침·공식 참고 자료는 [검수 기록](ENGINEERING-CRAFT.md)을 따른다. 외부 프레임워크는 필요 시 프로젝트별로 선택하며 자동 설치하지 않는다.
