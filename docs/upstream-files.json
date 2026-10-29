@@ -1,0 +1,997 @@
+{
+  "reviewed": "2026-10-29",
+  "files": [
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/review-walkthrough/skills/review-walkthrough/scripts/render_walkthrough.py",
+      "local": "skills/minwoo-diff-walkthrough/scripts/render_walkthrough.py",
+      "gitBlob": "d525a2f0981650507341c9844214c4461944d435",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/review-walkthrough/skills/review-walkthrough/template.html",
+      "local": "skills/minwoo-diff-walkthrough/template.html",
+      "gitBlob": "be9522417e8e20030f1361f202e30b566186fc72",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/scripts/collect.py",
+      "local": "skills/minwoo-dependency-audit/scripts/collect.py",
+      "gitBlob": "d3238e3fdfb700c6e239f6f41d359be2bad4fca8",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/scripts/model.py",
+      "local": "skills/minwoo-dependency-audit/scripts/model.py",
+      "gitBlob": "81407c29544a2a84ca19a286f01c25d76ab927e9",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/scripts/render.py",
+      "local": "skills/minwoo-dependency-audit/scripts/render.py",
+      "gitBlob": "b4aa9ca5f40ea76bc7b7f56cf6cb59a77d0487af",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/scripts/sources.py",
+      "local": "skills/minwoo-dependency-audit/scripts/sources.py",
+      "gitBlob": "0d65664fa3bc18f1fad72e01704eed0d9e4b32c5",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/scripts/test_collect.py",
+      "local": "skills/minwoo-dependency-audit/scripts/test_collect.py",
+      "gitBlob": "12dd8e6200a760002450c9e348220ec1685d5549",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/scripts/test_model.py",
+      "local": "skills/minwoo-dependency-audit/scripts/test_model.py",
+      "gitBlob": "efbe08366de7b78bf333a51769f4a420d1bec9a4",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/scripts/test_render.py",
+      "local": "skills/minwoo-dependency-audit/scripts/test_render.py",
+      "gitBlob": "54b1a5fef092855ee99be92be6393108609f8738",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/scripts/test_sources.py",
+      "local": "skills/minwoo-dependency-audit/scripts/test_sources.py",
+      "gitBlob": "42d9772a0320b28aaf44a94c8776cc2a92700345",
+      "modified": "Windows-safe explicit getuid fixtures; source execution unchanged"
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/property-based-testing/skills/property-based-testing/references/generating.md",
+      "local": "skills/minwoo-property-testing/references/generating.md",
+      "gitBlob": "0133ccd27580a6f68d662807832de67cb1d91514",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/property-based-testing/skills/property-based-testing/references/interpreting-failures.md",
+      "local": "skills/minwoo-property-testing/references/interpreting-failures.md",
+      "gitBlob": "10aeac48d239da352206b8c49f72ee776e5ca5be",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/property-based-testing/skills/property-based-testing/references/libraries.md",
+      "local": "skills/minwoo-property-testing/references/libraries.md",
+      "gitBlob": "6b9964a46c014f5ecee78cd356fb0bdc4cbcd830",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/property-based-testing/skills/property-based-testing/references/refactoring.md",
+      "local": "skills/minwoo-property-testing/references/refactoring.md",
+      "gitBlob": "d4be7fb1fd4f00e53fde109254dd6dc937248011",
+      "modified": false
+    },
+    {
+      "repo": "trailofbits/skills",
+      "ref": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "path": "plugins/property-based-testing/skills/property-based-testing/references/reviewing.md",
+      "local": "skills/minwoo-property-testing/references/reviewing.md",
+      "gitBlob": "a2ca783a7dabaece9e383f0ace972bb4fe2f7881",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/advanced-effect-event-deps.md",
+      "local": "skills/minwoo-react-performance/rules/advanced-effect-event-deps.md",
+      "gitBlob": "24d901b62be66f6088eb1de5b262e67f5c337d57",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/advanced-event-handler-refs.md",
+      "local": "skills/minwoo-react-performance/rules/advanced-event-handler-refs.md",
+      "gitBlob": "97e7ade243aa6dae50d6faa5111dea0d04778ead",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/advanced-init-once.md",
+      "local": "skills/minwoo-react-performance/rules/advanced-init-once.md",
+      "gitBlob": "73ee38e5e74c0afa28cb730afe3275479432092a",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/advanced-use-latest.md",
+      "local": "skills/minwoo-react-performance/rules/advanced-use-latest.md",
+      "gitBlob": "9c7cb501693d4a9521697f13dbd5906dd99f0257",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/async-api-routes.md",
+      "local": "skills/minwoo-react-performance/rules/async-api-routes.md",
+      "gitBlob": "6feda1ef0ac06b57b33c7b5bd6a19ca88d6c8a34",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/async-cheap-condition-before-await.md",
+      "local": "skills/minwoo-react-performance/rules/async-cheap-condition-before-await.md",
+      "gitBlob": "5799d7f6ee6e9d70422048ab0cae06ca021d22b2",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/async-defer-await.md",
+      "local": "skills/minwoo-react-performance/rules/async-defer-await.md",
+      "gitBlob": "460b5e16baf9c66f85e4169eb9d43e4d07f2ce94",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/async-dependencies.md",
+      "local": "skills/minwoo-react-performance/rules/async-dependencies.md",
+      "gitBlob": "0484ebab993f3db78277e8731872473d02475e6d",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/async-parallel.md",
+      "local": "skills/minwoo-react-performance/rules/async-parallel.md",
+      "gitBlob": "64133f6c31fec81eaaabd712586337d20122e09f",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/async-suspense-boundaries.md",
+      "local": "skills/minwoo-react-performance/rules/async-suspense-boundaries.md",
+      "gitBlob": "1fbc05b04ed2474637b12014a77688750e78f931",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/bundle-analyzable-paths.md",
+      "local": "skills/minwoo-react-performance/rules/bundle-analyzable-paths.md",
+      "gitBlob": "8276f156cf1aa8a611bd5bc3cadcb362e16ccd13",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/bundle-barrel-imports.md",
+      "local": "skills/minwoo-react-performance/rules/bundle-barrel-imports.md",
+      "gitBlob": "22d1050196671b7bc9f9aaf88cc665ba6fa8deb0",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/bundle-conditional.md",
+      "local": "skills/minwoo-react-performance/rules/bundle-conditional.md",
+      "gitBlob": "99d6fc90e31d683d2b6b71353b92d620b484b644",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/bundle-defer-third-party.md",
+      "local": "skills/minwoo-react-performance/rules/bundle-defer-third-party.md",
+      "gitBlob": "db041d1510e51defeade05926ba4e6bbad1068b5",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/bundle-dynamic-imports.md",
+      "local": "skills/minwoo-react-performance/rules/bundle-dynamic-imports.md",
+      "gitBlob": "60b62695e7a080e2020ff2242d8d841c5e3ecbc4",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/bundle-preload.md",
+      "local": "skills/minwoo-react-performance/rules/bundle-preload.md",
+      "gitBlob": "7000504065472628ae614786a3faadd23b0435a7",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/client-event-listeners.md",
+      "local": "skills/minwoo-react-performance/rules/client-event-listeners.md",
+      "gitBlob": "aad4ae91605d715aad8e92b76bd7fb85c91d7cdf",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/client-localstorage-schema.md",
+      "local": "skills/minwoo-react-performance/rules/client-localstorage-schema.md",
+      "gitBlob": "d30a1a7d4f85b0d50a0808eaa1b382c6deb595f4",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/client-passive-event-listeners.md",
+      "local": "skills/minwoo-react-performance/rules/client-passive-event-listeners.md",
+      "gitBlob": "ce39a889efb4452ec4c044555ff818301dcf7ece",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/client-swr-dedup.md",
+      "local": "skills/minwoo-react-performance/rules/client-swr-dedup.md",
+      "gitBlob": "2a430f27fd6abdc1b1b2f809b7a60114ff506790",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-batch-dom-css.md",
+      "local": "skills/minwoo-react-performance/rules/js-batch-dom-css.md",
+      "gitBlob": "a62d84ed8149b6d4f173debc7043af03f8f8dd06",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-cache-function-results.md",
+      "local": "skills/minwoo-react-performance/rules/js-cache-function-results.md",
+      "gitBlob": "180f8ac8fffd7e6ee320242d59d06565d40a12f8",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-cache-property-access.md",
+      "local": "skills/minwoo-react-performance/rules/js-cache-property-access.md",
+      "gitBlob": "39eec9061b4ca820150cc8183fb73f9e0c91ce85",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-cache-storage.md",
+      "local": "skills/minwoo-react-performance/rules/js-cache-storage.md",
+      "gitBlob": "aa4a30c08176aabd27b41fa44d5c1981457b675f",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-combine-iterations.md",
+      "local": "skills/minwoo-react-performance/rules/js-combine-iterations.md",
+      "gitBlob": "044d017ec3b24b53e46d638acd1d936a22ac6323",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-early-exit.md",
+      "local": "skills/minwoo-react-performance/rules/js-early-exit.md",
+      "gitBlob": "f46cb89c6cbe06e481aba0136848e3b17263ba96",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-flatmap-filter.md",
+      "local": "skills/minwoo-react-performance/rules/js-flatmap-filter.md",
+      "gitBlob": "ee0edf0da256eb8b62c5a998c768c51eb520e8cd",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-hoist-regexp.md",
+      "local": "skills/minwoo-react-performance/rules/js-hoist-regexp.md",
+      "gitBlob": "dae3fefdc0a1db66badcd4875489715edcdb038b",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-index-maps.md",
+      "local": "skills/minwoo-react-performance/rules/js-index-maps.md",
+      "gitBlob": "9d357a00b15ac67cdd638886f5197a13173a637d",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-length-check-first.md",
+      "local": "skills/minwoo-react-performance/rules/js-length-check-first.md",
+      "gitBlob": "8b89573630fdc3aa10564273f390ecc7e2b1cd3e",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-min-max-loop.md",
+      "local": "skills/minwoo-react-performance/rules/js-min-max-loop.md",
+      "gitBlob": "4b6656e96aecf3ae6ade52974090ae8b3e3f2bb5",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-request-idle-callback.md",
+      "local": "skills/minwoo-react-performance/rules/js-request-idle-callback.md",
+      "gitBlob": "d81927e5f0ddb9fa4eece79197728bfc4382cbfe",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-set-map-lookups.md",
+      "local": "skills/minwoo-react-performance/rules/js-set-map-lookups.md",
+      "gitBlob": "680a4892ee291c432bf8e769a44d0f1eb102b74b",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/js-tosorted-immutable.md",
+      "local": "skills/minwoo-react-performance/rules/js-tosorted-immutable.md",
+      "gitBlob": "eae8b3f8aed2c7a893ceaae4cab55fa1c444b309",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-activity.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-activity.md",
+      "gitBlob": "c957a490b7c2688542766150741e85e066539251",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-animate-svg-wrapper.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-animate-svg-wrapper.md",
+      "gitBlob": "646744cbe53b213c6fa5ead54ef107510e5be89d",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-conditional-render.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-conditional-render.md",
+      "gitBlob": "7e866f5852dac80e0822e7f7c33476f5c9fc22f1",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-content-visibility.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-content-visibility.md",
+      "gitBlob": "aa6656362b2c0dad9ffea788b5850843d6c0629e",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-hoist-jsx.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-hoist-jsx.md",
+      "gitBlob": "32d2f3fcea53dadcf847231ee20c60fa2c5c3049",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-hydration-no-flicker.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-hydration-no-flicker.md",
+      "gitBlob": "5cf0e79b69afd7564b965c09435a2c7ee79eb2bd",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-hydration-suppress-warning.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-hydration-suppress-warning.md",
+      "gitBlob": "24ba2513a29f5259b3184695d2d4da25e03e42ac",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-resource-hints.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-resource-hints.md",
+      "gitBlob": "1290bef06baf459f85dc5856ffc4486951224a48",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-script-defer-async.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-script-defer-async.md",
+      "gitBlob": "ee275ed1c06da8f1ae70e744e47965799eaebf02",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-svg-precision.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-svg-precision.md",
+      "gitBlob": "6d7712860365294936a1b736d29d3eb970b91da7",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rendering-usetransition-loading.md",
+      "local": "skills/minwoo-react-performance/rules/rendering-usetransition-loading.md",
+      "gitBlob": "0c1b0b98e884d2c77bdec66df754693bd48c7777",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-defer-reads.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-defer-reads.md",
+      "gitBlob": "e867c95f02fe6ed6ac2f91fdf1c0922304e0423a",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-dependencies.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-dependencies.md",
+      "gitBlob": "47a4d92685702e3a3b07073c62a61800fa0a6d7d",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-derived-state-no-effect.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-derived-state-no-effect.md",
+      "gitBlob": "3d9fe4050794ea6655add6bee50cfbc104e5dc31",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-derived-state.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-derived-state.md",
+      "gitBlob": "e5c899f6c073338bbd1b73c0275bc3e5e7d9ae7b",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-functional-setstate.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-functional-setstate.md",
+      "gitBlob": "b004ef45e347503947fee397b6c3d163b0a317fb",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-lazy-state-init.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-lazy-state-init.md",
+      "gitBlob": "4ecb350fbadff3db805b72429276e672d42736dc",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-memo-with-default-value.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-memo-with-default-value.md",
+      "gitBlob": "63570491848cb42c2bc7073bceb754893a6a4cfa",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-memo.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-memo.md",
+      "gitBlob": "f8982ab612105a3b7faee1292b797338e7fb5271",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-move-effect-to-event.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-move-effect-to-event.md",
+      "gitBlob": "dd58a1af091b3cf5cb271d25904af4feb836d1aa",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-no-inline-components.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-no-inline-components.md",
+      "gitBlob": "d97592acefced05bc4a8538c77d226fa24c08534",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-simple-expression-in-memo.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-simple-expression-in-memo.md",
+      "gitBlob": "59dfab0f3b048097627e0ca6e4c8da36629a5268",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-split-combined-hooks.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-split-combined-hooks.md",
+      "gitBlob": "89d805644dbffe3877bc1356bdf8ad416a5c715b",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-transitions.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-transitions.md",
+      "gitBlob": "d99f43f764232e994a49a1df89ec9d624552f439",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-use-deferred-value.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-use-deferred-value.md",
+      "gitBlob": "619c04b0142bf5a5b7d0f69532a56b797a78f664",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/rerender-use-ref-transient-values.md",
+      "local": "skills/minwoo-react-performance/rules/rerender-use-ref-transient-values.md",
+      "gitBlob": "cf04b81f8a531eacd07a32e8917fb3ed3c1bbecb",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-after-nonblocking.md",
+      "local": "skills/minwoo-react-performance/rules/server-after-nonblocking.md",
+      "gitBlob": "e8f5b260f5fc6d58141bc61e0a091569adb81e7e",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-auth-actions.md",
+      "local": "skills/minwoo-react-performance/rules/server-auth-actions.md",
+      "gitBlob": "ee82c0442bc69ffae7bf20c07709d57893da1123",
+      "modified": "Trailing whitespace removed from example code and blank lines; semantics unchanged"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-cache-lru.md",
+      "local": "skills/minwoo-react-performance/rules/server-cache-lru.md",
+      "gitBlob": "ef6938aa53c55dc3c0035bd6c66838810d870260",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-cache-react.md",
+      "local": "skills/minwoo-react-performance/rules/server-cache-react.md",
+      "gitBlob": "87c9ca33168a321a59fbaaa84843e2f48c99751a",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-dedup-props.md",
+      "local": "skills/minwoo-react-performance/rules/server-dedup-props.md",
+      "gitBlob": "fb24a2562c73fadbb9a11a79897c2cf93ea3c69a",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-hoist-static-io.md",
+      "local": "skills/minwoo-react-performance/rules/server-hoist-static-io.md",
+      "gitBlob": "25205c2fc42d0dd684d6423acde642774329a8cc",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-no-shared-module-state.md",
+      "local": "skills/minwoo-react-performance/rules/server-no-shared-module-state.md",
+      "gitBlob": "ff7d9f29c6e0e42ec1471acec8a3c7f394c8358d",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-parallel-fetching.md",
+      "local": "skills/minwoo-react-performance/rules/server-parallel-fetching.md",
+      "gitBlob": "1affc835a601a894fd02de08e6c9cdfd76d34b64",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-parallel-nested-fetching.md",
+      "local": "skills/minwoo-react-performance/rules/server-parallel-nested-fetching.md",
+      "gitBlob": "be1dc25075e40e6bda46cb24dc5a6f42b916b0e8",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/react-best-practices/rules/server-serialization.md",
+      "local": "skills/minwoo-react-performance/rules/server-serialization.md",
+      "gitBlob": "39c5c4164c31be7f171ea2f4b3b32fe47709a651",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/composition-patterns/rules/architecture-avoid-boolean-props.md",
+      "local": "skills/minwoo-react-composition/rules/architecture-avoid-boolean-props.md",
+      "gitBlob": "ccee19ce495b9d7fdf08867db3c6b6282006312e",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/composition-patterns/rules/architecture-compound-components.md",
+      "local": "skills/minwoo-react-composition/rules/architecture-compound-components.md",
+      "gitBlob": "e5e3043cb5a81b83dce0389848b828455f00854f",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/composition-patterns/rules/patterns-children-over-render-props.md",
+      "local": "skills/minwoo-react-composition/rules/patterns-children-over-render-props.md",
+      "gitBlob": "d4345ee30aea5f1b11815251edca7ebd0aefe2e2",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/composition-patterns/rules/patterns-explicit-variants.md",
+      "local": "skills/minwoo-react-composition/rules/patterns-explicit-variants.md",
+      "gitBlob": "56e32e8bee5e5768f747db4e9718a6c2b54bfce5",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/composition-patterns/rules/react19-no-forwardref.md",
+      "local": "skills/minwoo-react-composition/rules/react19-no-forwardref.md",
+      "gitBlob": "e0d8f8a76f14888f2fafc8cccd3d9395e4711d0d",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/composition-patterns/rules/state-context-interface.md",
+      "local": "skills/minwoo-react-composition/rules/state-context-interface.md",
+      "gitBlob": "d961bede0c6c6e318f6ba3aca9b5dfcdb768d8f9",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/composition-patterns/rules/state-decouple-implementation.md",
+      "local": "skills/minwoo-react-composition/rules/state-decouple-implementation.md",
+      "gitBlob": "71a5afaa7d7078c262c92d32c3b97723de62f99f",
+      "modified": false
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "ref": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "path": "skills/composition-patterns/rules/state-lift-state.md",
+      "local": "skills/minwoo-react-composition/rules/state-lift-state.md",
+      "gitBlob": "d7fe27b54933135f9050365b6c2001c101029d51",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/advanced-full-text-search.md",
+      "local": "skills/minwoo-postgres-review/references/advanced-full-text-search.md",
+      "gitBlob": "582cbeaada9378a280ad61f57e06c10d258e3c43",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/advanced-jsonb-indexing.md",
+      "local": "skills/minwoo-postgres-review/references/advanced-jsonb-indexing.md",
+      "gitBlob": "e3d261ea117fd7b1ad9c4f0d45308407b898ed5a",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/conn-idle-timeout.md",
+      "local": "skills/minwoo-postgres-review/references/conn-idle-timeout.md",
+      "gitBlob": "40b9cc50dd12cf347ed189fac965673b533f3f99",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/conn-limits.md",
+      "local": "skills/minwoo-postgres-review/references/conn-limits.md",
+      "gitBlob": "cb3e400c0234e7e9196c1650423faad66375b70b",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/conn-pooling.md",
+      "local": "skills/minwoo-postgres-review/references/conn-pooling.md",
+      "gitBlob": "e2ebd581d3c85bff0a077e8d9a2cb562d2513d03",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/conn-prepared-statements.md",
+      "local": "skills/minwoo-postgres-review/references/conn-prepared-statements.md",
+      "gitBlob": "555547d834e35b5059152dfb2288eca5e9838ea0",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/data-batch-inserts.md",
+      "local": "skills/minwoo-postgres-review/references/data-batch-inserts.md",
+      "gitBlob": "997947cb17bfed67f29eaa8da2a58de2306cc2c1",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/data-n-plus-one.md",
+      "local": "skills/minwoo-postgres-review/references/data-n-plus-one.md",
+      "gitBlob": "2109186ff88b3ba1cc32789f81e2a00d345c6e3f",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/data-pagination.md",
+      "local": "skills/minwoo-postgres-review/references/data-pagination.md",
+      "gitBlob": "633d839323612e212a833dd96828cb31fdfb39f8",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/data-upsert.md",
+      "local": "skills/minwoo-postgres-review/references/data-upsert.md",
+      "gitBlob": "bc95e2305d955679446c70854cb2b56b183aa56d",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/lock-advisory.md",
+      "local": "skills/minwoo-postgres-review/references/lock-advisory.md",
+      "gitBlob": "572eaf0dcf518ac925c4cde41beb60b62852b79c",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/lock-deadlock-prevention.md",
+      "local": "skills/minwoo-postgres-review/references/lock-deadlock-prevention.md",
+      "gitBlob": "974da5edec32f79de0fcdc771d4ef759dc3e049d",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/lock-short-transactions.md",
+      "local": "skills/minwoo-postgres-review/references/lock-short-transactions.md",
+      "gitBlob": "e6b8ef2633248a4aa4394628e48d8cb693e7e6ab",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/lock-skip-locked.md",
+      "local": "skills/minwoo-postgres-review/references/lock-skip-locked.md",
+      "gitBlob": "77bdbb97045010ce2fdbd90733e8f764be82881a",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/monitor-explain-analyze.md",
+      "local": "skills/minwoo-postgres-review/references/monitor-explain-analyze.md",
+      "gitBlob": "542978c3bafc510fa8d7a8864cff994ad40be4d7",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/monitor-pg-stat-statements.md",
+      "local": "skills/minwoo-postgres-review/references/monitor-pg-stat-statements.md",
+      "gitBlob": "d7e82f1aacd105d53789eb6188d11e8ea39e7310",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/monitor-vacuum-analyze.md",
+      "local": "skills/minwoo-postgres-review/references/monitor-vacuum-analyze.md",
+      "gitBlob": "e0e8ea0b7db8c1513a0d1605be477192bc21d91d",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/query-composite-indexes.md",
+      "local": "skills/minwoo-postgres-review/references/query-composite-indexes.md",
+      "gitBlob": "fea64523fd5bb3696f943d486ccaf2aea75d27b8",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/query-covering-indexes.md",
+      "local": "skills/minwoo-postgres-review/references/query-covering-indexes.md",
+      "gitBlob": "9d2a4947b94516dd975e1044d132bb007280f478",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/query-index-types.md",
+      "local": "skills/minwoo-postgres-review/references/query-index-types.md",
+      "gitBlob": "93b32590f4bfe377869274f45414ae6e43d168fa",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/query-missing-indexes.md",
+      "local": "skills/minwoo-postgres-review/references/query-missing-indexes.md",
+      "gitBlob": "e6daace7dd368c75cdf87dc61be4afd6ff66cbbe",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/query-partial-indexes.md",
+      "local": "skills/minwoo-postgres-review/references/query-partial-indexes.md",
+      "gitBlob": "3e61a3417b9cce3c8cee99b39b78b7ebf495dd1f",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/schema-constraints.md",
+      "local": "skills/minwoo-postgres-review/references/schema-constraints.md",
+      "gitBlob": "1d2ef8f9a968cd6fa882c7299134c30ace06373c",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/schema-data-types.md",
+      "local": "skills/minwoo-postgres-review/references/schema-data-types.md",
+      "gitBlob": "f253a5819d05531371e04485ab84f552fbb32fbe",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/schema-foreign-key-indexes.md",
+      "local": "skills/minwoo-postgres-review/references/schema-foreign-key-indexes.md",
+      "gitBlob": "6c3d6ff622b8a9df358f6673f323292e682ce87c",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/schema-lowercase-identifiers.md",
+      "local": "skills/minwoo-postgres-review/references/schema-lowercase-identifiers.md",
+      "gitBlob": "f0072940b159ff64e0c2d4fbb499133cb8f49a66",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/schema-partitioning.md",
+      "local": "skills/minwoo-postgres-review/references/schema-partitioning.md",
+      "gitBlob": "13137a03275fa45001c870a40b0069204d44e005",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/schema-primary-keys.md",
+      "local": "skills/minwoo-postgres-review/references/schema-primary-keys.md",
+      "gitBlob": "fb0fbb166fac9ea38c127d807a263282acc2dc93",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/security-privileges.md",
+      "local": "skills/minwoo-postgres-review/references/security-privileges.md",
+      "gitBlob": "448ec345fab6c5a0116c584d65638b86d758c558",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/security-rls-basics.md",
+      "local": "skills/minwoo-postgres-review/references/security-rls-basics.md",
+      "gitBlob": "c61e1a8503de113be0981759b82f5e37090f344c",
+      "modified": false
+    },
+    {
+      "repo": "supabase/agent-skills",
+      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "path": "skills/supabase-postgres-best-practices/references/security-rls-performance.md",
+      "local": "skills/minwoo-postgres-review/references/security-rls-performance.md",
+      "gitBlob": "c3c7c416d57d9a46a9993f4e0c20f772fb64483d",
+      "modified": false
+    }
+  ]
+}
