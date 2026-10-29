@@ -7,8 +7,8 @@
 | core | 7 | 프로젝트 문맥, 공개 전 점검, 스킬 검수, kit 유지보수, 인수인계, 릴리스 노트, 디버깅·CI 조사 |
 | web | 21 | core + React 성능·합성, PostgreSQL, 의존성 감사, 속성 테스트, 변경 설명, 브라우저 검사, API 호환성, 앱 보안, SEO, 브랜드 말투, 홈페이지 문구, 웹 자산, 출시 점검 |
 | video | 9 | core + 영상 비교·납품 점검, Remotion 렌더 |
-| documents | 7 | core의 문맥·인수인계·변경 기록 활용. 문서 제작 플러그인은 별도 설치·연결 |
-| all | 23 | 이 저장소에서 배포하는 모든 스킬 |
+| documents | 8 | core의 문맥·인수인계·변경 기록 + 자연스러운 문체 편집. 문서 제작 플러그인은 별도 설치·연결 |
+| all | 24 | 이 저장소에서 배포하는 모든 스킬 |
 
 묶음은 설치할 파일의 선택이다. 이미 설치된 다른 스킬을 삭제하거나 비활성화하지 않는다.
 일반 작업에는 스킬 이름·설명으로 필요한 것을 고르고, 선택한 본문과 필요한 참고 자료만 읽는다.
@@ -56,7 +56,7 @@ python -B scripts/doctor.py --profile all --json
 로컬에서 커밋 기반 묶음을 만들려면 저장소 밖의 새 출력 폴더를 지정한다.
 
 ```sh
-python -B scripts/build_release.py --output ../kit-release --tag v0.8.0
+python -B scripts/build_release.py --output ../kit-release --tag v0.9.0
 ```
 
 다운로드 후 `SHA256SUMS`의 ZIP 해시와 `Get-FileHash -Algorithm SHA256 파일.zip` 또는 `sha256sum 파일.zip` 결과를 대조한다. 해시는 파일 손상 검사용이며 별도 서명이나 신원 증명은 아니다. 압축을 새 폴더에 풀고 미리보기부터 실행한다.

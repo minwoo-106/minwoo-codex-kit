@@ -1,0 +1,25 @@
+{
+  "scope": "same selected roots as 0.8.0; not exact host tokens or truncation",
+  "kit_skills": 24,
+  "inventory": {
+    "scanned": 100,
+    "implicit_candidates": 94,
+    "explicit_only": 6,
+    "list_chars": 37738,
+    "list_utf8_bytes": 41110,
+    "comparison_budget_chars": 8000,
+    "over_comparison_budget": true,
+    "duplicates": [],
+    "errors": [],
+    "scope": "selected roots only; cache may include inactive plugins; exact host catalog, truncation and token count are not inferred"
+  },
+  "installation": {
+    "protected_existing_files": 515,
+    "changed_existing_files": 3,
+    "global_rules_unchanged": true,
+    "config_unchanged": false,
+    "all_kit_files_match": true,
+    "repeat_install_changes": 0,
+    "isolated_documents_skills": 8
+  }
+}

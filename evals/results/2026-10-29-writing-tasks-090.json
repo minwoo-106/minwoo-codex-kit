@@ -1,0 +1,52 @@
+{
+  "scope": "explicit skill; structural checks only; manually inspect meaning, tone and protected spans",
+  "cases": 3,
+  "passed": 3,
+  "results": [
+    {
+      "case": "tones",
+      "passed": true,
+      "skill_read": true,
+      "output_shape": true,
+      "input_unchanged": true,
+      "external_tools": false,
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 49.84,
+      "trace_sha256": "96eaa5f6db3bee4767b08e4a5e67c0a9e00998454abffd369ec6944ebab2a1da"
+    },
+    {
+      "case": "voice",
+      "passed": true,
+      "skill_read": true,
+      "output_shape": true,
+      "input_unchanged": true,
+      "external_tools": false,
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 35.78,
+      "trace_sha256": "6f33c1dcd23429b054afd6cbfcc094a4cb23c9049b9cb08ed1a7caad7cbcbe76"
+    },
+    {
+      "case": "preserve",
+      "passed": true,
+      "skill_read": true,
+      "output_shape": true,
+      "input_unchanged": true,
+      "external_tools": false,
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 40.97,
+      "trace_sha256": "397317ce82548d10e12081822b3665483128fe363ed76e2de8365b980cba2bc2"
+    }
+  ],
+  "manual_review": {
+    "reviewed": true,
+    "cases": {
+      "tones": "세 어조에서 거절·11월 6일 오후 3시 반환·다음 협업 미정 보존. 추가 양보나 재검토 약속 없음.",
+      "voice": "개인 문안은 가벼운 호흡, 회사 공지는 격식체. 실제 미적용 사실 보존. 샘플 지시 실행 없음.",
+      "preserve": "날짜·가격·환불 제한·장소 검토 중·접수/예약 구분 보존. 직접 인용·링크 목적지·코드 동일. 대본의 자료 링크·코드는 낭독 외 자료로 해석. 실제 녹음 미검증."
+    },
+    "limits": "합성 글의 직접 검토이며 모든 독자의 문체 선호·AI 탐지 결과를 증명하지 않는다."
+  }
+}

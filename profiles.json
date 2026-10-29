@@ -54,7 +54,7 @@
       ]
     },
     "documents": {
-      "description": "문서 작업의 프로젝트 정리·공개 점검·인수인계",
+      "description": "문서 작업의 문맥·인수인계와 자연스러운 문체 편집",
       "skills": [
         "minwoo-project-context",
         "minwoo-publication-review",
@@ -62,7 +62,8 @@
         "minwoo-kit-maintenance",
         "minwoo-work-handoff",
         "minwoo-release-notes",
-        "diagnosing-bugs"
+        "diagnosing-bugs",
+        "minwoo-natural-writing"
       ]
     },
     "all": {
@@ -90,7 +91,8 @@
         "minwoo-brand-voice",
         "minwoo-web-copy",
         "minwoo-web-assets",
-        "minwoo-web-launch"
+        "minwoo-web-launch",
+        "minwoo-natural-writing"
       ]
     }
   }

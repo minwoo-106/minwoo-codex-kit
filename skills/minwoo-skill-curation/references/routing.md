@@ -14,7 +14,7 @@
 | Figma·FigJam·디자인 시스템·디자인과 코드 연결 | [Figma](routing/figma.md) |
 | 구현·오류·테스트·코드 리뷰·API·DB | [개발과 검사](routing/engineering.md) |
 | 이미지·영상·자막·대화 속 시각화·펫 | [미디어](routing/media.md) |
-| 문서·표·슬라이드·PDF·재사용 서식 | [문서와 데이터](routing/documents.md) |
+| 글의 말투·문서·표·슬라이드·PDF·재사용 서식 | [문서와 데이터](routing/documents.md) |
 | 연결된 자료·Notion·Pages·메일·일정·외부 앱 | [연결 서비스](routing/services.md) |
 | 규칙·스킬 관리·프로젝트 안내·인수인계·Codex 앱 | [kit와 작업 관리](routing/kit.md) |
 
