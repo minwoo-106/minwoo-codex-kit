@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>컷 비교</title>
+<link rel="stylesheet" href="app.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<header><h1 id="title">영상 비교 준비 중</h1><p>같은 컷을 보고, 달라진 부분을 기록하세요.</p></header>
+<main>
+<div id="error" role="alert" hidden></div>
+<section aria-label="비교할 컷" class="toolbar">
+<label for="cut">비교할 컷</label><select id="cut" disabled></select>
+<button id="play" disabled>비교 재생</button><button id="pause" disabled>일시 정지</button>
+<label class="check"><input type="checkbox" id="loop" checked> 구간 반복</label>
+<label for="sound">소리</label><select id="sound"><option value="">음소거</option></select>
+</section>
+<div class="players" id="players">
+<section class="player"><h2 id="label-0">수정 전</h2><video id="video-0" controls muted preload="metadata" playsinline aria-labelledby="label-0"></video><p id="range-0" class="range">영상 준비 중</p></section>
+<section class="player"><h2 id="label-1">수정 후</h2><video id="video-1" controls muted preload="metadata" playsinline aria-labelledby="label-1"></video><p id="range-1" class="range">영상 준비 중</p></section>
+</div>
+<p class="hint">각 영상의 컷 시작에서 재생합니다. 구간 길이가 다르면 반복 주기도 달라집니다.</p>
+<section class="notes" aria-labelledby="notes-title">
+<div class="notes-heading"><h2 id="notes-title">검토 메모 <span id="count">0</span></h2><span id="save-state">저장할 메모 없음</span></div>
+<form id="note-form">
+<div class="note-options"><label for="version">대상 영상</label><select id="version" required></select>
+<label for="kind">메모 종류</label><select id="kind"><option value="visual">화면 관찰</option><option value="technical">기술 확인</option><option value="judgment">사용자 판단</option></select></div>
+<label for="note">관찰한 내용</label>
+<textarea id="note" maxlength="2000" rows="3" required placeholder="예: 컷 전환 뒤 자막이 화면 밖으로 잘리는지 확인"></textarea>
+<button type="submit" id="add-note" disabled>현재 시점에 메모 추가</button>
+</form>
+<div class="note-actions"><button id="export" disabled>메모 JSON 내보내기</button><label class="import-label" for="import">기존 메모 가져오기</label><input id="import" type="file" accept=".json,application/json"></div>
+<p id="notice" role="status" aria-live="polite">메모는 JSON으로 내보내야 파일로 저장됩니다.</p>
+<ol id="note-list"></ol>
+</section>
+</main>
+<footer>영상 원본은 수정하지 않습니다. 메모의 대상 일치는 설정과 영상의 해시로 확인합니다.</footer>
+</body>
+</html>

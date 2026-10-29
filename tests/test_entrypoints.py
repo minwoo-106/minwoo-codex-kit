@@ -58,6 +58,30 @@ class EntrypointTests(unittest.TestCase):
         self.assertFalse(self.codex.exists())
         self.assertFalse(self.skills.exists())
 
+    def test_four_new_skills_include_resources_and_preserve_existing_rules(self):
+        names = ["minwoo-skill-curation", "minwoo-work-handoff",
+                 "minwoo-kit-maintenance", "minwoo-video-review"]
+        self.codex.mkdir()
+        (self.codex / "AGENTS.md").write_bytes(b"keep local rules")
+        existing = self.skills / "studio-review" / "SKILL.md"
+        existing.parent.mkdir(parents=True)
+        existing.write_bytes(b"keep project-specific skill")
+        args = [sys.executable, str(REPO / "scripts/install.py"), "--skip-rules",
+                "--codex-home", str(self.codex), "--skills-root", str(self.skills)]
+        for name in names:
+            args += ["--skill", name]
+        self.invoke(args + ["--dry-run"])
+        self.assertFalse((self.skills / names[0]).exists())
+        self.invoke(args)
+        for name in names:
+            for original in (REPO / "skills" / name).rglob("*"):
+                if original.is_file():
+                    installed = self.skills / name / original.relative_to(REPO / "skills" / name)
+                    self.assertEqual(installed.read_bytes(), original.read_bytes())
+        self.assertEqual((self.codex / "AGENTS.md").read_bytes(), b"keep local rules")
+        self.assertEqual(existing.read_bytes(), b"keep project-specific skill")
+        self.assertIn("파일 쓰기 없음", self.invoke(args).stdout)
+
     def check_powershell(self, binary):
         shell = shutil.which(binary)
         if not shell:

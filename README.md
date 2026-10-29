@@ -9,6 +9,10 @@
 global/AGENTS.md                  공통 규칙 원본
 skills/minwoo-project-context/    프로젝트 AGENTS.md 작성·갱신
 skills/minwoo-publication-review/ 공개 전 읽기 전용 점검
+skills/minwoo-skill-curation/     스킬 수집·출처·중복·의존성 검수
+skills/minwoo-work-handoff/       작업 인수인계 문서 작성·재개
+skills/minwoo-kit-maintenance/    원본과 설치본의 읽기 전용 비교·선택 갱신
+skills/minwoo-video-review/       독립적인 로컬 영상 컷 비교·검토 메모
 templates/AGENTS.md               새 프로젝트용 시작 문서
 scripts/install.ps1              Windows 설치 진입점
 scripts/install.sh               Unix 계열 설치 진입점
@@ -83,6 +87,28 @@ python .\scripts\install.py --skill minwoo-project-context --skill minwoo-public
 현재 PC처럼 기존 `~/.codex/skills`를 쓰는 환경에서는 그 경로를 명시할 수 있다.
 기존 경로를 자동 이동하거나 같은 스킬을 여러 경로에 중복 설치하지 않는다.
 `config.toml`, 승인 모드, 인증 정보, MCP·플러그인 설정은 설치 대상에 포함하지 않는다.
+
+## 필요한 스킬 선택
+
+기존 기본 설치 예시는 프로젝트 규칙 작성·공개 점검 두 개를 선택한다.
+추가 스킬은 사용할 작업에 맞게 선택한다. 한 번 설치하면 다음 대화부터 필요할 때 사용할 수 있다.
+
+| 스킬 | 요청 예시 | 함께 제공하는 것 |
+| --- | --- | --- |
+| minwoo-skill-curation | 다른 채팅에서 모은 스킬들을 검수해 줘 | 출처·사용 근거·의존성 검토 항목 |
+| minwoo-work-handoff | 새 채팅에서 이 작업을 이어가게 정리해 줘 | 인수인계 형식과 재개 시 상태 대조 절차 |
+| minwoo-kit-maintenance | 이 PC의 kit 설치본 차이를 확인해 줘 | 읽기 전용 파일 비교 도구, 안전한 갱신 절차 |
+| minwoo-video-review | 이 두 영상의 같은 컷을 비교해 줘 | Python 로컬 서버, 비교 화면, 메모 해시 검증 |
+
+네 가지를 추가하면서 현재 전역 규칙을 유지하는 예:
+
+```powershell
+.\scripts\install.ps1 -SkipRules -Skills minwoo-skill-curation,minwoo-work-handoff,minwoo-kit-maintenance,minwoo-video-review -DryRun
+.\scripts\install.ps1 -SkipRules -Skills minwoo-skill-curation,minwoo-work-handoff,minwoo-kit-maintenance,minwoo-video-review
+```
+
+기존 PC가 ~/.codex/skills를 사용하면 두 명령 모두 그 위치를 -SkillsRoot로 명시한다.
+네 스킬의 사용 예시와 영상 도구의 실행 방법은 [추가 스킬 안내](docs/NEW-SKILLS.md)에 있다.
 
 ## 새 프로젝트에 적용
 
@@ -167,9 +193,9 @@ sh scripts/install.sh --scope project --project /path/to/existing-project --dry-
 여러 대화에서 사용한 스킬은 [스킬 카탈로그](docs/SKILL-CATALOG.md)에 검수해 정리했다.
 외부 스킬 11개는 확인한 원본 커밋·라이선스·설치 조건으로 관리하고, 기본 제공·플러그인 7개는 해당 환경에서 관리한다.
 실제 사용 보고와 일부 절차만 수행한 사례는 [검토 기록](docs/SKILL-REVIEW.md)에 구분했다.
-영상 검토용 [studio-review 후보](docs/candidates/studio-review.md)는 전용 실행 코드가 필요해 설치 대상에서 제외했다.
+기존 [studio-review 후보](docs/candidates/studio-review.md)는 프로젝트 전용으로 유지하고, 독립적인 범용 도구는 minwoo-video-review로 구현했다.
 
-**이 kit가 설치하는 스킬은 위의 자체 스킬 두 개다.**
+**이 kit가 배포하는 자체 스킬은 총 여섯 개다. 설치할 이름을 선택해야 하며 모두 자동 설치되지는 않는다.**
 외부 스킬을 모두 자동 설치하지 않으며, 기존 설치·플러그인과 중복되지 않게 필요한 것만 선택한다.
 외부 스킬의 본문을 전역 규칙에 붙이지 않고, 사용자 확인을 요구하는 원본 절차가 있는지도 선택 전에 확인한다.
 
