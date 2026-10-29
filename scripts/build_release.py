@@ -21,6 +21,7 @@ def build(output, ref="HEAD", expected_tag=None):
     if not re.fullmatch(r"\d+\.\d+\.\d+",version): raise ValueError("invalid VERSION")
     if expected_tag and expected_tag!="v"+version: raise ValueError("tag and VERSION disagree")
     output=output.expanduser().absolute(); check_path(output)
+    output=output.resolve()
     if output==ROOT or ROOT in output.parents: raise ValueError("release output must be outside source checkout")
     output.mkdir(parents=True,exist_ok=True)
     archive=output/f"minwoo-codex-kit-{version}.zip"

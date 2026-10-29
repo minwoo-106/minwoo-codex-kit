@@ -3,6 +3,7 @@ import hashlib
 import importlib.util
 import io
 import json
+import os
 from pathlib import Path
 import sys
 import tarfile
@@ -23,7 +24,7 @@ PATCH = "diff --git a/a.txt b/a.txt\nindex 7898192..6178079 100644\n--- a/a.txt\
 
 class ToolSetupTests(unittest.TestCase):
     def test_dry_run_does_not_create_destination(self):
-        with tempfile.TemporaryDirectory() as parent:
+        with tempfile.TemporaryDirectory(dir=os.environ.get("KIT_TEST_ROOT")) as parent:
             target = Path(parent) / "absent"
             with (
                 patch.object(sys, "argv", ["setup-tools.py", "--runtime-root", str(target), "--dry-run"]),
@@ -39,7 +40,7 @@ class ToolSetupTests(unittest.TestCase):
             self.assertFalse(target.exists())
 
     def test_repeat_keeps_files_and_modification_is_rejected(self):
-        with tempfile.TemporaryDirectory() as parent:
+        with tempfile.TemporaryDirectory(dir=os.environ.get("KIT_TEST_ROOT")) as parent:
             dest=Path(parent)
             hashes=setup.file_hashes({"package.json":b"{}"})
             file=dest/"package.json"
@@ -53,12 +54,12 @@ class ToolSetupTests(unittest.TestCase):
                 setup.verify_existing(dest,hashes)
 
     def test_unmanaged_directory_is_rejected(self):
-        with tempfile.TemporaryDirectory() as parent:
+        with tempfile.TemporaryDirectory(dir=os.environ.get("KIT_TEST_ROOT")) as parent:
             with self.assertRaises(setup.InstallError):
                 setup.verify_existing(Path(parent),{})
 
     def test_download_integrity_failure_writes_nothing(self):
-        with tempfile.TemporaryDirectory() as parent:
+        with tempfile.TemporaryDirectory(dir=os.environ.get("KIT_TEST_ROOT")) as parent:
             target=Path(parent)/"npm"
             with self.assertRaises(setup.InstallError):
                 setup.extract_npm(b"invalid",target)
@@ -72,7 +73,7 @@ class ToolSetupTests(unittest.TestCase):
                 archive.addfile(member)
             blob=stream.getvalue()
             with (
-                tempfile.TemporaryDirectory() as parent,
+                tempfile.TemporaryDirectory(dir=os.environ.get("KIT_TEST_ROOT")) as parent,
                 patch.object(setup,"NPM_SHA512",base64.b64encode(hashlib.sha512(blob).digest()).decode()),
             ):
                 target=Path(parent)/"npm"

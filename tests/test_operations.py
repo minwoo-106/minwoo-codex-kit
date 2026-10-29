@@ -173,6 +173,15 @@ class ReleaseTest(TemporaryTest):
         with self.assertRaises(ValueError): build_release.build(self.root / 'bad-file')
         self.assertFalse(list((self.root / 'bad-file').glob('*.zip')))
 
+    def test_relative_sibling_output_is_allowed(self):
+        previous = Path.cwd()
+        try:
+            os.chdir(self.repo)
+            build_release.build(Path('../sibling'))
+        finally:
+            os.chdir(previous)
+        self.assertTrue((self.root / 'sibling/SHA256SUMS').is_file())
+
 
 if __name__ == '__main__':
     unittest.main()
