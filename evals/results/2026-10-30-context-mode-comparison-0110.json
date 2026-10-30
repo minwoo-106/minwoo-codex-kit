@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-30",
+  "scope": "explicit CLI workflow, not auto-trigger evaluation; one native run per task/method; adapted context rerun preserved separately",
+  "original_cli_failure": {
+    "scope": "synthetic documented CLI retrieval; UTF-8 output bytes, not billed tokens; rg uses known exact headings",
+    "cases": [
+      {
+        "case": "retry",
+        "raw_utf8_bytes": 134546,
+        "rg_utf8_bytes": 649,
+        "context_utf8_bytes": 1052,
+        "rg_ms": 49.54,
+        "context_first_ms": 370.27,
+        "context_repeat_ms": 202.52,
+        "context_reused_at_start": false,
+        "repeat_reused": true,
+        "raw_facts": true,
+        "rg_facts": true,
+        "context_facts": false
+      },
+      {
+        "case": "migration",
+        "raw_utf8_bytes": 134546,
+        "rg_utf8_bytes": 649,
+        "context_utf8_bytes": 1062,
+        "rg_ms": 50.39,
+        "context_first_ms": 209.22,
+        "context_repeat_ms": 220.61,
+        "context_reused_at_start": true,
+        "repeat_reused": true,
+        "raw_facts": true,
+        "rg_facts": true,
+        "context_facts": false
+      }
+    ],
+    "changed_input_refreshed": false,
+    "other_file_isolated": true,
+    "korean_exact_query": false,
+    "passed": false
+  },
+  "failure_reason": "Windows CRLF headings became Untitled; adapter now normalizes only search snapshot to LF",
+  "first_native_comparison": {
+    "scope": "two synthetic native Codex tasks per method; explicit method, one run each; not a general performance benchmark",
+    "results": [
+      {
+        "mode": "baseline",
+        "case": "retry",
+        "passed": true,
+        "artifact_correct": true,
+        "original_preserved": true,
+        "original_section_read": true,
+        "context_command_succeeded": false,
+        "exit_code": 0,
+        "seconds": 60.94,
+        "command_output_utf8_bytes": 157612,
+        "usage": {
+          "input_tokens": 186387,
+          "cached_input_tokens": 144768,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1576,
+          "reasoning_output_tokens": 317
+        },
+        "trace_sha256": "9e08c792dccd0e8e3428deb1b6e872987493bc4c4aec0a2f132f97e06fc4de20"
+      },
+      {
+        "mode": "baseline",
+        "case": "migration",
+        "passed": true,
+        "artifact_correct": true,
+        "original_preserved": true,
+        "original_section_read": true,
+        "context_command_succeeded": false,
+        "exit_code": 0,
+        "seconds": 38.0,
+        "command_output_utf8_bytes": 143919,
+        "usage": {
+          "input_tokens": 193303,
+          "cached_input_tokens": 171776,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 673,
+          "reasoning_output_tokens": 14
+        },
+        "trace_sha256": "68fdf62dfad7547f9807bae60483d891d015f4bc1a41d0b36399f03eb6bc0740"
+      },
+      {
+        "mode": "context",
+        "case": "retry",
+        "passed": true,
+        "artifact_correct": true,
+        "original_preserved": true,
+        "original_section_read": true,
+        "context_command_succeeded": true,
+        "exit_code": 0,
+        "seconds": 64.44,
+        "command_output_utf8_bytes": 157954,
+        "usage": {
+          "input_tokens": 238082,
+          "cached_input_tokens": 213248,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1772,
+          "reasoning_output_tokens": 247
+        },
+        "trace_sha256": "359014b58c81ea9196175f1c49c678a4c68e9f8ea0257cd277c09dce7b4bfba9"
+      },
+      {
+        "mode": "context",
+        "case": "migration",
+        "passed": true,
+        "artifact_correct": true,
+        "original_preserved": true,
+        "original_section_read": true,
+        "context_command_succeeded": true,
+        "exit_code": 0,
+        "seconds": 40.17,
+        "command_output_utf8_bytes": 146212,
+        "usage": {
+          "input_tokens": 201214,
+          "cached_input_tokens": 177152,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 868,
+          "reasoning_output_tokens": 28
+        },
+        "trace_sha256": "9407de1c03fe7c287d6dfe1891de8cd90f31727c03a87019995e682a9bf583b9"
+      }
+    ]
+  },
+  "first_native_finding": "correct artifacts but no output saving because broad follow-up rg printed most of the source",
+  "workflow_revision": "add exact original section line ranges and bounded verification guidance; same inputs and independent acceptance",
+  "final_native_context": {
+    "scope": "two synthetic native Codex tasks per method; explicit method, one run each; not a general performance benchmark",
+    "results": [
+      {
+        "mode": "context",
+        "case": "retry",
+        "passed": true,
+        "artifact_correct": true,
+        "original_preserved": true,
+        "original_section_read": true,
+        "context_command_succeeded": true,
+        "exit_code": 0,
+        "seconds": 57.94,
+        "command_output_utf8_bytes": 20089,
+        "usage": {
+          "input_tokens": 172114,
+          "cached_input_tokens": 154496,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1684,
+          "reasoning_output_tokens": 266
+        },
+        "trace_sha256": "a1871010133029c687ab1f90cb3c1b7caf30f41bef6bdb38cd287e2a5c6a77c3"
+      },
+      {
+        "mode": "context",
+        "case": "migration",
+        "passed": true,
+        "artifact_correct": true,
+        "original_preserved": true,
+        "original_section_read": true,
+        "context_command_succeeded": true,
+        "exit_code": 0,
+        "seconds": 53.95,
+        "command_output_utf8_bytes": 11740,
+        "usage": {
+          "input_tokens": 188924,
+          "cached_input_tokens": 173056,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1261,
+          "reasoning_output_tokens": 267
+        },
+        "trace_sha256": "f7de501019c5df4473f8b137b853939af2436215ef2a286e2ae9d5f61b183c07"
+      }
+    ]
+  },
+  "final_cli_comparison": {
+    "scope": "synthetic documented CLI retrieval; UTF-8 output bytes, not billed tokens; rg uses known exact headings",
+    "cases": [
+      {
+        "case": "retry",
+        "baseline_tool": "rg",
+        "raw_utf8_bytes": 134546,
+        "rg_utf8_bytes": 649,
+        "context_utf8_bytes": 1763,
+        "rg_ms": 80.42,
+        "context_first_ms": 363.52,
+        "context_repeat_ms": 190.91,
+        "context_reused_at_start": false,
+        "repeat_reused": true,
+        "raw_facts": true,
+        "rg_facts": true,
+        "context_facts": true
+      },
+      {
+        "case": "migration",
+        "baseline_tool": "rg",
+        "raw_utf8_bytes": 134546,
+        "rg_utf8_bytes": 649,
+        "context_utf8_bytes": 1745,
+        "rg_ms": 78.48,
+        "context_first_ms": 181.79,
+        "context_repeat_ms": 181.24,
+        "context_reused_at_start": true,
+        "repeat_reused": true,
+        "raw_facts": true,
+        "rg_facts": true,
+        "context_facts": true
+      }
+    ],
+    "changed_input_refreshed": true,
+    "other_file_isolated": true,
+    "korean_exact_query": true,
+    "passed": true
+  },
+  "native_pair_comparison": [
+    {
+      "case": "retry",
+      "output_reduction_percent": 87.25,
+      "input_token_reduction_percent": 7.66,
+      "baseline_seconds": 60.94,
+      "context_seconds": 57.94
+    },
+    {
+      "case": "migration",
+      "output_reduction_percent": 91.84,
+      "input_token_reduction_percent": 2.27,
+      "baseline_seconds": 38.0,
+      "context_seconds": 53.95
+    }
+  ],
+  "decision": "adopt optional CLI retrieval; retain rg for exact locations and short input; no new MCP/hook/approval exceptions",
+  "limitations": [
+    "not a generic 98% token or billing saving",
+    "known-heading rg is smaller and faster",
+    "one migration run took longer with Context Mode",
+    "original file inspection remains necessary; CLI excerpts capped at 500 characters"
+  ]
+}

@@ -201,5 +201,25 @@
       "routing/engineering.md",
       "routing/refactoring.md"
     ]
+  },
+  {
+    "id": "large-reference-routing",
+    "prompt": "긴 로컬 API 참고 문서를 여러 번 조회하려고 해. 코드 위치를 이미 아는 검색과 문서의 관련 절을 찾는 도구가 겹치니 분야별 선택 안내를 보고 필요한 경로만 골라줘. 버그 진단, 스킬 관리 작업, 문서 작성은 아니야.",
+    "routes": [
+      "routing.md",
+      "routing/engineering.md"
+    ],
+    "expected": [],
+    "allowed": []
+  },
+  {
+    "id": "exact-code-routing",
+    "prompt": "파일과 함수 이름을 이미 아는 짧은 코드 위치 검색을 하려고 해. 큰 문서 색인 도구까지 필요한지 개발 분야 선택 안내에서 구분해줘. 오류 조사나 코드 수정은 아니야.",
+    "routes": [
+      "routing.md",
+      "routing/engineering.md"
+    ],
+    "expected": [],
+    "allowed": []
   }
 ]

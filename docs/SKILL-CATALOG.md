@@ -120,3 +120,7 @@ SKILL.md를 복사하는 것만으로 이미지 생성, 사이트 게시, 플러
 직접 작성 후보의 검토는 [studio-review 후보](candidates/studio-review.md), 전체 판단 기록은 [스킬 검토 기록](SKILL-REVIEW.md)을 참고한다.
 
 0.10.0 코딩 후보 10개의 편입·겹침·공식 참고 자료는 [검수 기록](ENGINEERING-CRAFT.md)을 따른다. 외부 프레임워크는 필요 시 프로젝트별로 선택하며 자동 설치하지 않는다.
+
+## Context Mode 선택 도구
+
+[검수·설치·갱신 안내](CONTEXT-MODE.md). 기존 diagnosing-bugs와 개발 선택 안내에 긴 참고 문서 검색만 확장했다. 새 스킬·MCP 서버·자동 훅은 추가하지 않는다. Context7·일반 rg·인수인계의 역할은 유지한다.

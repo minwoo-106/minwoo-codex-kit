@@ -3,7 +3,7 @@
 내 Codex 공통 규칙과 자주 쓰는 작업 절차를 관리하는 개인용 저장소.
 새 PC에는 공통 규칙과 필요한 스킬만 설치하고, 프로젝트에는 그 프로젝트의 사실만 추가한다.
 
-현재 버전 **0.10.0**. [설치 묶음·상태 점검·자동 검증·갱신·복구](docs/OPERATIONS.md),
+현재 버전 **0.11.0**. [설치 묶음·상태 점검·자동 검증·갱신·복구](docs/OPERATIONS.md),
 [실제 스킬 선택 평가](evals/README.md), [릴리스 노트](docs/RELEASE-NOTES.md).
 배포 ZIP은 [GitHub Releases](https://github.com/minwoo-106/minwoo-codex-kit/releases)에서 확인한다.
 
@@ -14,6 +14,8 @@
 [자연스러운 글과 말투](docs/NATURAL-WRITING.md): 내 말투·격식·공손함을 상황에 맞게 조절하는 일반 문체 편집 스킬.
 
 [코딩 구현·검증 강화](docs/ENGINEERING-CRAFT.md): 새 역할 7개, 기존 확장 2개와 안전한 리팩터링 선택 안내.
+
+[Context Mode 선택 구성](docs/CONTEXT-MODE.md): 큰 로컬 문서의 색인·검색 CLI만 선택 설치한다. 기존 승인·규칙·MCP 설정을 유지하며 새 스킬은 추가하지 않는다.
 
 ## 구성
 

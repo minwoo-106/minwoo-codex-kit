@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-30",
+  "kit_skills": 31,
+  "scope": "17 current selected roots; computer-use and notion paths updated to active versions; metadata text, not exact host token count",
+  "inventory": {
+    "scanned": 107,
+    "implicit_candidates": 101,
+    "explicit_only": 6,
+    "list_chars": 39007,
+    "list_utf8_bytes": 43260,
+    "comparison_budget_chars": 8000,
+    "over_comparison_budget": true,
+    "duplicates": [],
+    "errors": [],
+    "scope": "selected roots only; cache may include inactive plugins; exact host catalog, truncation and token count are not inferred"
+  },
+  "delta_chars": 0,
+  "delta_utf8_bytes": 0,
+  "kit_metadata_delta_chars": 0,
+  "protection": {
+    "baseline_existing_files": 525,
+    "changed_existing_files": [
+      "skills/diagnosing-bugs/SKILL.md",
+      "skills/diagnosing-bugs/UPSTREAM.md",
+      "skills/minwoo-skill-curation/references/routing/engineering.md",
+      "skills/minwoo-skill-curation/references/routing/kit.md"
+    ],
+    "config_fields_changed": [],
+    "config_bytes_unchanged": true,
+    "global_rules_unchanged": true,
+    "all_kit_files_match": true,
+    "repeat_skill_install_changes": 0,
+    "repeat_runtime_install": "UNCHANGED"
+  }
+}

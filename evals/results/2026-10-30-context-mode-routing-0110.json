@@ -1,0 +1,53 @@
+{
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "model": "current user default; no override",
+  "scope": "native read-only routing and full-document read evidence; no service execution",
+  "case_count": 2,
+  "passed": 2,
+  "results": [
+    {
+      "passed": true,
+      "observed": [
+        "routing.md",
+        "routing/engineering.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "large-reference-routing",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "05f33f20a1848d4dd48eb2116eb3a0563bf62162e75caaf24e53d2e2355f6f70",
+      "elapsed_seconds": 33.64
+    },
+    {
+      "passed": true,
+      "observed": [
+        "routing.md",
+        "routing/engineering.md"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "id": "exact-code-routing",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "cffbc2412854c8b316f25454a2d1eed683db6af32e34998e4ccf0eef7e54ea84",
+      "elapsed_seconds": 31.97
+    }
+  ],
+  "guide_sha256": {
+    "routing.md": "745e5d983a6ce8e0bcb8da3693a03043274c35d5f4add88c5d9b5c961d681717",
+    "routing/documents.md": "8184cbe594fc8ca5744f0c8bd89c269dbc1eb4ac9709b7682435a0a99334f881",
+    "routing/engineering.md": "b5c2595e22e18d6a06c10e866d7e4155a23c40e3172f11983d8a604717611ced",
+    "routing/figma.md": "3a774ad1982bbaab4e4b48014bf99ae05aee85ab962277e580d0d13ab8a88bfa",
+    "routing/kit.md": "9ee71f6fd8e91b2f491586d3d5d8266dc48d1100ee709b04d460de02c86b571c",
+    "routing/media.md": "35aba74b90cd456545fe6ac14895f437a4beedf4160947e22d03425c2e85b305",
+    "routing/refactoring.md": "061fe70bcb3a761466e29721d875a8ff94aadab63bca8b1ae8211134e7e2f614",
+    "routing/services.md": "2143913512c85f8687f0a16289df7215811d393d1ab0142cea2f6d6c98a6f4e4",
+    "routing/web-craft.md": "a1bcfe884f93bac69bca5b8ff39c152cde7b1486460cdab63d42373d40fbb1c9",
+    "routing/web-ui.md": "c343e8e2e6cad378dd673a124ed61cacef752c16d4c065e3bb1fe3f45ec5b41a"
+  }
+}

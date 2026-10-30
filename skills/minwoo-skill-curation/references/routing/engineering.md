@@ -39,3 +39,7 @@ GitHub 연결 도구는 저장소·PR·CI의 실제 증거와 승인된 반영�
 API 제공자/소비자 계약은 minwoo-api-compat의 consumer-contracts, 가끔 실패하는 테스트는 diagnosing-bugs의 flaky-tests 참조로 이어간다. 같은 작업을 별도 스킬로 중복 등록하지 않는다.
 
 동작을 보존하는 코드 정리는 [안전한 리팩터링](refactoring.md)을 필요한 경우만 읽는다. 이 안내는 새 자동 발동 스킬이 아니며 기존 설계·테스트·리뷰를 요청 범위에 맞게 연결한다.
+
+## 큰 참고 문서 검색 보조
+
+정확한 코드 위치·짧은 파일·한 번만 보는 로그는 기존 rg/파일 도구를 사용한다. 긴 API·운영·마이그레이션 문서를 반복 조회하며 관련 절을 찾아야 한다면 설치된 diagnosing-bugs의 references/context-mode.md와 scripts/context_search.py만 참고할 수 있다. 검색 때문에 진단 스킬 전체를 발동하거나 새 도구를 설치하지 않는다. 검색 조각 뒤에는 필요한 원문·예외를 확인한다. Context7은 외부 최신 문서 조회, 이 도구는 이미 확보한 로컬 문서의 검색이다.
