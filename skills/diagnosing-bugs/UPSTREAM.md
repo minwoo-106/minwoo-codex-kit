@@ -9,3 +9,5 @@
 - 재배포 범위는 SKILL.md와 scripts/hitl-loop.template.sh, 기존 UI 메타데이터다. 개인 대화·프로젝트·설정은 포함하지 않는다.
 
 0.10.0: 직접 작성한 references/flaky-tests.md와 진입 링크를 추가했다. 기존 원문 진단 단계·실행 템플릿은 유지했다.
+
+0.11.0: 직접 작성한 references/context-mode.md와 scripts/context_search.py를 추가했다. Context Mode 원문·실행 파일은 이 스킬에 복제하지 않는다. 선택 설치기는 ELv2 배포의 CLI·package.json·LICENSE만 원본 그대로 내려받으며 버전·해시로 검증한다.

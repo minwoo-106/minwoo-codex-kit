@@ -11,6 +11,8 @@ For a failing GitHub Actions check, use [the CI evidence workflow](references/gi
 
 For intermittent test failures, read [the flaky-test workflow](references/flaky-tests.md) to separate first-attempt failures from retries and control order, clock, and shared state.
 
+For repeated lookup in a large reference document, consider the optional [Context Mode CLI workflow](references/context-mode.md). Keep ordinary file/search tools for short files, exact code locations, and one-off logs.
+
 When exploring the codebase, read `CONTEXT.md` (if it exists) to get a clear mental model of the relevant modules, and check ADRs in the area you're touching.
 
 ## Redact
