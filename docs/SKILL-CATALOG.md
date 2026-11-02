@@ -124,3 +124,7 @@ SKILL.md를 복사하는 것만으로 이미지 생성, 사이트 게시, 플러
 ## Context Mode 선택 도구
 
 [검수·설치·갱신 안내](CONTEXT-MODE.md). 기존 diagnosing-bugs와 개발 선택 안내에 긴 참고 문서 검색만 확장했다. 새 스킬·MCP 서버·자동 훅은 추가하지 않는다. Context7·일반 rg·인수인계의 역할은 유지한다.
+
+## 도트·픽셀 아트 참고 후보
+
+[픽셀 아트 참고 선반](../skills/minwoo-skill-curation/references/routing/pixel-art-candidates.md)에 pixelfx(코드 이펙트), Pixelorama(원화·애니메이션 편집), free-tex-packer-core(아틀라스 포장)를 용도별로 기록했다. 2026-11-02 기준 공식 자료·라이선스·확인 커밋을 검토한 후보이며 설치·실행 검증 전이다. 원본 코드·이미지·스킬을 복제하거나 새 스킬·MCP를 등록하지 않았다.
