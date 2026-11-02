@@ -38,6 +38,8 @@ React 성능 문제는 minwoo-react-performance, 재사용 컴포넌트 API 문�
 
 ## 콘텐츠·자산·출시
 
+전용 디자인 편집기, 절차적 배경, 래스터→SVG 변환, 3D 자산 최적화가 필요할 때만 [디자인·미디어 참고 후보](creative-tool-candidates.md)의 Toolcraft·css-doodle·VTracer·glTF Transform 해당 절을 확인한다. 기존 UI 주도 스킬과 minwoo-web-assets의 보조 후보이며 새 스택으로 자동 이전하거나 모든 홈페이지에 추가하지 않는다.
+
 | 요청 | 주도 | 연결할 때 |
 | --- | --- | --- |
 | 홈페이지 페이지 구성·콘텐츠 기획 문서 | minwoo-project-context의 site-brief | 실제 문구 작성·UI 구현으로 임의 확장하지 않음 |

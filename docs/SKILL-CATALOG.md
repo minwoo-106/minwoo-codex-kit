@@ -128,3 +128,12 @@ SKILL.md를 복사하는 것만으로 이미지 생성, 사이트 게시, 플러
 ## 도트·픽셀 아트 참고 후보
 
 [픽셀 아트 참고 선반](../skills/minwoo-skill-curation/references/routing/pixel-art-candidates.md)에 pixelfx(코드 이펙트), Pixelorama(원화·애니메이션 편집), free-tex-packer-core(아틀라스 포장)를 용도별로 기록했다. 2026-11-02 기준 공식 자료·라이선스·확인 커밋을 검토한 후보이며 설치·실행 검증 전이다. 원본 코드·이미지·스킬을 복제하거나 새 스킬·MCP를 등록하지 않았다.
+
+## 개발·아트·데이터 외부 도구 12개
+
+2026-11-02 공식 README·루트 라이선스·확인 소스 커밋을 검토했다. 현재 설치 목록이나 실전 검증 완료 목록이 아니다.
+
+- [개발·데이터 후보 6개](../skills/minwoo-skill-curation/references/routing/development-tool-candidates.md): ast-grep, Knip, dependency-cruiser, Hyperfine, Bruno, Datasette.
+- [디자인·미디어 후보 6개](../skills/minwoo-skill-curation/references/routing/creative-tool-candidates.md): Toolcraft, css-doodle, VTracer, Manim Community, ScreenToGif, glTF Transform.
+
+구조 검색·정리·의존·성능·API·웹 자산과 겹치는 역할은 기존 분야별 스킬 안내에 보조 후보로 연결했다. 전용 편집기·화면 녹화·설명 영상·SQLite 자료실은 별도 참고 후보로 구분한다. 새 자동 발동 스킬·MCP·실행 의존성은 추가하지 않고, 실제 필요 시 관련 후보의 조건과 대표 검증을 확인한다.
