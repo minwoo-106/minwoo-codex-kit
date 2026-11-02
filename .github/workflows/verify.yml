@@ -76,6 +76,8 @@ jobs:
         run: node "$KIT_RUNTIME/node_modules/playwright/cli.js" install --with-deps chromium
       - name: Real browser, API, video and migration acceptance cases
         run: python -B evals/verify_practical.py --runtime "$KIT_RUNTIME" --out "$RUNNER_TEMP/practical"
+      - name: Isolated database permissions, migration and snapshot restore
+        run: node evals/verify_db_safety.mjs "$KIT_RUNTIME"
       - name: Accessibility and visual regression acceptance cases
         run: node evals/verify_quality.mjs --runtime "$KIT_RUNTIME" --out "$RUNNER_TEMP/quality"
       - name: Website routes, assets, timing and form receipts

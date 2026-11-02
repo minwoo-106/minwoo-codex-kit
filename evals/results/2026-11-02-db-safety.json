@@ -1,0 +1,57 @@
+{
+  "scope": "Synthetic in-memory PGlite only; no cloud DB, credentials, network, native pg_dump/PITR or model selection test",
+  "node": "v24.22.1",
+  "postgres": "18.6",
+  "cases": 12,
+  "passed": 12,
+  "results": [
+    {
+      "name": "migration-preserves-values-and-down",
+      "passed": true
+    },
+    {
+      "name": "same-row-count-value-loss-detected",
+      "passed": true
+    },
+    {
+      "name": "incorrect-down-detected",
+      "passed": true
+    },
+    {
+      "name": "missing-down-not-claimed-as-recovery",
+      "passed": true
+    },
+    {
+      "name": "rls-actual-roles-own-vs-other-rows",
+      "passed": true
+    },
+    {
+      "name": "rls-cross-tenant-update-zero-rows",
+      "passed": true
+    },
+    {
+      "name": "rls-insert-and-owner-change-denied",
+      "passed": true
+    },
+    {
+      "name": "rls-permitted-write-succeeds",
+      "passed": true
+    },
+    {
+      "name": "readonly-role-select-allowed-writes-and-ddl-denied",
+      "passed": true
+    },
+    {
+      "name": "owner-bypasses-rls-invalid-test-role",
+      "passed": true
+    },
+    {
+      "name": "readonly-transaction-blocks-write",
+      "passed": true
+    },
+    {
+      "name": "snapshot-restores-values-constraints-and-role-policy",
+      "passed": true
+    }
+  ]
+}

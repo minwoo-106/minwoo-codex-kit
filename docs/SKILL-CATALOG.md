@@ -121,6 +121,10 @@ SKILL.md를 복사하는 것만으로 이미지 생성, 사이트 게시, 플러
 
 0.10.0 코딩 후보 10개의 편입·겹침·공식 참고 자료는 [검수 기록](ENGINEERING-CRAFT.md)을 따른다. 외부 프레임워크는 필요 시 프로젝트별로 선택하며 자동 설치하지 않는다.
 
+## DB 안전 절차와 기술별 스킬 후보
+
+DB 분야는 [기술별 스킬 후보 5개 묶음](../skills/minwoo-skill-curation/references/routing/database-skill-candidates.md)에 정리했다. 기존 PostgreSQL 스킬의 [변경·권한·복구 절차](../skills/minwoo-postgres-review/references/operations-safety.md)를 보강했으며 외부 후보는 설치 전이다. 원본 서비스·ORM의 버전과 승인 방식 차이를 기록했고 중복 스킬은 추가하지 않았다.
+
 ## Context Mode 선택 도구
 
 [검수·설치·갱신 안내](CONTEXT-MODE.md). 기존 diagnosing-bugs와 개발 선택 안내에 긴 참고 문서 검색만 확장했다. 새 스킬·MCP 서버·자동 훅은 추가하지 않는다. Context7·일반 rg·인수인계의 역할은 유지한다.

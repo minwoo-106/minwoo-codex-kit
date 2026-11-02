@@ -40,6 +40,12 @@ API 제공자/소비자 계약은 minwoo-api-compat의 consumer-contracts, 가�
 
 동작을 보존하는 코드 정리는 [안전한 리팩터링](refactoring.md)을 필요한 경우만 읽는다. 이 안내는 새 자동 발동 스킬이 아니며 기존 설계·테스트·리뷰를 요청 범위에 맞게 연결한다.
 
+## DB 작업과 기술별 참고
+
+PostgreSQL·Supabase의 변경·권한·복구 검토는 기존 minwoo-postgres-review의 references/operations-safety.md를 필요한 때 읽는다. 스킬은 작업 지침이며 실제 DB 권한 제한을 대신하지 않는다. 일반 조회에는 전체 검토를 강제하지 않는다.
+
+Neon 분기, Prisma ORM, MySQL, Supabase 서비스 기능, PlanetScale 운영 기능이 필요한 경우에만 [DB 스킬 참고 후보](database-skill-candidates.md)의 해당 절을 읽는다. 공급자 추천·별도 승인 계약·자동 설치는 공통 규칙으로 가져오지 않는다. MySQL 검증에 PGlite를 사용하지 않는다.
+
 ## 선택형 개발 도구 후보
 
 개발 도구 자체가 필요할 때만 [개발·데이터 참고 후보](development-tool-candidates.md)의 관련 절을 확인한다. 구조 검색은 ast-grep, 미사용 코드 조사는 Knip, 모듈 의존 조사에는 dependency-cruiser, 명령 성능 비교에는 Hyperfine, API 요청 모음에는 Bruno가 후보이며 현재 검색·설계·진단·API 안내의 보조 역할이다. SQLite 탐색 화면은 별도 Datasette 후보로 구분한다. 모두 설치·실행 검증 전이며 기본 구현마다 도구를 추가하지 않는다.
