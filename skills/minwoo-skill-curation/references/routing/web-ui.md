@@ -10,6 +10,8 @@
 
 ## 주도 스킬 하나 고르기
 
+Hallmark는 [외부 후보 안내](ai-workflow-candidates.md#hallmark)에 보관한 설치 전 디자인 비교 후보다. 기존 Taste·Impeccable을 기본으로 유지하며 같은 화면에 스타일 규칙을 겹쳐 적용하지 않는다. 후보의 실제 시각 비교 전에는 우수성이나 실행 가능성을 가정하지 않는다.
+
 | 상황 | 주도 | 추가할 때 / 겹침 제외 |
 | --- | --- | --- |
 | 브랜드·포트폴리오·랜딩의 뚜렷한 시각 방향 | design-taste-frontend | frontend-design과 두 가지 스타일 체계를 동시에 강제하지 않음 |

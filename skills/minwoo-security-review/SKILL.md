@@ -15,4 +15,6 @@ description: Python·JavaScript/TypeScript·Go 앱의 보안 검토나 안전한
 
 패키지의 알려진 취약점은 minwoo-dependency-audit의 역할이고, 일반 변경 품질은 code-review의 역할이다. 이 스킬의 결과를 전면 침투 시험이나 모든 취약점 부재의 증명으로 표현하지 않는다. 지원 언어 밖에서는 범위를 밝히고 해당 기술의 공식 보안 문서를 먼저 확인한다.
 
+후보의 확정·반증·재현 근거를 정리할 때 [증거와 대조군](references/evidence.md)을 읽는다. 추가 검증이 필요한 가설을 확정 취약점 수·심각도에 합산하지 않는다.
+
 [출처와 설계 판단](references/sources.md)

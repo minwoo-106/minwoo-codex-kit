@@ -48,6 +48,8 @@ Neon 분기, Prisma ORM, MySQL, Supabase 서비스 기능, PlanetScale 운영 �
 
 ## 선택형 개발 도구 후보
 
+Cloudflare 감사의 근거 구분은 minwoo-security-review, ub-mode의 측정 관점은 minwoo-test-quality에 보강했다. ECC·Superpowers 전체 묶음과 언어별 추가 스킬을 고려할 때만 [외부 워크플로 후보](ai-workflow-candidates.md)를 읽는다. 변경 영향·리뷰 피드백은 기존 리팩터링 안내의 관련 절만 적용하고, 전역 규칙·승인 흐름을 바꾸지 않는다.
+
 개발 도구 자체가 필요할 때만 [개발·데이터 참고 후보](development-tool-candidates.md)의 관련 절을 확인한다. 구조 검색은 ast-grep, 미사용 코드 조사는 Knip, 모듈 의존 조사에는 dependency-cruiser, 명령 성능 비교에는 Hyperfine, API 요청 모음에는 Bruno가 후보이며 현재 검색·설계·진단·API 안내의 보조 역할이다. SQLite 탐색 화면은 별도 Datasette 후보로 구분한다. 모두 설치·실행 검증 전이며 기본 구현마다 도구를 추가하지 않는다.
 
 ## 큰 참고 문서 검색 보조

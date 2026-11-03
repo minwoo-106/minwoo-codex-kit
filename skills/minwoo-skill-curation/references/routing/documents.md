@@ -1,5 +1,7 @@
 # 문서와 데이터 선택
 
+금융 멀티에이전트 연구를 명시적으로 할 때만 [TradingAgents 후보](ai-workflow-candidates.md#tradingagents)를 검토한다. 일반 표 분석이나 투자 판단에 자동으로 호출·설치하지 않는다.
+
 SQLite 데이터를 반복 탐색할 별도 자료실이 필요할 때만 [개발·데이터 참고 후보](development-tool-candidates.md#datasette)의 Datasette 절을 확인한다. 일반 표·CSV 분석이나 스프레드시트 산출물은 아래 기존 형식 도구로 처리하며 새 서버 설치·게시를 자동 진행하지 않는다.
 
 일반 글·메일·공지·대본의 번역투·반복·내 말투·격식·공손함 편집은 minwoo-natural-writing이 맡는다. 단순 맞춤법은 바로 처리한다. 브랜드 전체 말투 체계는 minwoo-brand-voice, 홈페이지 문구 기획은 minwoo-web-copy가 주도하며 같은 문구에 편집 절차를 중복 적용하지 않는다.
