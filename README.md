@@ -21,7 +21,7 @@
 
 ```text
 global/AGENTS.md                  공통 규칙 원본
-skills/minwoo-project-context/    프로젝트 AGENTS.md 작성·갱신
+skills/minwoo-project-context/    프로젝트 규칙·기획·토론 합의와 작업 분할
 skills/minwoo-publication-review/ 공개 전 읽기 전용 점검
 skills/minwoo-skill-curation/     스킬 수집·출처·중복·의존성 검수
 skills/minwoo-work-handoff/       작업 인수인계 문서 작성·재개

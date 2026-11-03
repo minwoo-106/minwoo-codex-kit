@@ -18,6 +18,10 @@
 
 0.9.0의 자체 문체 편집 스킬과 외부 참고 검수는 [자연스러운 글과 말투](NATURAL-WRITING.md)에 기록했다.
 
+## 토론에서 구현까지의 연결
+
+2026-11-03 Matt Pocock의 to-spec·to-tickets 지정 본문과 MIT 라이선스를 확인하고 기존 minwoo-project-context의 [합의·작업 연결](../skills/minwoo-project-context/references/discussion-to-delivery.md)에 필요한 관점만 독자적으로 보강했다. 원본 묶음·설치기·자동 게시·반복 승인·자동 커밋은 도입하지 않았다. 질문·도메인·구현·리뷰 스킬은 기존 것을 필요한 때 선택한다. 검토 커밋은 참고 문서의 고정 링크에 기록했다.
+
 ## 검토한 11개
 
 | 스킬 | 사용할 상황 | 제공 자료의 근거 | 의존성·주의할 차이 |

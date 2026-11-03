@@ -427,5 +427,33 @@
     "kind": "negative",
     "prompt": "로그가 무슨 뜻인지 초보자에게 두 문장으로 설명해줘. 설정이나 구현은 필요 없어.",
     "expected": []
+  },
+  {
+    "id": "requirements-discussion",
+    "kind": "positive",
+    "prompt": "기존 코드를 먼저 살펴보고 예약 취소 기능의 요구사항을 나랑 차근차근 논의하자. 아직 구현하지 말고 결정할 것과 완료 조건부터 정리해 줘.",
+    "expected": [
+      "minwoo-project-context"
+    ]
+  },
+  {
+    "id": "agreement-breakdown",
+    "kind": "positive",
+    "prompt": "앞서 합의한 큰 기능의 요구사항과 제외 범위를 명세로 정리하고, 따로 확인 가능한 작업 단위와 선후 관계로 나눠 줘. 지금은 문서만 정리할 거야.",
+    "expected": [
+      "minwoo-project-context"
+    ]
+  },
+  {
+    "id": "simple-readme-edit",
+    "kind": "negative",
+    "prompt": "README.md의 제목을 Synthetic example로 바꾸는 간단한 수정이야. 명세나 별도 계획 문서는 필요 없어.",
+    "expected": []
+  },
+  {
+    "id": "approval-explanation",
+    "kind": "negative",
+    "prompt": "토론만 하자는 요청과 구현해 달라는 요청의 차이를 한 문장으로 설명해 줘. 프로젝트 작업이나 문서 작성은 필요 없어.",
+    "expected": []
   }
 ]

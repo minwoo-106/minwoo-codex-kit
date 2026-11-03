@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-03",
+  "selected_skills": 2,
+  "existing_files_changed": 3,
+  "new_skill_files": 1,
+  "protected_files": 21,
+  "unintended_protected_changes": 0,
+  "backup_originals_verified": 3,
+  "global_rules_and_config_unchanged": true,
+  "managed_skills_all_match": 31,
+  "isolated_repeat_writes": 0,
+  "pc_repeat_writes": 0,
+  "new_skills": 0,
+  "discovery_description_delta": {
+    "chars": -5,
+    "utf8_bytes": -11
+  },
+  "inventory": {
+    "scanned": 59,
+    "implicit_candidates": 53,
+    "explicit_only": 6,
+    "list_chars": 16819,
+    "list_utf8_bytes": 21028,
+    "comparison_budget_chars": 8000,
+    "over_comparison_budget": true,
+    "duplicates": [],
+    "errors": [],
+    "scope": "selected roots only; cache may include inactive plugins; exact host catalog, truncation and token count are not inferred"
+  },
+  "scope": "Selected user skill root including system skills, excluding plugin caches; no host token/truncation measurement."
+}

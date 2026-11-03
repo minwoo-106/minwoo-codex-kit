@@ -1,0 +1,62 @@
+{
+  "scope": "Explicit skill execution; manual review of questions, decisions, plan and verification claims still required. Not natural selection accuracy.",
+  "cases": [
+    {
+      "case": "discuss",
+      "exit_code": 0,
+      "documents_read": true,
+      "changed_files": [],
+      "scope_preserved": true,
+      "external_tools": false,
+      "artifact_checks": true,
+      "independent_acceptance": null,
+      "trace_sha256": "1cddc9f5de72051117a2afcd9aaab845b1a8a6c6ca8dd7d7ad3a780471b2d579",
+      "seconds": 35.42,
+      "automated_pass": true
+    },
+    {
+      "case": "document",
+      "exit_code": 0,
+      "documents_read": true,
+      "changed_files": [
+        "PLAN.md"
+      ],
+      "scope_preserved": true,
+      "external_tools": false,
+      "artifact_checks": true,
+      "independent_acceptance": null,
+      "trace_sha256": "510bb2888195aa8af813f912f8f6e0072fbb80f5ea7cc16ce7af11a339a30688",
+      "seconds": 59.05,
+      "automated_pass": true
+    },
+    {
+      "case": "implement",
+      "exit_code": 0,
+      "documents_read": true,
+      "changed_files": [
+        "tasks.py",
+        "test_tasks.py"
+      ],
+      "scope_preserved": true,
+      "external_tools": false,
+      "artifact_checks": true,
+      "independent_acceptance": true,
+      "trace_sha256": "4a571a0bef445de63cc1e18c6e193faf18e4f8265b2f816b771a0762dc199744",
+      "seconds": 49.83,
+      "automated_pass": true
+    }
+  ],
+  "automated_passed": 3,
+  "date": "2026-11-03",
+  "manual_review": {
+    "passed": true,
+    "discussion": "Actual code read, material date-basis question, completion policy left open; no files changed.",
+    "document": "Only PLAN.md written; agreed exceptions and completion conditions retained; no implementation or test-execution claims.",
+    "implementation": "No repeat approval request; model ran 6 passing unittest tests. Independent acceptance passed 32 inputs, preserving values, identity and invalid-input behavior.",
+    "commands": "Reviewed successful/failed commands and tool types; no installation, external calls, commits or subagents observed. Git discovery errors correctly reflected a non-Git fixture."
+  },
+  "limitations": [
+    "Three explicit skill trials, one run each, not broad reliability evidence.",
+    "No multi-turn conversation, large dependency graph, external issue tracker or production deployment tested."
+  ]
+}

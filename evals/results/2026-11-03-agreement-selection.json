@@ -1,0 +1,164 @@
+{
+  "cli_version": "codex-cli 0.166.0-alpha.5.1",
+  "model": "current user default; no model override",
+  "scope": "native skill selection under a read-only preparation request; kit skills only",
+  "case_count": 5,
+  "passed": 5,
+  "results": [
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-project-context"
+      ],
+      "observed": [
+        "minwoo-project-context"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 56594,
+        "cached_input_tokens": 41344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 433,
+        "reasoning_output_tokens": 225
+      },
+      "id": "project",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "3d2d4f9839859e6ae461667174b5cfaa2371e7966e126420b0f87108fc0b0e8c",
+      "elapsed_seconds": 19.16
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-project-context"
+      ],
+      "observed": [
+        "minwoo-project-context"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 118583,
+        "cached_input_tokens": 100992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 927,
+        "reasoning_output_tokens": 214
+      },
+      "id": "requirements-discussion",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "975df4467ac9ad07cf66e8a4e204b44fc424513243e84d32e40b62741491b734",
+      "elapsed_seconds": 34.28
+    },
+    {
+      "passed": true,
+      "expected": [
+        "minwoo-project-context"
+      ],
+      "observed": [
+        "minwoo-project-context"
+      ],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 87065,
+        "cached_input_tokens": 70144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 736,
+        "reasoning_output_tokens": 277
+      },
+      "id": "agreement-breakdown",
+      "kind": "positive",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "0d95f7c5a004cdfe421411b27caf98a9f522838cc495e35b5f5a041edfc3eaf6",
+      "elapsed_seconds": 31.97
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 27970,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 282,
+        "reasoning_output_tokens": 235
+      },
+      "id": "simple-readme-edit",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "234614237863ca8e9653fc5e762f4666a1a46734d181cb1da642a27632df7983",
+      "elapsed_seconds": 11.03
+    },
+    {
+      "passed": true,
+      "expected": [],
+      "observed": [],
+      "missing": [],
+      "unexpected": [],
+      "forbidden_actions": [],
+      "completed": true,
+      "usage": {
+        "input_tokens": 27973,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 159,
+        "reasoning_output_tokens": 107
+      },
+      "id": "approval-explanation",
+      "kind": "negative",
+      "exit_code": 0,
+      "fixture_unchanged": true,
+      "trace_sha256": "cbaf342311863b3dd7246dca25b6621f01b8512bdc595041099b65f7a5884a2d",
+      "elapsed_seconds": 8.72
+    }
+  ],
+  "skill_sha256": {
+    "diagnosing-bugs": "ea769d8a2b0d6c9ae460a477c0ae719cbe2f56dfcd6de08948b0df405f0eee17",
+    "minwoo-api-compat": "a633313d055c2b5ac46f6ec17725c7105f770558967c88eabc513b37e015127c",
+    "minwoo-async-jobs": "3d6fc722d6e90298791091e51f507b10616658d6c7deed0433728c89955dc871",
+    "minwoo-brand-voice": "682cd72f9bc29bbb43ac87ca6c02170ff1992f89ff4db6fda4eed5e5b2263ce2",
+    "minwoo-browser-check": "f6ba87abd0aa0013cc6ecd437bb6dd9249afd843fe2bae150c6ff8d750349242",
+    "minwoo-data-ingestion": "f7989fdd1db209cd9ad66b18f9d6a5cd6c0e58bd80d0c0af0912ea12e7baaa71",
+    "minwoo-dependency-audit": "30e314dd4c846c984e8dc2ffd877b381957f2ea714e284c9732887fa808ab9ae",
+    "minwoo-dependency-upgrade": "1c104181b1d8c4a5fcf63d8856c1070c2ba3435615c9630828ea665cc9410694",
+    "minwoo-diff-walkthrough": "5d47bfe6e269c0bd6989b0280999bf6b03d28ebf9c9b52a0615ddf3120b2b410",
+    "minwoo-i18n": "444ebbdc4b6a4f57090a79fd7ebe444ee80358cd823f09a11f27827e105efc29",
+    "minwoo-kit-maintenance": "1f420ec3beccc706731c0adb7d56576c3959698aa0c09d36d5841594a2f1a7a9",
+    "minwoo-natural-writing": "e213463518ac189d0c27f344cf6c682e4286f443ac0a4ec0ae825b0a4f8c8278",
+    "minwoo-observability": "123da3ff31f5cfaaf7974788a8d6047a04b69cf6e581cd5c514fbba35c05f520",
+    "minwoo-postgres-review": "d623382601143ea6e5baa807961b9d6518f676584eb549b92fbbb1a095e6bf7c",
+    "minwoo-project-context": "f91fb7de0ec3d46cc1c1c38c793489da3b6d100c64180befaa3d5acd65165be2",
+    "minwoo-property-testing": "52ded4417ff3bd7159bf67ed52d24bff7324ea6d39a998f0ca3cc2a56f032b63",
+    "minwoo-publication-review": "a21dbda6b4d3c43b0e5ccd22f343d38f56fc8fa36c6f2732f9d4638b49a4df96",
+    "minwoo-react-composition": "514ac9fa8d791a8576589eb5142eef876e9d816770ab599ac64e028dd4ab635a",
+    "minwoo-react-performance": "7e843435fce144d19646958508d52d24e93ae732dbaade8712cb7f1d086ecf69",
+    "minwoo-release-notes": "d692cb2a4558a16021dcba6b417adb7572b5229d436404cf3c2589cebaf094f8",
+    "minwoo-remotion-render": "9e1865840f9933f49ecccdf28edc06cde314005d27cfc6cdc2112ae91fb1afc7",
+    "minwoo-security-review": "4ff6efbc4e885f70406995c202bff50818512c5e72b41e5cc6a9676688188e28",
+    "minwoo-seo-review": "6c3b8cd5c13a9c81b532355bafbf62422b1ceef604b5c965a97669bc2159a874",
+    "minwoo-skill-curation": "74edca1b4224e54069d0ff8e049c534a637b7ca3821742470c881c8207151369",
+    "minwoo-state-flow": "ca31bc38221af5c295bab90c607e35323e28a363f15b09cb11f777ba3a9b61ac",
+    "minwoo-test-quality": "fd9567d2b6f253c605d298223e545d816c5e3011ddf8a2dd5a85f8497593bd9d",
+    "minwoo-video-review": "e94d729e5ac657ac63c89f30318d06ff5adbb3dea7194a20598c4bf42dfb945b",
+    "minwoo-web-assets": "8da79f1e7b3297d72ddc06f6b572c2624fdf7d4c4e73b0354388c3c563f5bef1",
+    "minwoo-web-copy": "5bda84dda481e8033bc2df88946dc732066246f1c8bfb05ab66c17dd546a122f",
+    "minwoo-web-launch": "978b311ad038ecbdcad8a63c77a15af0e057c5e30b37d9ffc4daa971d58f4679",
+    "minwoo-work-handoff": "b7c6fc54ccf284c3681dee0cd41b26e49dd49b85f1bb75443e14a6e2bd66f791"
+  }
+}

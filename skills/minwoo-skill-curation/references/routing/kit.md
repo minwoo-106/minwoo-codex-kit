@@ -3,6 +3,7 @@
 | 요청 | 선택 |
 | --- | --- |
 | 프로젝트별 AGENTS.md 신규 작성·현재 코드에 맞춘 갱신 | minwoo-project-context |
+| 개발 요구사항 토론·합의 명세·큰 작업 분할 | minwoo-project-context의 discussion-to-delivery; 대화·문서·구현 요청 범위를 구분 |
 | 다른 채팅·다음 세션으로 작업 인계 또는 재개 | minwoo-work-handoff |
 | 확정 커밋·태그 범위의 사용자용 변경 기록 | minwoo-release-notes |
 | 공개·업로드 전 민감정보·출처·배포 범위 점검 | minwoo-publication-review |

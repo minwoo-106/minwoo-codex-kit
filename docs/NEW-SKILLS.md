@@ -1,6 +1,6 @@
 # 0.2.0 — 필요할 때 사용하는 네 가지 스킬
 
-기존 minwoo-project-context는 장기 프로젝트 규칙, minwoo-publication-review는 공개 직전 점검을 맡는다.
+기존 minwoo-project-context는 프로젝트 규칙·기획·토론 합의와 작업 분할, minwoo-publication-review는 공개 직전 점검을 맡는다.
 이번 네 가지는 수집·세션 전환·설치 관리·영상 검토에 한정한다. 일반 작업마다 전부 실행하지 않는다.
 이미 허용된 작업은 이어서 수행하며 스킬 추가를 이유로 승인 모드를 변경하지 않는다.
 
