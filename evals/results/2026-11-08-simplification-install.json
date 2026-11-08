@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-08",
+  "selected_skills": 2,
+  "existing_skill_files_updated": 2,
+  "new_reference_files": 1,
+  "global_rule_lines_added": 2,
+  "preexisting_global_differences_preserved": true,
+  "config_unchanged": true,
+  "protected_files": 21,
+  "unintended_protected_changes": 0,
+  "backup_originals_verified": 3,
+  "isolated_repeat_writes": 0,
+  "pc_repeat_writes": 0,
+  "managed_skills_all_match": 31,
+  "new_skills": 0,
+  "frontmatter_changes": 0,
+  "inventory": {
+    "scanned": 59,
+    "implicit_candidates": 53,
+    "explicit_only": 6,
+    "list_chars": 16819,
+    "list_utf8_bytes": 21028,
+    "comparison_budget_chars": 8000,
+    "over_comparison_budget": true,
+    "duplicates": [],
+    "errors": [],
+    "scope": "selected roots only; cache may include inactive plugins; exact host catalog, truncation and token count are not inferred"
+  },
+  "scope": "User skills including system skills, excluding plugin caches; metadata inventory is not exact host token budget or truncation. Global rules intentionally retain preexisting local differences."
+}

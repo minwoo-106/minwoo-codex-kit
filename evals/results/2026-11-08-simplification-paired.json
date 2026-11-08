@@ -1,0 +1,336 @@
+{
+  "before_ref": "6e4b899d4070a266ef20416ad09aae90b8ba48a3",
+  "scope": "Explicit instruction loading; 3 synthetic task types, one trial per arm. Not natural selection accuracy or a speed benchmark. Manual trace and readability review required.",
+  "cases": [
+    {
+      "case": "reuse",
+      "arm": "before",
+      "exit_code": 0,
+      "documents_read": true,
+      "scope_preserved": true,
+      "changed_files": [
+        "app.py",
+        "test_changes.py"
+      ],
+      "external_tools": false,
+      "tests_passed": true,
+      "passed_inputs": 36,
+      "initial_metrics": {
+        "production_nonblank_lines": 16,
+        "test_nonblank_lines": 5,
+        "branches": 2,
+        "imports": [
+          "csv",
+          "helpers",
+          "io"
+        ]
+      },
+      "final_metrics": {
+        "production_nonblank_lines": 16,
+        "test_nonblank_lines": 103,
+        "branches": 3,
+        "imports": [
+          "csv",
+          "helpers",
+          "io"
+        ]
+      },
+      "seconds": 124.72,
+      "trace_sha256": "b9a81af4815a60f6f8a95d833793fdc3e6ea2e460ad8ad31699c87c5b264f855",
+      "instruction_sha256": {
+        "global/AGENTS.md": "aa7f9c74d8d43b4aff2529160bc5157d075ad69a4e8e7f9b57021bf0c22826be",
+        "skills/minwoo-skill-curation/references/routing/refactoring.md": "595363ca5fc0fcff89b0022a5c2a368b79862e5ce925e7ee9093161e3819003d",
+        "skills/minwoo-test-quality/references/metrics-and-mutations.md": "c705e76dfe4cf9e6deac4d02d56f227ed15a6a3fa538fc705dde4af2f8185181"
+      },
+      "usage": [
+        {
+          "input_tokens": 290605,
+          "cached_input_tokens": 263936,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4098,
+          "reasoning_output_tokens": 1141
+        }
+      ],
+      "automated_pass": true,
+      "initial_automated_pass": true,
+      "initial_documents_read": true,
+      "production_sha256": {
+        "app.py": "b744ad4170cf302cf3fcf4c67523bb4eebf816fded4fc6df4a472e181edf32d5",
+        "helpers.py": "582cb158b2f9e35e4fc48ed41ff16ab17ab1135099a6470a7877e0ebca46cd99"
+      }
+    },
+    {
+      "case": "reuse",
+      "arm": "after",
+      "exit_code": 0,
+      "documents_read": true,
+      "scope_preserved": true,
+      "changed_files": [
+        "app.py",
+        "test_changes.py"
+      ],
+      "external_tools": false,
+      "tests_passed": true,
+      "passed_inputs": 36,
+      "initial_metrics": {
+        "production_nonblank_lines": 16,
+        "test_nonblank_lines": 5,
+        "branches": 2,
+        "imports": [
+          "csv",
+          "helpers",
+          "io"
+        ]
+      },
+      "final_metrics": {
+        "production_nonblank_lines": 16,
+        "test_nonblank_lines": 91,
+        "branches": 3,
+        "imports": [
+          "csv",
+          "helpers",
+          "io"
+        ]
+      },
+      "seconds": 125.45,
+      "trace_sha256": "a301e2695bed6c4993d5bd6b926ea3ff442b6110ef7f8621ff96a886219db07a",
+      "instruction_sha256": {
+        "global/AGENTS.md": "fc7c2daea85683f322c924b3c408a08ee9e8da116954002ecec230c7d0a17d66",
+        "skills/minwoo-skill-curation/references/routing/refactoring.md": "80a934c8499d14f8132ec8e9862ed857c9690bfd16e9275250ef93c056a1cdd1",
+        "skills/minwoo-test-quality/references/metrics-and-mutations.md": "e8486b4af0c49abcf049a5f258ad545bb5161d55e621377daadc5a6c96388cad"
+      },
+      "usage": [
+        {
+          "input_tokens": 256194,
+          "cached_input_tokens": 229632,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4322,
+          "reasoning_output_tokens": 1297
+        }
+      ],
+      "automated_pass": true,
+      "initial_automated_pass": false,
+      "initial_documents_read": false,
+      "production_sha256": {
+        "app.py": "b744ad4170cf302cf3fcf4c67523bb4eebf816fded4fc6df4a472e181edf32d5",
+        "helpers.py": "582cb158b2f9e35e4fc48ed41ff16ab17ab1135099a6470a7877e0ebca46cd99"
+      }
+    },
+    {
+      "case": "duplicates",
+      "arm": "after",
+      "exit_code": 0,
+      "documents_read": true,
+      "scope_preserved": true,
+      "changed_files": [
+        "app.py",
+        "test_changes.py"
+      ],
+      "external_tools": false,
+      "tests_passed": true,
+      "passed_inputs": 94,
+      "initial_metrics": {
+        "production_nonblank_lines": 23,
+        "test_nonblank_lines": 5,
+        "branches": 6,
+        "imports": []
+      },
+      "final_metrics": {
+        "production_nonblank_lines": 13,
+        "test_nonblank_lines": 102,
+        "branches": 5,
+        "imports": []
+      },
+      "seconds": 172.25,
+      "trace_sha256": "91697fbf337e5d75c6ecf0d2945e26b548134c6b973325821514c8994e1e48f2",
+      "instruction_sha256": {
+        "global/AGENTS.md": "fc7c2daea85683f322c924b3c408a08ee9e8da116954002ecec230c7d0a17d66",
+        "skills/minwoo-skill-curation/references/routing/refactoring.md": "80a934c8499d14f8132ec8e9862ed857c9690bfd16e9275250ef93c056a1cdd1",
+        "skills/minwoo-test-quality/references/metrics-and-mutations.md": "e8486b4af0c49abcf049a5f258ad545bb5161d55e621377daadc5a6c96388cad"
+      },
+      "usage": [
+        {
+          "input_tokens": 302293,
+          "cached_input_tokens": 275456,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6424,
+          "reasoning_output_tokens": 2147
+        }
+      ],
+      "automated_pass": true,
+      "initial_automated_pass": false,
+      "initial_documents_read": false,
+      "production_sha256": {
+        "app.py": "2427d362fb87f21ae6ab3bb745f90c39f694de9fd0e98a24dfea133f753ae57e"
+      }
+    },
+    {
+      "case": "duplicates",
+      "arm": "before",
+      "exit_code": 0,
+      "documents_read": true,
+      "scope_preserved": true,
+      "changed_files": [
+        "app.py",
+        "test_changes.py"
+      ],
+      "external_tools": false,
+      "tests_passed": true,
+      "passed_inputs": 94,
+      "initial_metrics": {
+        "production_nonblank_lines": 23,
+        "test_nonblank_lines": 5,
+        "branches": 6,
+        "imports": []
+      },
+      "final_metrics": {
+        "production_nonblank_lines": 13,
+        "test_nonblank_lines": 142,
+        "branches": 5,
+        "imports": []
+      },
+      "seconds": 168.06,
+      "trace_sha256": "d416371f6c45a3cf3569af8fd7674676afd138cfe2f1d09bc38c9adcd184298f",
+      "instruction_sha256": {
+        "global/AGENTS.md": "aa7f9c74d8d43b4aff2529160bc5157d075ad69a4e8e7f9b57021bf0c22826be",
+        "skills/minwoo-skill-curation/references/routing/refactoring.md": "595363ca5fc0fcff89b0022a5c2a368b79862e5ce925e7ee9093161e3819003d",
+        "skills/minwoo-test-quality/references/metrics-and-mutations.md": "c705e76dfe4cf9e6deac4d02d56f227ed15a6a3fa538fc705dde4af2f8185181"
+      },
+      "usage": [
+        {
+          "input_tokens": 292221,
+          "cached_input_tokens": 267776,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6287,
+          "reasoning_output_tokens": 1629
+        }
+      ],
+      "automated_pass": true,
+      "initial_automated_pass": true,
+      "initial_documents_read": true,
+      "production_sha256": {
+        "app.py": "2427d362fb87f21ae6ab3bb745f90c39f694de9fd0e98a24dfea133f753ae57e"
+      }
+    },
+    {
+      "case": "strict-date",
+      "arm": "before",
+      "exit_code": 0,
+      "documents_read": true,
+      "scope_preserved": true,
+      "changed_files": [
+        "app.py",
+        "test_changes.py"
+      ],
+      "external_tools": false,
+      "tests_passed": true,
+      "passed_inputs": 94,
+      "initial_metrics": {
+        "production_nonblank_lines": 23,
+        "test_nonblank_lines": 5,
+        "branches": 9,
+        "imports": [
+          "datetime"
+        ]
+      },
+      "final_metrics": {
+        "production_nonblank_lines": 14,
+        "test_nonblank_lines": 126,
+        "branches": 4,
+        "imports": [
+          "datetime",
+          "re"
+        ]
+      },
+      "seconds": 220.97,
+      "trace_sha256": "cdb6eb77836fcec754163920e33193f52f818e97fc75bd94ad28cede79e83e1d",
+      "instruction_sha256": {
+        "global/AGENTS.md": "aa7f9c74d8d43b4aff2529160bc5157d075ad69a4e8e7f9b57021bf0c22826be",
+        "skills/minwoo-skill-curation/references/routing/refactoring.md": "595363ca5fc0fcff89b0022a5c2a368b79862e5ce925e7ee9093161e3819003d",
+        "skills/minwoo-test-quality/references/metrics-and-mutations.md": "c705e76dfe4cf9e6deac4d02d56f227ed15a6a3fa538fc705dde4af2f8185181"
+      },
+      "usage": [
+        {
+          "input_tokens": 356709,
+          "cached_input_tokens": 330240,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 9119,
+          "reasoning_output_tokens": 2416
+        }
+      ],
+      "automated_pass": true,
+      "initial_automated_pass": true,
+      "initial_documents_read": true,
+      "production_sha256": {
+        "app.py": "64904f2e378cef7d0f89dc84efdde1e6fe21bb118164a2c4e6718d425c53a58b"
+      }
+    },
+    {
+      "case": "strict-date",
+      "arm": "after",
+      "exit_code": 0,
+      "documents_read": true,
+      "scope_preserved": true,
+      "changed_files": [
+        "app.py",
+        "test_changes.py"
+      ],
+      "external_tools": false,
+      "tests_passed": true,
+      "passed_inputs": 94,
+      "initial_metrics": {
+        "production_nonblank_lines": 23,
+        "test_nonblank_lines": 5,
+        "branches": 9,
+        "imports": [
+          "datetime"
+        ]
+      },
+      "final_metrics": {
+        "production_nonblank_lines": 14,
+        "test_nonblank_lines": 114,
+        "branches": 4,
+        "imports": [
+          "datetime",
+          "re"
+        ]
+      },
+      "seconds": 164.88,
+      "trace_sha256": "3c42db76beecbee06d54c94ada94c5781a5926b732e44a39a57c7375fda37bd6",
+      "instruction_sha256": {
+        "global/AGENTS.md": "fc7c2daea85683f322c924b3c408a08ee9e8da116954002ecec230c7d0a17d66",
+        "skills/minwoo-skill-curation/references/routing/refactoring.md": "80a934c8499d14f8132ec8e9862ed857c9690bfd16e9275250ef93c056a1cdd1",
+        "skills/minwoo-test-quality/references/metrics-and-mutations.md": "e8486b4af0c49abcf049a5f258ad545bb5161d55e621377daadc5a6c96388cad"
+      },
+      "usage": [
+        {
+          "input_tokens": 255611,
+          "cached_input_tokens": 230656,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6084,
+          "reasoning_output_tokens": 1953
+        }
+      ],
+      "automated_pass": true,
+      "initial_automated_pass": false,
+      "initial_documents_read": false,
+      "production_sha256": {
+        "app.py": "6293b741ddfc786022d766de83652c905b110ea6a61497128e106e3927149638"
+      }
+    }
+  ],
+  "date": "2026-11-08",
+  "configured_model": "gpt-6-astra",
+  "configured_reasoning": "ultra",
+  "cli_version": "0.167.0-alpha.3.2",
+  "grading_correction": "Windows CRCRLF and expanded empty lines caused false read negatives. Same preserved traces regraded retaining every nonempty line, indentation and order; no model rerun or weakened functional checks.",
+  "manual_review": {
+    "completed": true,
+    "scope_and_autonomy_preserved": true,
+    "existing_tests_preserved": true,
+    "unnecessary_dependencies": false,
+    "readability": "CSV and aggregate production code identical across arms. Date code differs only in explicit regex match absence expression. Required validation and order retained.",
+    "conclusion": "No additional production-code reduction demonstrated. Test code smaller in these after samples, but one run per arm does not establish superiority or equal test strength."
+  },
+  "independent_inputs_total": 448
+}
