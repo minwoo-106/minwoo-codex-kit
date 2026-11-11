@@ -106,7 +106,14 @@
         "minwoo-async-jobs",
         "minwoo-state-flow",
         "minwoo-data-ingestion",
-        "minwoo-i18n"
+        "minwoo-i18n",
+        "minwoo-trading-research"
+      ]
+    },
+    "trading": {
+      "description": "자동매매 연구·자금 활용·공정한 후보 검증",
+      "skills": [
+        "minwoo-trading-research"
       ]
     }
   }

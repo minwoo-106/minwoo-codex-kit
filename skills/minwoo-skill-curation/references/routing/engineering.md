@@ -57,3 +57,7 @@ Cloudflare 감사의 근거 구분은 minwoo-security-review, ub-mode의 측정 
 ## 큰 참고 문서 검색 보조
 
 정확한 코드 위치·짧은 파일·한 번만 보는 로그는 기존 rg/파일 도구를 사용한다. 긴 API·운영·마이그레이션 문서를 반복 조회하며 관련 절을 찾아야 한다면 설치된 diagnosing-bugs의 references/context-mode.md와 scripts/context_search.py만 참고할 수 있다. 검색 때문에 진단 스킬 전체를 발동하거나 새 도구를 설치하지 않는다. 검색 조각 뒤에는 필요한 원문·예외를 확인한다. Context7은 외부 최신 문서 조회, 이 도구는 이미 확보한 로컬 문서의 검색이다.
+
+## 자동매매 연구
+
+자동매매의 자금 활용·비용·손실 원인 및 동일 조건 후보 Replay는 minwoo-trading-research를 선택한다. 일반 오류 조사·종목 추천·실제 주문 실행에는 적용하지 않는다. 연구 권한을 운영 전략 변경 권한으로 확대하지 않는다.

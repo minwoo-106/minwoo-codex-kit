@@ -455,5 +455,19 @@
     "kind": "negative",
     "prompt": "토론만 하자는 요청과 구현해 달라는 요청의 차이를 한 문장으로 설명해 줘. 프로젝트 작업이나 문서 작성은 필요 없어.",
     "expected": []
+  },
+  {
+    "id": "trading-research-capital",
+    "kind": "positive",
+    "prompt": "현재 모의매매는 유지하고 자금이 적게 쓰이는 원인을 분석한 뒤 동일 비용·시점 조건으로 자금배분과 스윙 후보를 비교해 줘.",
+    "expected": [
+      "minwoo-trading-research"
+    ]
+  },
+  {
+    "id": "trading-research-not-stock-tip",
+    "kind": "negative",
+    "prompt": "삼성전자 회사 이름을 영어로 써 줘.",
+    "expected": []
   }
 ]

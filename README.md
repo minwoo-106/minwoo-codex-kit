@@ -7,7 +7,7 @@
 [실제 스킬 선택 평가](evals/README.md), [릴리스 노트](docs/RELEASE-NOTES.md).
 배포 ZIP은 [GitHub Releases](https://github.com/minwoo-106/minwoo-codex-kit/releases)에서 확인한다.
 
-[웹 품질·보안·SEO 검수](docs/WEB-QUALITY-REVIEW.md): 기존 브라우저 스킬 확장과 새 스킬 2개. 관리 스킬은 31개이며 Context7은 별도 연결이 필요한 선택 플러그인이다.
+[웹 품질·보안·SEO 검수](docs/WEB-QUALITY-REVIEW.md): 기존 브라우저 스킬 확장과 새 스킬 2개. 관리 스킬은 32개이며 Context7은 별도 연결이 필요한 선택 플러그인이다.
 
 [홈페이지 기획·디자인·문구·출시](docs/WEBSITE-CRAFT.md): 새 스킬 4개와 기존 기능 확장, 선택 안내를 제공한다.
 
@@ -253,3 +253,7 @@ python -m unittest discover -s tests -v
 [jongwony/epistemic-protocols](https://github.com/jongwony/epistemic-protocols)의 구조와 필요 시 절차를 선택하는 철학을 참고했다.
 코드·스킬 본문·설치 스크립트는 가져오지 않았다. 세부 출처와 공식 문서는 [설계 기록](docs/DESIGN.md)에 있다.
 GitHub 저장소 생성·공개 범위·푸시는 소유자가 결정한다. 공개와 별개로 재배포 라이선스는 아직 지정하지 않았다.
+
+## 자동매매 연구
+
+[자동매매 연구 스킬](skills/minwoo-trading-research/SKILL.md)은 저장 자료의 자금 활용·비용·손실 원인을 분석하고 가상 후보를 비교한다. 운영 전략 변경과 실제 주문은 별도 요청 범위다. `trading` 프로필 또는 `--skill minwoo-trading-research`로 선택하며 필수 외부 패키지는 없다. 공개 거래 프로젝트의 코드를 복제하지 않고 필요한 검증 관점을 독자 작성했다.
