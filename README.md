@@ -3,6 +3,8 @@
 내 Codex 공통 규칙과 자주 쓰는 작업 절차를 관리하는 개인용 저장소.
 새 PC에는 공통 규칙과 필요한 스킬만 설치하고, 프로젝트에는 그 프로젝트의 사실만 추가한다.
 
+공통 대화 원칙은 [global/AGENTS.md](global/AGENTS.md)의 ‘판단과 피드백 — 과도한 동조 방지’에 둔다. 친근한 말투를 유지하면서도 자동 동의·근거 없는 칭찬을 피하고, 일부만 맞는 의견은 타당한 부분과 문제 조건을 구분한다. 더 나은 대안은 이유와 함께 설명하며 새 근거에 따라 판단을 수정한다. 반박 자체를 목표로 삼거나 기존 승인 방식·자율 작업 범위를 바꾸지 않는다. 이 README는 안내이고, 실제 공통 지침 원본은 `global/AGENTS.md`다.
+
 현재 버전 **0.11.0**. [설치 묶음·상태 점검·자동 검증·갱신·복구](docs/OPERATIONS.md),
 [실제 스킬 선택 평가](evals/README.md), [릴리스 노트](docs/RELEASE-NOTES.md).
 배포 ZIP은 [GitHub Releases](https://github.com/minwoo-106/minwoo-codex-kit/releases)에서 확인한다.
