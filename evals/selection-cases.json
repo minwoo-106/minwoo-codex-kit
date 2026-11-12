@@ -469,5 +469,27 @@
     "kind": "negative",
     "prompt": "삼성전자 회사 이름을 영어로 써 줘.",
     "expected": []
+  },
+  {
+    "id": "trading-thesis-weekly",
+    "kind": "positive",
+    "prompt": "실험 결과는 이미 계산됐어. 가설별 원래 기대와 새 지지·반박 증거를 대조하고 지난주 대비 판단 변화와 다음 결정을 주간 연구 보고서에 정리해 줘.",
+    "expected": [
+      "minwoo-trading-thesis"
+    ]
+  },
+  {
+    "id": "trading-thesis-posthoc",
+    "kind": "positive",
+    "prompt": "수익이 난 결과를 보고 새로 만든 가설과 사전에 고정한 가설이 섞였어. 새 실험이나 계산 없이 기존 근거 장부를 정리하고 판단 가능한 것과 보류할 것을 구분해 줘.",
+    "expected": [
+      "minwoo-trading-thesis"
+    ]
+  },
+  {
+    "id": "trading-thesis-not-definition",
+    "kind": "negative",
+    "prompt": "투자 가설이라는 단어의 뜻만 한 문장으로 설명해 줘. 기록이나 연구 검토는 필요 없어.",
+    "expected": []
   }
 ]

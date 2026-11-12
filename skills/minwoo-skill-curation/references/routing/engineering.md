@@ -61,3 +61,5 @@ Cloudflare 감사의 근거 구분은 minwoo-security-review, ub-mode의 측정 
 ## 자동매매 연구
 
 자동매매의 자금 활용·비용·손실 원인 및 동일 조건 후보 Replay는 minwoo-trading-research를 선택한다. 일반 오류 조사·종목 추천·실제 주문 실행에는 적용하지 않는다. 연구 권한을 운영 전략 변경 권한으로 확대하지 않는다.
+
+이미 계산된 EOD·주간 결과로 연구 가설의 지지·반박 증거, 이전 판단 대비 변화, 다음 결정을 정리하는 요청에는 minwoo-trading-thesis를 선택한다. 계산·Replay를 다시 실행할 필요가 없다면 trading-research 전체 절차를 중복 적용하지 않는다. 설치는 자동 연구 연결이나 주문 실행을 의미하지 않는다.

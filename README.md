@@ -23,6 +23,8 @@
 
 ## 구성
 
+[자동매매 연구 가설 추적](skills/minwoo-trading-thesis/SKILL.md): 기존 실험 결과에서 지지·반박 증거와 다음 결정을 정리하는 한국어 각색 스킬. 손익 계산·후보 Replay는 기존 `minwoo-trading-research`가 맡으며, 설치만으로 EOD나 주문이 실행되지는 않는다.
+
 ```text
 global/AGENTS.md                  공통 규칙 원본
 skills/minwoo-project-context/    프로젝트 규칙·기획·토론 합의와 작업 분할

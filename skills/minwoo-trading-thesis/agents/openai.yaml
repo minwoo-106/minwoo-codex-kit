@@ -1,0 +1,4 @@
+interface:
+  display_name: "자동매매 연구 가설 추적"
+  short_description: "고정 가설의 지지·반박 증거와 다음 결정을 연구 보고서로 정리"
+  default_prompt: "$minwoo-trading-thesis로 저장된 연구 결과를 비교해 가설별 지지·반박 증거와 다음 결정을 정리해줘."

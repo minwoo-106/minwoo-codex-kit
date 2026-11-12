@@ -1016,6 +1016,22 @@
       "local": "skills/diagnosing-bugs/agents/openai.yaml",
       "gitBlob": "a13a755a77634ce61a649a3a0d905a66d3865b35",
       "modified": false
+    },
+    {
+      "repo": "anthropics/financial-services",
+      "ref": "60565064557ca77b12f62aa7877f365d111c129d",
+      "path": "plugins/vertical-plugins/equity-research/skills/thesis-tracker/SKILL.md",
+      "local": "skills/minwoo-trading-thesis/SKILL.md",
+      "gitBlob": "f9a3ce9187bdc3410d3f4f3713ce70a6f6b8f221",
+      "modified": true
+    },
+    {
+      "repo": "anthropics/financial-services",
+      "ref": "60565064557ca77b12f62aa7877f365d111c129d",
+      "path": "LICENSE",
+      "local": "skills/minwoo-trading-thesis/LICENSE",
+      "gitBlob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "modified": false
     }
   ]
 }
