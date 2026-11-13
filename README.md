@@ -9,11 +9,13 @@
 [실제 스킬 선택 평가](evals/README.md), [릴리스 노트](docs/RELEASE-NOTES.md).
 배포 ZIP은 [GitHub Releases](https://github.com/minwoo-106/minwoo-codex-kit/releases)에서 확인한다.
 
-[웹 품질·보안·SEO 검수](docs/WEB-QUALITY-REVIEW.md): 기존 브라우저 스킬 확장과 새 스킬 2개. 관리 스킬은 32개이며 Context7은 별도 연결이 필요한 선택 플러그인이다.
+[웹 품질·보안·SEO 검수](docs/WEB-QUALITY-REVIEW.md): 기존 브라우저 스킬 확장과 새 스킬 2개. 관리 스킬은 33개이며 Context7은 별도 연결이 필요한 선택 플러그인이다.
 
 [홈페이지 기획·디자인·문구·출시](docs/WEBSITE-CRAFT.md): 새 스킬 4개와 기존 기능 확장, 선택 안내를 제공한다.
 
 [자연스러운 글과 말투](docs/NATURAL-WRITING.md): 내 말투·격식·공손함을 상황에 맞게 조절하는 일반 문체 편집 스킬.
+
+[업무 문서 편집·디자인 검수](skills/minwoo-skill-curation/references/routing/document-quality.md): 지정 양식·사실·필수 고지를 보존하고 불필요한 장식·작은 부가 문구·페이지 낭비를 점검한다. 기존 제작 도구에 조건부로 연결하며 새 스킬이나 승인 단계는 추가하지 않는다. [공개 후보 검토](skills/minwoo-skill-curation/references/routing/document-candidates.md), [합성 문서 전후 비교](evals/DOCUMENT-QUALITY.md).
 
 [코딩 구현·검증 강화](docs/ENGINEERING-CRAFT.md): 새 역할 7개, 기존 확장 2개와 안전한 리팩터링 선택 안내.
 
