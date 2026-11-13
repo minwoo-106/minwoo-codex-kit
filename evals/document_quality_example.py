@@ -27,6 +27,7 @@ PLANS = [
 LIMITATION = '내부 목표일이며 외부 회신이나 완료를 보장하지 않습니다.'
 SOURCE = '근거: 검증용 합성자료 A-01 (2026.11.13 기준)'
 DECISION = '입력 오류의 재검토가 끝나기 전에는 새 양식을 배포하지 않습니다.'
+DECISION_SHORT = '재검토 전 새 양식 배포 보류'
 
 
 def styles():
@@ -64,20 +65,24 @@ def build(out, arm):
     baseline = arm == 'before'
     if baseline:
         story += [p('WEEKLY WORK OVERVIEW', 'label'), Spacer(1, 6)]
-    story += [p(TITLE, 'title'), p('샘플 운영팀 | ' + PERIOD), Spacer(1, 12)]
+    story += [p(TITLE, 'title')]
+    if baseline:
+        story += [p('샘플 운영팀 | ' + PERIOD), Spacer(1, 12)]
     if baseline:
         box = Table([[p('이번 주 핵심 요약', 'heading')], [p('자료 정리와 입력 양식 점검, 안내문 개정을 진행했습니다.')]], colWidths=[width])
         box.setStyle(TableStyle([('BACKGROUND', (0, 0), (-1, -1), colors.HexColor('#EAF2F5')), ('BOX', (0, 0), (-1, -1), .5, colors.HexColor('#CADDE3')), ('LEFTPADDING', (0, 0), (-1, -1), 12), ('BOTTOMPADDING', (0, 0), (-1, -1), 12)]))
         story += [box, Spacer(1, 12)]
-    story += [p('이번 주 진행 내용', 'heading'), table([['업무', '진행 상태', '남은 내용']] + ROWS, [112, 137, width - 249], st, baseline)]
+    rows = [row[:] for row in ROWS]
+    if not baseline:
+        rows[1][2] += '<br/>' + DECISION_SHORT
+    story += [p('이번 주 진행 내용', 'heading'), table([['업무', '진행 상태', '남은 내용']] + rows, [112, 137, width - 249], st, baseline)]
     if baseline:
         story += [PageBreak(), p('NEXT WEEK ACTION PLAN', 'label'), p('다음 주 실행 계획', 'title'), p('샘플 운영팀 | ' + PERIOD)]
     else:
         story += [p('다음 주 계획', 'heading')]
     story += [table([['내부 목표일', '담당', '다음 조치']] + PLANS, [89, 90, width - 179], st, baseline)]
-    if not baseline:
-        story += [Spacer(1, 8), p(LIMITATION)]
-    story += [p('확인할 사항', 'heading'), p(DECISION), Spacer(1, 14), p(SOURCE)]
+    if baseline:
+        story += [p('확인할 사항', 'heading'), p(DECISION), Spacer(1, 14), p(SOURCE)]
 
     def decorate(canvas, doc):
         if not baseline:
@@ -100,21 +105,23 @@ def build(out, arm):
 
 
 def check_and_render(out):
-    required = [TITLE, PERIOD, LIMITATION, SOURCE, DECISION]
-    required += [value for row in ROWS + PLANS for value in row]
+    business_content = [TITLE, '내부 목표일']
+    business_content += [value for row in ROWS + PLANS for value in row]
     summary = {'kind': 'controlled synthetic layout example; not a model A/B benchmark', 'results': {}}
     for arm in ('before', 'after'):
         path = out / (arm + '.pdf')
         reader = PdfReader(path)
         text = '\n'.join(page.extract_text() for page in reader.pages)
         compact = ''.join(text.split())
+        required = business_content + ([DECISION, PERIOD, LIMITATION, SOURCE] if arm == 'before' else [DECISION_SHORT])
         missing = [value for value in required if ''.join(value.split()) not in compact]
         assert not missing, (arm, missing)
         assert all(abs(float(page.mediabox.width) - A4[0]) < 1 for page in reader.pages)
         assert all(abs(float(page.mediabox.height) - A4[1]) < 1 for page in reader.pages)
         if arm == 'after':
-            assert '체계적으로 정리했습니다' not in text
-            assert 'WEEKLY WORK OVERVIEW' not in text
+            for extra in [PERIOD, LIMITATION, SOURCE, '샘플 운영팀', '확인할 사항',
+                          '체계적으로 정리했습니다', 'WEEKLY WORK OVERVIEW']:
+                assert ''.join(extra.split()) not in compact, extra
             assert len(reader.pages) == 1
         document = pdfium.PdfDocument(str(path))
         for index in range(len(document)):
