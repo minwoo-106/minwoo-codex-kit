@@ -7,17 +7,17 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@electric-sql/pglite": "0.5.13",
-    "@remotion/bundler": "4.0.539",
-    "@remotion/captions": "4.0.539",
-    "@remotion/renderer": "4.0.539",
+    "@electric-sql/pglite": "0.5.15",
+    "@remotion/bundler": "4.0.541",
+    "@remotion/captions": "4.0.541",
+    "@remotion/renderer": "4.0.541",
     "fast-check": "4.10.2",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "remotion": "4.0.539",
-    "playwright": "1.62.1",
+    "remotion": "4.0.541",
+    "playwright": "1.65.0",
     "@axe-core/playwright": "4.14.0",
-    "@playwright/test": "1.62.1"
+    "@playwright/test": "1.65.0"
   },
   "overrides": {
     "zod": "4.6.7"
