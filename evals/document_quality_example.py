@@ -74,7 +74,7 @@ def build(out, arm):
         story += [box, Spacer(1, 12)]
     rows = [row[:] for row in ROWS]
     if not baseline:
-        rows[1][2] += '<br/>' + DECISION_SHORT
+        rows[1][2] = f'<font name="KoreanBold">{DECISION_SHORT}</font><br/>{rows[1][2]}'
     story += [p('이번 주 진행 내용', 'heading'), table([['업무', '진행 상태', '남은 내용']] + rows, [112, 137, width - 249], st, baseline)]
     if baseline:
         story += [PageBreak(), p('NEXT WEEK ACTION PLAN', 'label'), p('다음 주 실행 계획', 'title'), p('샘플 운영팀 | ' + PERIOD)]
