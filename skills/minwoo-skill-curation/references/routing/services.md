@@ -9,6 +9,7 @@
 | Notion 근거 조사·비교·보고 | notion:notion-research-documentation |
 | Notion 명세에서 구현 계획·작업 만들기 | notion:notion-spec-to-implementation |
 | Notion 추적표·데이터베이스 설계 | notion:notion-database-designer |
+| 흩어진 할 일·주간 목표를 Notion에 정리 | 기존 할 일 DB의 담당·상태·기한과 이번 주 보기부터 확인. 새 추적표 설계가 필요하면 notion:notion-database-designer |
 | Notion 회의 준비·후속 작업 정리 | notion:notion-meeting-intelligence |
 | Notion 주간 변화 요약 | notion:notion-weekly-project-digest |
 | Notion 설치 후 초기 연결 설정 요청 | notion:notion-setup |
@@ -23,6 +24,7 @@
 | Canva 디자인 | 현재 Canva 도구 |
 
 Notion 회의 준비와 주간 보고는 기간·결과물이 다르다. 자료 한 건의 직접 수정에 연구·주간 보고 절차를 모두 적용하지 않는다.
+개인 업무 정리는 실제 할 일 하나를 기존 보드에 넣어 오늘·이번 주 보기에서 같은 항목으로 보이는지부터 확인한다. 습관의 일별 이력이 필요할 때만 날짜별 기록을 구분한다. 할 일 목록만 요청한 경우 대시보드 전체나 외부 템플릿을 도입하지 않는다.
 Pages의 직접 수정·근거 유지·구조 정리는 변경의 종류로 나눈다. Page가 선택돼 있다는 사실만으로 쓰기 권한을 추론하지 않는다.
 스프레드시트·슬라이드의 Artifact Session은 연결된 산출물을 편집하는 실행 도구다. 저장 위치를 정하기 전에 별도 문서를 만들지 않는다.
 
@@ -32,6 +34,7 @@ Pages의 직접 수정·근거 유지·구조 정리는 변경의 종류로 나�
 - 목적에 맞는 기존 도구·연결 기능을 먼저 쓴다. 플러그인 검색이 필요하면 plugin-management:plugin-management를 적용한다.
 - 적절한 API·CLI가 없고 화면 조작이 필요한 경우 computer-use:computer-use 또는 현재 제공되는 컴퓨터 사용 도구의 안내를 따른다.
 - 일반 웹 검색은 현재 검색 도구를 사용한다. 외부 앱·계정 접근이 필요할 때만 새 연결을 찾는다.
+- 여러 공개 사이트에서 같은 필드를 반복 수집하면 [Firecrawl](https://docs.firecrawl.dev/introduction)을 참고 후보로 검토한다. 먼저 대표 페이지로 필드 누락·출처·수집 범위를 확인한다. 단발 조사는 기존 검색으로 충분하다.
 - 메일·메신저 발송은 명시적 사용자 지시 범위에서만 한다. 안내표는 발송·권한 확대의 승인이 아니다.
 - 보호자 설정·도움 요청 전용 연결 기능은 해당 사용자의 구체적인 요청에서만 도구의 필수 조회·사용 절차를 따른다.
 - 앱의 플러그인 목록에 보인다는 사실, 스킬 파일 존재, 연결된 계정, 실제 실행 성공을 서로 구분한다.
