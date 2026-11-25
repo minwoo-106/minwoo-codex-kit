@@ -505,5 +505,19 @@
     "kind": "negative",
     "prompt": "PDF라는 약자가 무엇인지 알려줘.",
     "expected": []
+  },
+  {
+    "id": "cafe-announcement",
+    "kind": "positive",
+    "prompt": "네이버 카페 회원들에게 재입고를 알릴 공지를 써줘. 초안을 보고 수정할게.",
+    "expected": [
+      "naver-cafe-post"
+    ]
+  },
+  {
+    "id": "cafe-word-only",
+    "kind": "negative",
+    "prompt": "네이버 카페와 실제 커피 가게는 같은 뜻이야? 한 문장으로 설명해줘.",
+    "expected": []
   }
 ]

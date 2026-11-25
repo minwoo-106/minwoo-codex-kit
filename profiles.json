@@ -71,7 +71,8 @@
         "minwoo-release-notes",
         "diagnosing-bugs",
         "minwoo-natural-writing",
-        "reference-led-report"
+        "reference-led-report",
+        "naver-cafe-post"
       ]
     },
     "all": {
@@ -110,7 +111,8 @@
         "minwoo-i18n",
         "minwoo-trading-research",
         "minwoo-trading-thesis",
-        "reference-led-report"
+        "reference-led-report",
+        "naver-cafe-post"
       ]
     },
     "trading": {

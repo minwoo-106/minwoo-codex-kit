@@ -35,3 +35,5 @@ Google Slides는 presentations의 경로 안내가 요구하는 Drive 흐름을 
 일반 채팅 답변은 문서로 저장하지 않는다. 저장소 README·AGENTS.md 작업은 저장소 파일에 작성하고 Pages로 옮기지 않는다. Pages·Notion 저장이 목적이면 [연결 서비스](services.md)를 사용한다.
 
 양식 없는 업무 보고서에서 공개 사례를 조사해 구성을 정해야 하면 [reference-led-report](../../../reference-led-report/SKILL.md)를 사용한다. 지정 양식 채우기는 해당 형식 도구로 진행한다.
+
+네이버 카페 회원용 공지의 작성·수정·승인 후 게시는 [naver-cafe-post](../../../naver-cafe-post/SKILL.md)를 사용한다. 일반 공지의 문체 교정만 필요하면 minwoo-natural-writing을 선택한다.
