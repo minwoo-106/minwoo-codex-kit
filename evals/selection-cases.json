@@ -491,5 +491,19 @@
     "kind": "negative",
     "prompt": "투자 가설이라는 단어의 뜻만 한 문장으로 설명해 줘. 기록이나 연구 검토는 필요 없어.",
     "expected": []
+  },
+  {
+    "id": "report-reference",
+    "kind": "positive",
+    "prompt": "양식 없는 업무 메모로 의사결정 보고서를 만들어 줘. 비슷한 공개 보고서 두 건을 직접 비교해서 구성을 정해줘.",
+    "expected": [
+      "reference-led-report"
+    ]
+  },
+  {
+    "id": "report-file-extension",
+    "kind": "negative",
+    "prompt": "PDF라는 약자가 무엇인지 알려줘.",
+    "expected": []
   }
 ]

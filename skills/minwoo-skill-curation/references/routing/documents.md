@@ -33,3 +33,5 @@ Google Slides는 presentations의 경로 안내가 요구하는 Drive 흐름을 
 발표 자료의 일반 요청·명시적 파일 요청·기존 문서 수정은 presentations의 우선순위대로 결정한다. 입력이 PPTX라는 이유만으로 출력도 PPTX라고 단정하지 않는다.
 열린 문서 편집은 연결 세션·지원 기능을 먼저 조회한다. 문서 제어 도구가 노출됐다는 이유로 열린 파일이나 편집 권한이 있다고 추정하지 않는다.
 일반 채팅 답변은 문서로 저장하지 않는다. 저장소 README·AGENTS.md 작업은 저장소 파일에 작성하고 Pages로 옮기지 않는다. Pages·Notion 저장이 목적이면 [연결 서비스](services.md)를 사용한다.
+
+양식 없는 업무 보고서에서 공개 사례를 조사해 구성을 정해야 하면 [reference-led-report](../../../reference-led-report/SKILL.md)를 사용한다. 지정 양식 채우기는 해당 형식 도구로 진행한다.
